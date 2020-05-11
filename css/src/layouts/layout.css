@@ -1,0 +1,15 @@
+/* #############################################################################
+   Layout
+   ########################################################################## */
+
+.layout {
+  display: flex;
+}
+
+.layout.layout--stretch {
+  min-height: 100vh;
+}
+
+.layout.layout--vertical {
+  flex-direction: column;
+}

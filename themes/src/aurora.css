@@ -1,0 +1,147 @@
+/* #############################################################################
+   Aurora
+   ########################################################################## */
+
+/**
+ *  A dark theme for Ruckus based on the Aurora Borealis.
+ */
+
+.theme--aurora {
+
+  /* Button
+     ######################################################################## */
+
+  /* Default */
+  --ruckus-button-background-color: hsl( 160, 64%, 64% );
+  --ruckus-button-border-color: transparent;
+  --ruckus-button-box-shadow: none;
+  --ruckus-button-color: hsl( 160, 64%, 16% );
+  --ruckus-button-transition: background-color 160ms;
+  --ruckus-button-hover-background-color: hsl( 160, 64%, 68% );
+  --ruckus-button-hover-border-color: transparent;
+  --ruckus-button-hover-box-shadow: none;
+  --ruckus-button-hover-color: hsl( 160, 64%, 16% );
+  --ruckus-button-hover-transition: background-color 160ms;
+  --ruckus-button-focus-background-color: hsl( 160, 64%, 72% );
+  --ruckus-button-focus-border-color: transparent;
+  --ruckus-button-focus-box-shadow: none;
+  --ruckus-button-focus-color: hsl( 160, 64%, 16% );
+  --ruckus-button-focus-transition: background-color 160ms;
+  --ruckus-button-active-background-color: hsl( 160, 64%, 72% );
+  --ruckus-button-active-border-color: transparent;
+  --ruckus-button-active-box-shadow: none;
+  --ruckus-button-active-color: hsl( 160, 64%, 16% );
+  --ruckus-button-active-transition: background-color 160ms;
+
+  /* Subtle */
+  --ruckus-button-subtle-background-color: hsl( 232, 16%, 20% );
+  --ruckus-button-subtle-border-color: hsl( 232, 16%, 24% );
+  --ruckus-button-subtle-box-shadow: none;
+  --ruckus-button-subtle-color: hsl( 232, 16%, 80% );
+  --ruckus-button-subtle-transition: background-color 160ms;
+  --ruckus-button-subtle-hover-background-color: hsl( 232, 16%, 24% );
+  --ruckus-button-subtle-hover-border-color: transparent;
+  --ruckus-button-subtle-hover-box-shadow: none;
+  --ruckus-button-subtle-hover-color: hsl( 232, 16%, 80% );
+  --ruckus-button-subtle-hover-transition: background-color 160ms;
+  --ruckus-button-subtle-focus-background-color: hsl( 232, 16%, 28% );
+  --ruckus-button-subtle-focus-border-color: transparent;
+  --ruckus-button-subtle-focus-box-shadow: none;
+  --ruckus-button-subtle-focus-color: hsl( 232, 16%, 80% );
+  --ruckus-button-subtle-focus-transition: background-color 160ms;
+  --ruckus-button-subtle-active-background-color: hsl( 232, 16%, 28% );
+  --ruckus-button-subtle-active-border-color: transparent;
+  --ruckus-button-subtle-active-box-shadow: none;
+  --ruckus-button-subtle-active-color: hsl( 232, 16%, 80% );
+  --ruckus-button-subtle-active-transition: background-color 160ms;
+
+  /* Sizes */
+  --ruckus-button-border-radius: 0.125rem;
+  --ruckus-button-border-style: solid;
+  --ruckus-button-border-width: 0.125rem;
+  --ruckus-button-font-size: 1rem;
+  --ruckus-button-font-weight: 600;
+  --ruckus-button-padding: 0.375rem 0.875rem;
+  --ruckus-button-small-border-width: 0.125rem;
+  --ruckus-button-small-font-size: 0.875rem;
+  --ruckus-button-small-line-height: calc( 1.5 / 0.875 );
+  --ruckus-button-small-padding: 0 0.375rem;
+  --ruckus-button-large-border-width: 0.125rem;
+  --ruckus-button-large-font-size: 1.125rem;
+  --ruckus-button-large-line-height: calc( 1.5 / 1.125 );
+  --ruckus-button-large-padding: 0.875rem 1.375rem;
+
+  /* Card
+     ######################################################################## */
+
+  --ruckus-card-background-color: hsl( 232, 16%, 20% );
+  --ruckus-card-color: hsl( 232, 16%, 80% );
+
+  /* Container
+     ######################################################################## */
+
+  --ruckus-container-max-width: 960px;
+  --ruckus-container-small-max-width: 480px;
+  --ruckus-container-large-max-width: 1200px;
+
+  /* Divider
+     ######################################################################## */
+
+  --ruckus-divider-border-color: hsl( 232, 16%, 32% );
+  --ruckus-divider-border-style: solid;
+  --ruckus-divider-border-width: 0.125rem;
+
+
+  /* Heading
+     ######################################################################## */
+
+  --ruckus-heading-title-font-size: 2.5rem;
+  --ruckus-heading-title-font-weight: 400;
+  --ruckus-heading-content-font-size: 1.5rem;
+  --ruckus-heading-content-font-weight: 500;
+  --ruckus-heading-menu-font-size: 1rem;
+  --ruckus-heading-menu-font-weight: 700;
+
+
+  /* HTML
+     ######################################################################## */
+
+  --ruckus-html-background-color: hsl( 232, 16%, 16% );
+  --ruckus-html-color: hsl( 232, 16%, 80% );
+  --ruckus-html-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --ruckus-html-font-size: 16px;
+  --ruckus-html-line-height: 1.5;
+
+  /* Link
+     ######################################################################## */
+
+  --ruckus-link-color: hsl( 160, 48%, 72% );
+  --ruckus-link-decoration-color: hsl( 232, 16%, 32% );
+
+  /* Section
+     ######################################################################## */
+
+  --ruckus-section-padding: 1rem;
+  --ruckus-section-small-padding: 0.5rem;
+  --ruckus-section-large-padding: 2rem;
+
+  /* Select
+     ######################################################################## */
+
+ --ruckus-select-background-color: hsl( 232, 16%,  20% );
+ --ruckus-select-border-color: transparent;
+ --ruckus-select-border-radius: 0.125rem;
+ --ruckus-select-border-style: solid;
+ --ruckus-select-border-width: 0;
+ --ruckus-select-color: hsl( 232, 16%, 80% );
+ --ruckus-select-font-size: 1rem;
+ --ruckus-select-padding: 0.5rem 1rem;
+
+  /* Stack
+     ######################################################################## */
+
+  --ruckus-stack-margin-bottom: 1rem;
+  --ruckus-stack-small-margin-bottom: 0.5rem;
+  --ruckus-stack-large-margin-bottom: 2rem;
+
+}

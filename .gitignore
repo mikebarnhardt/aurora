@@ -1,0 +1,30 @@
+################################################################################
+# .gitignore
+################################################################################
+
+# Ruckus will ignore the following files and folders by default. This file is
+# meant to be a catch-all and sub-directories may contain their own .gitignore
+# files.
+
+# System
+################################################################################
+
+.DS_Store
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+
+# npm
+################################################################################
+
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Folders
+################################################################################
+
+build
+dist

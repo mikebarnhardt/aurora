@@ -1,0 +1,15 @@
+{
+  "name": "ruckus-themes",
+  "version": "0.1.0",
+  "description": "Themes for Ruckus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "ruckus"
+  ],
+  "author": "Mike Barnhardt <mikebarnhardt+github@gmail.com>",
+  "license": "MIT"
+}

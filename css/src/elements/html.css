@@ -1,0 +1,14 @@
+/* #############################################################################
+   HTML
+   ########################################################################## */
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var( --ruckus-html-background-color );
+  color: var( --ruckus-html-color );
+  font-family: var( --ruckus-html-font-family );
+  font-size: var( --ruckus-html-font-size );
+  line-height: var( --ruckus-html-line-height );
+  text-rendering: optimizeLegibility;
+}

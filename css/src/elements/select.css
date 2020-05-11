@@ -1,0 +1,15 @@
+/* #############################################################################
+   Select
+   ########################################################################## */
+
+.select {
+  background-color: var( --ruckus-select-background-color );
+  border-color: var( --ruckus-select-border-color );
+  border-radius: var( --ruckus-select-border-radius );
+  border-style: var( --ruckus-select-border-style );
+  border-width: var( --ruckus-select-border-width );
+  color: var( --ruckus-select-color );
+  font: inherit;
+  font-size: var( --ruckus-select-font-size );
+  padding: var( --ruckus-select-padding );
+}

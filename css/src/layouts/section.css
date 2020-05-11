@@ -1,0 +1,15 @@
+/* #############################################################################
+   Section
+   ########################################################################## */
+
+.section {
+  padding: var( --ruckus-section-padding );
+}
+
+.section.section--small {
+  padding: var( --ruckus-section-small-padding );
+}
+
+.section.section--large {
+  padding: var( --ruckus-section-large-padding );
+}

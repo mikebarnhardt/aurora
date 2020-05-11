@@ -1,0 +1,38 @@
+/* #############################################################################
+   Notification
+   ########################################################################## */
+
+.notification {
+  background-color: var( --ruckus-notification-background-color );
+  color: var( --ruckus-notification-color );
+  font-size: var( --ruckus-notification-font-size );
+  line-height: var( --ruckus-notification-line-height );
+  padding: var( --ruckus-notification-padding );
+}
+
+.notification.notification--error {
+  background-color: var( --ruckus-notification-error-background-color );
+  color: var( --ruckus-notification-error-color );
+}
+
+.notification.notification--success {
+  background-color: var( --ruckus-notification-success-background-color );
+  color: var( --ruckus-notification-success-color );
+}
+
+.notification.notification--warning {
+  background-color: var( --ruckus-notification-warning-background-color );
+  color: var( --ruckus-notification-warning-color );
+}
+
+.notification.notification--small {
+  font-size: var( --ruckus-notification-small-font-size );
+  line-height: var( --ruckus-notification-small-line-height );
+  padding: var( --ruckus-notification-small-padding );
+}
+
+.notification.notification--large {
+  font-size: var( --ruckus-notification-large-font-size );
+  line-height: var( --ruckus-notification-large-line-height );
+  padding: var( --ruckus-notification-large-padding );
+}
