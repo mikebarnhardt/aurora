@@ -28,5 +28,5 @@
     "build": "postcss --env=production --no-map src/ruckus.css --output dist/ruckus.min.css",
     "start": "postcss --watch src/ruckus.css --output dist/ruckus.css"
   },
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
