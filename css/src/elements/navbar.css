@@ -1,0 +1,9 @@
+/* =============================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar {
+  background-color: var( --ruckus-navbar-background-color );
+  color: var( --ruckus-navbar-color );
+  padding: var( --ruckus-navbar-padding );
+}

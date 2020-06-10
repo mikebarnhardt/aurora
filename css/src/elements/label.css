@@ -1,0 +1,11 @@
+/* =============================================================================
+   Label
+   ========================================================================== */
+
+.label {
+  cursor: pointer;
+  display: block;
+  font-size: var( --ruckus-label-font-size );
+  font-weight: var( --ruckus-label-font-weight );
+  line-height: var( --ruckus-label-line-height );
+}

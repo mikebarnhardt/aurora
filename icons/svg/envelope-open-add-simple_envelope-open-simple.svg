@@ -1,0 +1,5 @@
+<svg id="envelope-open-simple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <path class="icon--primary" d="M20,8H18.09L10,14,2,8H0V6L10,0,20,6Z"/>
+  <path class="icon--secondary" d="M12,20H0V8H2l8,6,8.09-6H20v4H16v4H12v4Z"/>
+  <path class="icon--primary" d="M24,20H20v4H18V20H14V18h4V14h2v4h4Z"/>
+</svg>

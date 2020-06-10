@@ -1,3 +1,8 @@
 /* ==========================================================================
-   Radio
+   Text Selection
    ========================================================================== */
+
+::selection {
+  background-color: var( --ruckus-text-selection-background-color );
+  color: var( --ruckus-text-selection-color );
+}

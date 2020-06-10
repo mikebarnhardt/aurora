@@ -4,6 +4,12 @@ function Button() {
   return (
     <div className="container container--small stack stack--large">
       <h1 className="heading heading--title">Button</h1>
+      
+      <p>
+        The button is the most primitive form of interaction with a page. Each
+        button color and size should be carefully crafted to make clear{' '}
+        <strong>user choices</strong> and <strong>visual hierarchy</strong>.
+      </p>
 
       <div className="card">
         <section className="card-section">
@@ -14,7 +20,7 @@ function Button() {
         <section className="card-section">
           <button className="button" type="button">Default</button>
           {' '}
-          <button className="button button--subtle" type="button">Primary</button>
+          <button className="button button--primary" type="button">Primary</button>
           {' '}
           <button className="button button--secondary" type="button">Secondary</button>
           {' '}
@@ -25,6 +31,11 @@ function Button() {
           <button className="button button--warning" type="button">Warning</button>
         </section>
       </div>
+      
+      <div className="notification notification--error">
+        You can use media queries in your theme to make sure button sizes are
+        appropriately sized on smaller devices.
+      </div>
 
       <div className="card">
         <section className="card-section">
@@ -34,7 +45,7 @@ function Button() {
         <section className="card-section">
           <button className="button button--small" type="button">Default Button</button>
           {' '}
-          <button className="button button--small button--subtle" type="button">Subtle Button</button>
+          <button className="button button--small button--primary" type="button">Subtle Button</button>
         </section>
       </div>
 
@@ -46,7 +57,7 @@ function Button() {
         <section className="card-section">
           <button className="button button--large" type="button">Default Button</button>
           {' '}
-          <button className="button button--large button--subtle" type="button">Subtle Button</button>
+          <button className="button button--large button--primary" type="button">Subtle Button</button>
         </section>
       </div>
 
@@ -58,7 +69,7 @@ function Button() {
         <section className="card-section">
           <button className="button" disabled type="button">Disabled Button</button>
           {' '}
-          <button className="button button--subtle" disabled type="button">Disabled Subtle Button</button>
+          <button className="button button--primary" disabled type="button">Disabled Subtle Button</button>
         </section>
       </div>
     </div>

@@ -1,36 +1,67 @@
-/* #############################################################################
+/* =============================================================================
    Notification
-   ########################################################################## */
+   ========================================================================== */
 
+/**
+ *  QuickView: Use CTRL+F or your editor's find feature to quickly search.
+ *  QV01  Default
+ *  QV02  Color Variants
+ *  QV03  Primary
+ *  QV04  Error
+ *  QV05  Size Variants
+ *  QV06  Small
+ *  QV07  Large
+ */
+
+/* Default                                                               QV01
+   ========================================================================== */
 .notification {
   background-color: var( --ruckus-notification-background-color );
+  border-color: var( --ruckus-notification-border-color );
+  border-radius: var( --ruckus-notification-border-radius );
+  border-style: var( --ruckus-notification-border-style );
+  border-width: var( --ruckus-notification-border-width );
   color: var( --ruckus-notification-color );
   font-size: var( --ruckus-notification-font-size );
   line-height: var( --ruckus-notification-line-height );
   padding: var( --ruckus-notification-padding );
 }
 
+/* ==========================================================================
+   Color Variants                                                        QV02
+   ========================================================================== */
+
+/* Primary                                                               QV03
+   ========================================================================== */
+.notification.notification--primary {
+  background-color: var( --ruckus-notification-primary-background-color );
+  border-color: var( --ruckus-notification-primary-border-color );
+  color: var( --ruckus-notification-primary-color );
+}
+
+/* Error                                                                 QV04
+   ========================================================================== */
 .notification.notification--error {
   background-color: var( --ruckus-notification-error-background-color );
+  border-color: var( --ruckus-notification-error-border-color );
   color: var( --ruckus-notification-error-color );
 }
 
-.notification.notification--success {
-  background-color: var( --ruckus-notification-success-background-color );
-  color: var( --ruckus-notification-success-color );
-}
+/* ==========================================================================
+   Size Variants                                                         QV05
+   ========================================================================== */
 
-.notification.notification--warning {
-  background-color: var( --ruckus-notification-warning-background-color );
-  color: var( --ruckus-notification-warning-color );
-}
-
+/* Small                                                                 QV06
+   ========================================================================== */
 .notification.notification--small {
+  border-width: var( --ruckus-notification-small-border-width );
   font-size: var( --ruckus-notification-small-font-size );
   line-height: var( --ruckus-notification-small-line-height );
   padding: var( --ruckus-notification-small-padding );
 }
 
+/* Large                                                                 QV07
+   ========================================================================== */
 .notification.notification--large {
   font-size: var( --ruckus-notification-large-font-size );
   line-height: var( --ruckus-notification-large-line-height );

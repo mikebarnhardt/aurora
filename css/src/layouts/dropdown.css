@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Dropdown
+   ========================================================================== */
+
+/**
+ *  While most frameworks label dropdowns as components, I think of dropdowns as
+ *  a layout element. It shows and hides content on a new layer. The content is
+ *  the component.
+ *
+ *  Since positioning of the dropdown is important (e.g. when above it should
+ *  display above the trigger element) we need to wrap our markup in a
+ *  container.
+ */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/**
+ *  Allow a dropdown to break outside of a parent if the parent has its overflow
+ *  set to hidden (such as a card element).
+ */
+.dropdown--overflow {
+  position: absolute;
+}
+
+.dropdown-content {
+  position: absolute;
+  min-width: 24rem;
+  z-index: 1000;
+}
+
+.dropdown-content.dropdown-content--active {
+  display: block;
+}
+
+.dropdown-content.dropdown-content--inactive {
+  display: none;
+}
+
+.dropdown-content.dropdown-content--bottom {
+  top: 100%;
+}
+
+.dropdown-content.dropdown-content--left {
+  left: 0;
+}
+
+.dropdown-content.dropdown-content--right {
+  right: 0;
+}
+
+.dropdown-content.dropdown-content--top {
+  bottom: 100%;
+}

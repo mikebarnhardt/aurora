@@ -1,0 +1,40 @@
+/* =============================================================================
+   Icon
+   ========================================================================== */
+
+/**
+ *  1.  Keep the icon size relative to the font-size.
+ *  2.  This should be the adjusted to keep the icon aligned to the font
+ *      baseline (See https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4).
+ */
+
+.icon {
+  display: inline-block;
+  height: 1em; /* 1 */
+  transform: translateY(12.5%); /* 2 */
+  width: 1em; /* 1 */
+}
+
+.icon > svg {
+  display: block;
+}
+
+/* Path
+   ========================================================================== */
+
+/**
+ *  1.  `currentColor` will allow the icon to be used universally without
+ *      needing a separate variable for each component (`icon--button`)
+ *  2.  For duotone icons we can lower the opacity of the secondary path
+ *      without needing excessive variables.
+ */
+
+.path--primary {
+  fill: var( --ruckus-path-primary-fill ); /* 1 */
+  opacity: var( --ruckus-path-primary-opacity );
+}
+
+.path--secondary {
+  fill: var( --ruckus-path-secondary-fill ); /* 1 */
+  opacity: var( --ruckus-path-secondary-opacity ); /* 2 */
+}

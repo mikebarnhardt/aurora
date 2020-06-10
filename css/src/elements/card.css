@@ -1,6 +1,6 @@
-/* #############################################################################
+/* =============================================================================
    Card
-   ########################################################################## */
+   ========================================================================== */
 
 .card {
   background-color: var( --ruckus-card-background-color );
@@ -10,6 +10,8 @@
   border-width: var( --ruckus-card-border-width );
   box-shadow: var( --ruckus-card-box-shadow );
   color: var( --ruckus-card-color );
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -20,10 +22,82 @@
 }
 
 .card-section {
+  flex: 1 1 auto;
   padding: var( --ruckus-card-section-padding );
 }
 
 .card-section--action {
   background-color: var( --ruckus-card-action-background-color );
   color: var( --ruckus-card-action-color );
+}
+
+.card-figure {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.card-figure > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Card Menu
+   ========================================================================== */
+
+/**
+ * @NOTE
+ * Card menus are a duplicate of menu with a more appropriate color scheme.
+ * I'm still not sure if I want to keep it separate or create a modifier
+ * (.menu--card) so it will stay here for now.
+ */
+
+.card-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-menu > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-menu.card-menu--dividers > .card-menu-link:not(:last-child) {
+  border-bottom-color: var( --ruckus-card-menu-divider-border-color );
+  border-bottom-style: var( --ruckus-card-menu-divider-border-style );
+  border-bottom-width: var( --ruckus-card-menu-divider-border-width );
+}
+
+.card-menu-link {
+  background-color: var( --ruckus-card-menu-background-color );
+  color: var( --ruckus-card-menu-color );
+  display: block;
+  font-size: var( --ruckus-card-menu-font-size );
+  line-height: var( --ruckus-card-menu-line-height );
+  list-style: none;
+  padding: var( --ruckus-card-menu-padding );
+}
+
+.card-menu-link:hover {
+  background-color: var( --ruckus-card-menu-hover-background-color );
+  color: var( --ruckus-card-menu-hover-color );
+}
+
+.card-menu-link:focus {
+  background-color: var( --ruckus-card-menu-focus-background-color );
+  color: var( --ruckus-card-menu-focus-color );
+}
+
+.card-menu-link:active,
+.card-menu-link.card-menu-link--active {
+  background-color: var( --ruckus-card-menu-active-background-color );
+  color: var( --ruckus-card-menu-active-color );
 }

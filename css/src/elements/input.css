@@ -1,3 +1,69 @@
-/* #############################################################################
+/* =============================================================================
    Input
-   ########################################################################## */
+   ========================================================================== */
+
+.input {
+  background-color: var( --ruckus-input-background-color );
+  border-color: var( --ruckus-input-border-color );
+  border-radius: var( --ruckus-input-border-radius );
+  border-style: var( --ruckus-input-border-style );
+  border-width: var( --ruckus-input-border-width );
+  box-shadow: var( --ruckus-input-box-shadow );
+  color: var( --ruckus-input-color );
+  font-size: var( --ruckus-input-font-size );
+  line-height: var( --ruckus-input-line-height );
+  padding: var( --ruckus-input-padding );
+  width: 100%;
+}
+
+.input:hover {
+  background-color: var( --ruckus-input-hover-background-color );
+  border-color: var( --ruckus-input-hover-border-color );
+  box-shadow: var( --ruckus-input-hover-box-shadow );
+  color: var( --ruckus-input-hover-color );
+}
+
+.input:focus {
+  background-color: var( --ruckus-input-focus-background-color );
+  border-color: var( --ruckus-input-focus-border-color );
+  box-shadow: var( --ruckus-input-focus-box-shadow );
+  color: var( --ruckus-input-focus-color );
+}
+
+.input:active {
+  background-color: var( --ruckus-input-active-background-color );
+  border-color: var( --ruckus-input-active-border-color );
+  box-shadow: var( --ruckus-input-active-box-shadow );
+  color: var( --ruckus-input-active-color );
+}
+
+/* Color Variants
+   ========================================================================== */
+
+.input.input--error {
+  background-color: var( --ruckus-input-error-background-color );
+  border-color: var( --ruckus-input-error-border-color );
+  box-shadow: var( --ruckus-input-error-box-shadow );
+  color: var( --ruckus-input-error-color );
+}
+
+.input.input--error:hover {
+  background-color: var( --ruckus-input-error-hover-background-color );
+  border-color: var( --ruckus-input-error-hover-border-color );
+  box-shadow: var( --ruckus-input-error-hover-box-shadow );
+  color: var( --ruckus-input-error-hover-color );
+}
+
+.input.input--error:focus {
+  background-color: var( --ruckus-input-error-focus-background-color );
+  border-color: var( --ruckus-input-error-focus-border-color );
+  box-shadow: var( --ruckus-input-error-focus-box-shadow );
+  color: var( --ruckus-input-error-focus-color );
+}
+
+.input.input--error:active {
+  background-color: var( --ruckus-input-error-active-background-color );
+  border-color: var( --ruckus-input-error-active-border-color );
+  box-shadow: var( --ruckus-input-error-active-box-shadow );
+  color: var( --ruckus-input-error-active-color );
+}

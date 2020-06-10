@@ -1,6 +1,14 @@
-/* #############################################################################
+/* =============================================================================
    Link
-   ########################################################################## */
+   ========================================================================== */
+
+/**
+ *  Setting custom link styles/colors on the anchor tag can cause override
+ *  issues later with menus, navigation, buttons, etc.
+ *
+ *  It's probably smarter to use a `link` class that we can use manually and to
+ *  copy these styles in a prose-type scope later on.
+ */
 
 a {
   color: inherit;
@@ -9,4 +17,17 @@ a {
 
 .link {
   color: var( --ruckus-link-color );
+  text-decoration: var( --ruckus-link-text-decoration );
+  text-decoration-color: var( --ruckus-link-text-decoration-color );
+}
+
+.link:hover {
+  color: var( --ruckus-link-hover-color );
+  text-decoration: var( --ruckus-link-hover-text-decoration );
+  text-decoration-color: var(--ruckus-link-hover-text-decoration-color);
+}
+
+.link:focus {
+  background-color: var( --ruckus-text-selection-background-color );
+  color: var( --ruckus-text-selection-color );
 }

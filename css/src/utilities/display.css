@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Display Utilities
+   ========================================================================== */
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+@media (--desktop) {
+  .desktop\:block {
+    display: block;
+  }
+
+  .desktop\:inline {
+    display: inline;
+  }
+
+  .desktop\:inline-block {
+    display: inline-block;
+  }
+
+  .desktop\:flex {
+    display: flex;
+  }
+
+  .desktop\:inline-flex {
+    display: inline-flex;
+  }
+  
+  .desktop\:hide {
+    display: none;
+  }
+
+  .desktop\:invisible {
+    visibility: hidden;
+  }
+}

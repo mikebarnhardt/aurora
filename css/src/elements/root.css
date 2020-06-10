@@ -1,215 +1,340 @@
-/* #############################################################################
-   Root
-   ########################################################################## */
+/* =============================================================================
+   Root Theme
+   ========================================================================== */
+
+/**
+ *  Steal this theme!
+ *
+ *  Copy and paste the contents of this theme file to get started with a custom
+ *  theme. It is recommended to run the file through a minifier. If you are
+ *  using a pre-processor, add it to your build system. You can also copy and
+ *  paste your edited file into https://cssminifier.com/.
+ *
+ *  Also, change :root to a classname if you want to use multiple themes.
+ */
 
 /**
  *  Adds the default theme to the `:root` element. This is necessary for good DX
  *  when combined with `postcss-css-variables` to enable fallback values.
  */
-
+ 
 /**
- *  Colors
- *  1.  pri - primary
- *  2.  sec - secondary
- *  3.  err - error
- *  4.  sxs - success
- *  5.  wrn - warning
- *
- *  Sizes
- *  1.  xs - extra small
- *  2.  sm - small
- *  3.  md - medium
- *  4.  lg - large
- *  5.  xl - extra large
+ *  Quickview: Use CTRL+F or your editor's find feature to quickly search.
+ *  CLR00 Colors
+ *  SIZ00 Sizes
+ *  BUT00 Button
+ *    BUT01 Default Button
+ *    BUT02 Primary Button
+ *    BUT03 Secondary Button
+ *    BUT04 Error Button
+ *    BUT05 Success Button
+ *    BUT06 Warning Button
+ *    BUT07 Small Button
+ *    BUT08 Large Button
+ *  CAR00 Card
+ *  CHE00 Checkbox
+ *  COL00 Column
+ *  CON00 Container
+ *  DIV00 Divider
+ *  HEA00 Heading
+ *  HTM00 HTML
+ *  INP00 Input
+ *    INP01 Default Input
+ *    INP02 Error Input
+ *  MEN00 Menu
+ *  LIN00 Link
+ *  NAV00 Navbar
+ *  NOT00 Notification
+ *    NOT01 Default Notification
+ *    NOT02 Primary Notification
+ *    NOT03 Error Notification
+ *    NOT04 Small Notification
+ *    NOT05 Large Notification
+ *  PAT00 Path
+ *  ROW00 Row
+ *  SEC00 Section
+ *  SEL00 Select
+ *  STA00 Stack
+ *  TAG00 Tag
+ *    TAG01 Default Tag
+ *    TAG02 Primary Tag
+ *    TAG03 Secondary Tag
+ *    TAG04 Error Tag
+ *    TAG05 Success Tag
+ *    TAG06 Warning Tag
+ *    TAG07 Extra-small Tag
+ *    TAG08 Small Tag
+ *    TAG09 Large Tag
+ *  TEX00 Text Selection
  */
 
 :root {
+  
+  /* ========================================================================
+     Colors                                                             CLR00
+     ======================================================================== */
 
-  /* Button
-     ######################################################################## */
+  --ruckus-default-hue: 232;
+  --ruckus-default-sat: 24%;
+  --ruckus-primary-hue: 232;
+  --ruckus-primary-sat: 64%;
+  --ruckus-secondary-hue: 232;
+  --ruckus-secondary-sat: 24%;
+  --ruckus-error-hue: 344;
+  --ruckus-error-sat: 80%;
+  --ruckus-success-hue: 160;
+  --ruckus-success-sat: 48%;
+  --ruckus-warning-hue: 16;
+  --ruckus-warning-sat: 64%;
 
-  /* Default */
-  --ruckus-button-background-color: hsl( 200, 16%, 100% );
-  --ruckus-button-border-color: hsl( 200, 16%, 80% );
-  --ruckus-button-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-color: hsl( 96, 48%, 16% );
+  /* ========================================================================
+     Sizes                                                              SIZ00
+     ======================================================================== */
+
+  --ruckus-spacing: 1rem;
+  --ruckus-spacing-sm: 0.5rem;
+  --ruckus-spacing-lg: 2rem;
+  --ruckus-border-width: 0.0625rem;
+  --ruckus-border-radius: 0.25rem;
+
+  /* ========================================================================
+     Button                                                             BUT00
+     ======================================================================== */
+
+  /* Default Button                                                     BUT01
+     ======================================================================== */
+  --ruckus-button-background-color: hsl( 232, 24%, 100% );
+  --ruckus-button-border-color: hsl( 232, 24%, 88% );
+  --ruckus-button-box-shadow: 0 0.0625rem 0 hsla( 232, 24%, 88%, 0.25 );
+  --ruckus-button-color: hsl( 232, 24%, 48% );
   --ruckus-button-transition: none;
   --ruckus-button-hover-background-color: var( --ruckus-button-background-color );
-  --ruckus-button-hover-border-color: hsl( 200, 16%, 64% );
-  --ruckus-button-hover-box-shadow: 0 1px 0 hsla( 200, 16%, 64%, 0.25 );
-  --ruckus-button-hover-color: hsl( 96, 48%, 16% );
-  --ruckus-button-hover-transition: var( --ruckus-button-transition );
+  --ruckus-button-hover-border-color: hsl( 232, 24%, 80% );
+  --ruckus-button-hover-box-shadow: 0 0.0625rem 0 hsla( 232, 24%, 80%, 0.25 );
+  --ruckus-button-hover-color: hsl( 232, 24%, 48% );
+  --ruckus-button-hover-transition: none;
   --ruckus-button-focus-background-color: var( --ruckus-button-background-color );
-  --ruckus-button-focus-border-color: hsl( 208, 64%, 48% );
-  --ruckus-button-focus-box-shadow:  0 0 0 2px hsla( 208, 64%, 48%, 0.5 );
-  --ruckus-button-focus-color: hsl( 96, 48%, 16% );
-  --ruckus-button-focus-transition: var( --ruckus-button-transition );
-  --ruckus-button-active-background-color: hsl( 200, 16%, 92% );
-  --ruckus-button-active-border-color: hsl( 200, 16%, 64% );
-  --ruckus-button-active-box-shadow: inset 0 1px 0 hsl( 200, 16%, 80% );
-  --ruckus-button-active-color: hsl( 96, 48%, 16% );
-  --ruckus-button-active-transition: var( --ruckus-button-transition );
-
-  /* Subtle */
-  --ruckus-button-subtle-background-color: hsl( 208, 64%, 48% );
-  --ruckus-button-subtle-border-color: hsl( 208, 72%, 40% );
-  --ruckus-button-subtle-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.8 );
-  --ruckus-button-subtle-color:  hsl( 208, 64%, 100% );
-  --ruckus-button-subtle-transition: background-color 160ms;
-  --ruckus-button-subtle-hover-background-color: hsl( 208, 64%, 52% );
-  --ruckus-button-subtle-hover-border-color: hsl( 208, 72%, 32% );
-  --ruckus-button-subtle-hover-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-subtle-hover-color: hsl( 208, 64%, 100% );
-  --ruckus-button-subtle-hover-transition: background-color 160ms;
-  --ruckus-button-subtle-focus-background-color: hsl( 208, 64%, 48% );
-  --ruckus-button-subtle-focus-border-color: hsl( 208, 72%, 32% );
-  --ruckus-button-subtle-focus-box-shadow: 0 0 0 2px hsla( 208, 64%, 48%, 0.5 );
-  --ruckus-button-subtle-focus-color: hsl( 208, 64%, 100% );
-  --ruckus-button-subtle-focus-transition: background-color 160ms;
-  --ruckus-button-subtle-active-background-color: hsl( 208, 72%, 44% );
-  --ruckus-button-subtle-active-border-color: hsl( 208, 72%, 32% );
-  --ruckus-button-subtle-active-box-shadow: inset 0 1px 0 hsl( 208, 72%, 36% );
-  --ruckus-button-subtle-active-color: hsl( 208, 64%, 100% );
-  --ruckus-button-subtle-active-transition: background-color 160ms;
-
-  /* Secondary */
-  --ruckus-button-secondary-background-color: hsl( 172, 64%, 56% );
-  --ruckus-button-secondary-border-color: hsl( 172, 72%, 40% );
-  --ruckus-button-secondary-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.8 );
-  --ruckus-button-secondary-color:  hsl( 172, 64%, 24% );
-  --ruckus-button-secondary-transition: background-color 160ms;
-  --ruckus-button-secondary-hover-background-color: hsl( 172, 64%, 64% );
-  --ruckus-button-secondary-hover-border-color: hsl( 172, 72%, 32% );
-  --ruckus-button-secondary-hover-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-secondary-hover-color: hsl( 172, 64%, 24% );
-  --ruckus-button-secondary-hover-transition: background-color 160ms;
-  --ruckus-button-secondary-focus-background-color: hsl( 172, 64%, 64% );
-  --ruckus-button-secondary-focus-border-color: hsl( 172, 72%, 32% );
-  --ruckus-button-secondary-focus-box-shadow: 0 0 0 2px hsla( 172, 64%, 48%, 0.5 );
-  --ruckus-button-secondary-focus-color: hsl( 172, 64%, 24% );
-  --ruckus-button-secondary-focus-transition: background-color 160ms;
-  --ruckus-button-secondary-active-background-color: hsl( 172, 64%, 48% );
-  --ruckus-button-secondary-active-border-color: hsl( 172, 64%, 32% );
-  --ruckus-button-secondary-active-box-shadow: inset 0 1px 0 hsl( 172, 64%, 44% );
-  --ruckus-button-secondary-active-color: hsl( 172, 64%, 16% );
-  --ruckus-button-secondary-active-transition: background-color 160ms;
-
-  /* Error */
-  --ruckus-button-error-background-color: hsl( 352, 80%, 64% );
-  --ruckus-button-error-border-color: hsl( 352, 72%, 40% );
-  --ruckus-button-error-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.8 );
-  --ruckus-button-error-color:  hsl( 352, 64%, 100% );
-  --ruckus-button-error-transition: background-color 160ms;
-  --ruckus-button-error-hover-background-color: hsl( 352, 64%, 64% );
-  --ruckus-button-error-hover-border-color: hsl( 352, 72%, 32% );
-  --ruckus-button-error-hover-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-error-hover-color: hsl( 352, 64%, 100% );
-  --ruckus-button-error-hover-transition: background-color 160ms;
-  --ruckus-button-error-focus-background-color: hsl( 352, 64%, 64% );
-  --ruckus-button-error-focus-border-color: hsl( 352, 72%, 32% );
-  --ruckus-button-error-focus-box-shadow: 0 0 0 2px hsla( 352, 64%, 48%, 0.5 );
-  --ruckus-button-error-focus-color: hsl( 352, 64%, 100% );
-  --ruckus-button-error-focus-transition: background-color 160ms;
-  --ruckus-button-error-active-background-color: hsl( 352, 64%, 48% );
-  --ruckus-button-error-active-border-color: hsl( 352, 64%, 32% );
-  --ruckus-button-error-active-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-error-active-color: hsl( 352, 64%, 100% );
-  --ruckus-button-error-active-transition: background-color 160ms;
-
-  /* Success */
-  --ruckus-button-success-background-color: hsl( 96, 48%, 64% );
-  --ruckus-button-success-border-color: hsl( 96, 48%, 40% );
-  --ruckus-button-success-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.8 );
-  --ruckus-button-success-color:  hsl( 96, 48%, 24% );
-  --ruckus-button-success-transition: background-color 160ms;
-  --ruckus-button-success-hover-background-color: hsl( 96, 48%, 68% );
-  --ruckus-button-success-hover-border-color: hsl( 96, 48%, 32% );
-  --ruckus-button-success-hover-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-success-hover-color: hsl( 96, 48%, 24% );
-  --ruckus-button-success-hover-transition: background-color 160ms;
-  --ruckus-button-success-focus-background-color: hsl( 96, 48%, 64% );
-  --ruckus-button-success-focus-border-color: hsl( 96, 48%, 32% );
-  --ruckus-button-success-focus-box-shadow: 0 0 0 2px hsla( 96, 48%, 48%, 0.5 );
-  --ruckus-button-success-focus-color: hsl( 96, 48%, 24% );
-  --ruckus-button-success-focus-transition: background-color 160ms;
-  --ruckus-button-success-active-background-color: hsl( 96, 48%, 60% );
-  --ruckus-button-success-active-border-color: hsl( 96, 48%, 32% );
-  --ruckus-button-success-active-box-shadow: inset 0 1px 0 hsl( 96, 48%, 48% );
-  --ruckus-button-success-active-color: hsl( 96, 48%, 16% );
-  --ruckus-button-success-active-transition: background-color 160ms;
-
-  /* Warning */
-  --ruckus-button-warning-background-color: hsl( 48, 64%, 72% );
-  --ruckus-button-warning-border-color: hsl( 48, 72%, 40% );
-  --ruckus-button-warning-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.8 );
-  --ruckus-button-warning-color:  hsl( 48, 64%, 24% );
-  --ruckus-button-warning-transition: background-color 160ms;
-  --ruckus-button-warning-hover-background-color: hsl( 48, 64%, 64% );
-  --ruckus-button-warning-hover-border-color: hsl( 48, 72%, 32% );
-  --ruckus-button-warning-hover-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-warning-hover-color: hsl( 48, 64%, 24% );
-  --ruckus-button-warning-hover-transition: background-color 160ms;
-  --ruckus-button-warning-focus-background-color: hsl( 48, 64%, 64% );
-  --ruckus-button-warning-focus-border-color: hsl( 48, 72%, 32% );
-  --ruckus-button-warning-focus-box-shadow: 0 0 0 2px hsla( 48, 64%, 48%, 0.5 );
-  --ruckus-button-warning-focus-color: hsl( 48, 64%, 24% );
-  --ruckus-button-warning-focus-transition: background-color 160ms;
-  --ruckus-button-warning-active-background-color: hsl( 48, 64%, 48% );
-  --ruckus-button-warning-active-border-color: hsl( 48, 64%, 32% );
-  --ruckus-button-warning-active-box-shadow: 0 1px 0 hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-button-warning-active-color: hsl( 48, 64%, 16% );
-  --ruckus-button-warning-active-transition: background-color 160ms;
-
-  /* Sizes */
-  --ruckus-button-border-radius: 2px;
+  --ruckus-button-focus-border-color: hsl( 232, 64%, 64% );
+  --ruckus-button-focus-box-shadow:  0 0 0 0.125rem hsla( 232, 64%, 64%, 0.25 );
+  --ruckus-button-focus-color: hsl( 232, 24%, 48% );
+  --ruckus-button-focus-transition: none;
+  --ruckus-button-active-background-color: hsl( 232, 24%, 96% );
+  --ruckus-button-active-border-color: hsl( 232, 24%, 80% );
+  --ruckus-button-active-box-shadow: inset 0 0.0625rem 0 hsla( 232, 24%, 80%, 0.25 );
+  --ruckus-button-active-color: hsl( 232, 24%, 48% );
+  --ruckus-button-active-transition: none;
+  --ruckus-button-border-radius: 0.25rem;
   --ruckus-button-border-style: solid;
-  --ruckus-button-border-width: 1px;
-  --ruckus-button-font-size: 14px;
+  --ruckus-button-border-width: 0.0625rem;
+  --ruckus-button-font-size: 0.875rem;
   --ruckus-button-font-weight: normal;
-  --ruckus-button-padding: 4px 8px;
-  --ruckus-button-small-border-width: 1px;
-  --ruckus-button-small-font-size: 12px;
+  --ruckus-button-padding: 0.25rem 0.5rem;
+
+  /* Primary Button                                                    BUT02
+     =======================================================================  */
+  --ruckus-button-primary-background-color: hsl( 232, 64%, 64% );
+  --ruckus-button-primary-border-color: hsl( 232, 64%, 56% );
+  --ruckus-button-primary-box-shadow: 0 0.0625rem 0 hsla( 232, 64%, 56%, 0.25 );
+  --ruckus-button-primary-color:  hsl( 232, 64%, 100% );
+  --ruckus-button-primary-transition: none;
+  --ruckus-button-primary-hover-background-color: hsl( 232, 64%, 68% );
+  --ruckus-button-primary-hover-border-color: hsl( 232, 64%, 48% );
+  --ruckus-button-primary-hover-box-shadow: 0 0.0625rem 0 hsla( 232, 64%, 48%, 0.25 );
+  --ruckus-button-primary-hover-color: hsl( 232, 64%, 100% );
+  --ruckus-button-primary-hover-transition: none;
+  --ruckus-button-primary-focus-background-color: hsl( 232, 64%, 64% );
+  --ruckus-button-primary-focus-border-color: hsl( 232, 64%, 56% );
+  --ruckus-button-primary-focus-box-shadow: 0 0 0 0.125rem hsla( 232, 64%, 56%, 0.25 );
+  --ruckus-button-primary-focus-color: hsl( 232, 64%, 100% );
+  --ruckus-button-primary-focus-transition: none;
+  --ruckus-button-primary-active-background-color: hsl( 232, 64%, 60% );
+  --ruckus-button-primary-active-border-color: hsl( 232, 64%, 40% );
+  --ruckus-button-primary-active-box-shadow: inset 0 0.0625rem 0 hsla( 232, 64%, 40%, 0.25 );
+  --ruckus-button-primary-active-color: hsl( 232, 64%, 100% );
+  --ruckus-button-primary-active-transition: none;
+
+  /* Secondary Button                                                   BUT03
+     ======================================================================== */
+  --ruckus-button-secondary-background-color: hsl( 232, 24%, 40% );
+  --ruckus-button-secondary-border-color: hsl( 232, 24%, 32% );
+  --ruckus-button-secondary-box-shadow: 0 0.0625rem 0 hsla( 232, 24%, 32%, 0.5 );
+  --ruckus-button-secondary-color:  hsl( 232, 24%, 100% );
+  --ruckus-button-secondary-transition: none;
+  --ruckus-button-secondary-hover-background-color: hsl( 232, 24%, 44% );
+  --ruckus-button-secondary-hover-border-color: hsl( 232, 24%, 24% );
+  --ruckus-button-secondary-hover-box-shadow: 0 0.0625rem 0 hsla( 232, 24%, 24%, 0.5 );
+  --ruckus-button-secondary-hover-color: hsl( 232, 24%, 100% );
+  --ruckus-button-secondary-hover-transition: none;
+  --ruckus-button-secondary-focus-background-color: hsl( 232, 24%, 40% );
+  --ruckus-button-secondary-focus-border-color: hsl( 232, 24%, 32% );
+  --ruckus-button-secondary-focus-box-shadow: 0 0 0 0.125rem hsla( 232, 24%, 32%, 0.5 );
+  --ruckus-button-secondary-focus-color: hsl( 232, 24%, 100% );
+  --ruckus-button-secondary-focus-transition: none;
+  --ruckus-button-secondary-active-background-color: hsl( 232, 24%, 36% );
+  --ruckus-button-secondary-active-border-color: hsl( 232, 24%, 16% );
+  --ruckus-button-secondary-active-box-shadow: inset 0 0.0625rem 0 hsl( 232, 24%, 12% );
+  --ruckus-button-secondary-active-color: hsl( 232, 24%, 100% );
+  --ruckus-button-secondary-active-transition: none;
+
+  /* Error Button                                                       BUT04
+     ======================================================================== */
+  --ruckus-button-error-background-color: hsl( 344, 64%, 64% );
+  --ruckus-button-error-border-color: hsl( 344, 64%, 48% );
+  --ruckus-button-error-box-shadow: 0 0.0625rem 0 hsla( 344, 64%, 48%, 0.5 );
+  --ruckus-button-error-color:  hsl( 344, 64%, 100% );
+  --ruckus-button-error-transition: none;
+  --ruckus-button-error-hover-background-color: hsl( 344, 64%, 68% );
+  --ruckus-button-error-hover-border-color: hsl( 344, 64%, 40% );
+  --ruckus-button-error-hover-box-shadow: 0 0.0625rem 0 hsla( 344, 64%, 40%, 0.5 );
+  --ruckus-button-error-hover-color: hsl( 344, 64%, 100% );
+  --ruckus-button-error-hover-transition: none;
+  --ruckus-button-error-focus-background-color: hsl( 344, 64%, 64% );
+  --ruckus-button-error-focus-border-color: hsl( 344, 64%, 40% );
+  --ruckus-button-error-focus-box-shadow: 0 0 0 0.125rem hsla( 344, 64%, 40%, 0.5 );
+  --ruckus-button-error-focus-color: hsl( 344, 64%, 100% );
+  --ruckus-button-error-focus-transition: none;
+  --ruckus-button-error-active-background-color: hsl( 344, 64%, 60% );
+  --ruckus-button-error-active-border-color: hsl( 344, 64%, 32% );
+  --ruckus-button-error-active-box-shadow: inset 0 0.0625rem 0 hsl( 344, 64%, 56% );
+  --ruckus-button-error-active-color: hsl( 344, 64%, 100% );
+  --ruckus-button-error-active-transition: none;
+
+  /* Success Button                                                     BUT05
+     ======================================================================== */
+  --ruckus-button-success-background-color: hsl( 160, 48%, 64% );
+  --ruckus-button-success-border-color: hsl( 160, 48%, 48% );
+  --ruckus-button-success-box-shadow: 0 0.0625rem 0 hsla( 160, 48%, 48%, 0.5 );
+  --ruckus-button-success-color:  hsl( 160, 48%, 24% );
+  --ruckus-button-success-transition: none;
+  --ruckus-button-success-hover-background-color: hsl( 160, 48%, 68% );
+  --ruckus-button-success-hover-border-color: hsl( 160, 48%, 40% );
+  --ruckus-button-success-hover-box-shadow: 0 0.0625rem 0 hsla( 160, 48%, 40%, 0.5 );
+  --ruckus-button-success-hover-color: hsl( 160, 48%, 24% );
+  --ruckus-button-success-hover-transition: none;
+  --ruckus-button-success-focus-background-color: hsl( 160, 48%, 64% );
+  --ruckus-button-success-focus-border-color: hsl( 160, 48%, 40% );
+  --ruckus-button-success-focus-box-shadow: 0 0 0 0.125rem hsla( 160, 48%, 40%, 0.5 );
+  --ruckus-button-success-focus-color: hsl( 160, 48%, 24% );
+  --ruckus-button-success-focus-transition: none;
+  --ruckus-button-success-active-background-color: hsl( 160, 48%, 60% );
+  --ruckus-button-success-active-border-color: hsl( 160, 48%, 32% );
+  --ruckus-button-success-active-box-shadow: inset 0 0.0625rem 0 hsl( 160, 48%, 56% );
+  --ruckus-button-success-active-color: hsl( 160, 48%, 24% );
+  --ruckus-button-success-active-transition: none;
+
+  /* Warning Button                                                     BUT06
+     ======================================================================== */
+  --ruckus-button-warning-background-color: hsl( 16, 64%, 72% );
+  --ruckus-button-warning-border-color: hsl( 16, 64%, 56% );
+  --ruckus-button-warning-box-shadow: 0 0.0625rem 0 hsla( 16, 64%, 56%, 0.5 );
+  --ruckus-button-warning-color:  hsl( 16, 64%, 24% );
+  --ruckus-button-warning-transition: none;
+  --ruckus-button-warning-hover-background-color: hsl( 16, 64%, 76% );
+  --ruckus-button-warning-hover-border-color: hsl( 16, 64%, 48% );
+  --ruckus-button-warning-hover-box-shadow: 0 0.0625rem 0 hsla( 16, 64%, 48%, 0.5 );
+  --ruckus-button-warning-hover-color: hsl( 16, 64%, 24% );
+  --ruckus-button-warning-hover-transition: none;
+  --ruckus-button-warning-focus-background-color: hsl( 16, 64%, 72% );
+  --ruckus-button-warning-focus-border-color: hsl( 16, 64%, 48% );
+  --ruckus-button-warning-focus-box-shadow: 0 0 0 0.125rem hsla( 16, 64%, 48%, 0.5 );
+  --ruckus-button-warning-focus-color: hsl( 16, 64%, 24% );
+  --ruckus-button-warning-focus-transition: none;
+  --ruckus-button-warning-active-background-color: hsl( 16, 64%, 68% );
+  --ruckus-button-warning-active-border-color: hsl( 16, 64%, 40% );
+  --ruckus-button-warning-active-box-shadow: inset 0 0.0625rem 0 hsl( 16, 64%, 64% );
+  --ruckus-button-warning-active-color: hsl( 16, 64%, 24% );
+  --ruckus-button-warning-active-transition: none;
+
+  /* Small Button                                                       BUT07
+     ======================================================================== */
+  --ruckus-button-small-border-width: 0.0625rem;
+  --ruckus-button-small-font-size: 0.75rem;
   --ruckus-button-small-line-height: 1.5;
-  --ruckus-button-small-padding: 0 4px;
-  --ruckus-button-large-border-width: 1px;
-  --ruckus-button-large-font-size: 16px;
+  --ruckus-button-small-padding: 0 0.25rem;
+
+  /* Large Button                                                       BUT08
+     ======================================================================== */
+  --ruckus-button-large-border-width: 0.0625rem;
+  --ruckus-button-large-font-size: 1rem;
   --ruckus-button-large-line-height: 1.5;
-  --ruckus-button-large-padding: 8px 16px;
+  --ruckus-button-large-padding: 0.5rem 1rem;
 
-  /* Card
-     ######################################################################## */
+  /* ========================================================================
+     Card                                                               CAR00
+     ======================================================================== */
 
-  --ruckus-card-background-color: hsl( 200, 16%, 100% );
-  --ruckus-card-border-color: hsl( 200, 16%, 80% );
-  --ruckus-card-border-radius: 4px;
+  --ruckus-card-background-color: hsl( 232, 24%, 100% );
+  --ruckus-card-border-color: hsl( 232, 24%, 88% );
+  --ruckus-card-border-radius: 0.25rem;
   --ruckus-card-border-style: solid;
-  --ruckus-card-border-width: 1px;
-  --ruckus-card-box-shadow: 0 2px 1px hsla( 200, 16%, 80%, 0.5 );
-  --ruckus-card-color: hsl( 200, 16%, 32% );
-  --ruckus-card-divider-color: hsl( 200, 16%, 88% );
+  --ruckus-card-border-width: 0.0625rem;
+  --ruckus-card-box-shadow: 0 0.0625rem 0 hsla( 232, 24%, 88%, 0.25 );
+  --ruckus-card-color: hsl( 232, 24%, 50% );
+  --ruckus-card-divider-color: hsl( 232, 24%, 96% );
   --ruckus-card-divider-style: solid;
-  --ruckus-card-divider-width: 1px;
+  --ruckus-card-divider-width: 0.0625rem;
   --ruckus-card-section-padding: 1rem;
-  --ruckus-card-action-background-color: hsl( 200, 16%, 96% );
-  --ruckus-card-action-color: hsl( 200, 16%, 32% );
+  --ruckus-card-action-background-color: hsl( 232, 24%, 98% );
+  --ruckus-card-action-color: hsl( 232, 24%, 49% );
+  
+  --ruckus-card-menu-background-color: transparent;
+  --ruckus-card-menu-color: inherit;
+  --ruckus-card-menu-hover-background-color: hsl( 232, 24%, 96% );
+  --ruckus-card-menu-hover-color: inherit;
+  --ruckus-card-menu-focus-background-color: hsl( 232, 24%, 92% );
+  --ruckus-card-menu-focus-color: inherit;
+  --ruckus-card-menu-active-background-color: hsl( 232, 24%, 88% );
+  --ruckus-card-menu-active-color: inherit;
+  --ruckus-card-menu-font-size: 0.875rem;
+  --ruckus-card-menu-line-height: 1.5;
+  --ruckus-card-menu-divider-border-color: hsl( 232, 24%, 96% );
+  --ruckus-card-menu-divider-border-style: solid;
+  --ruckus-card-menu-divider-border-width: 0.0625rem;
+  --ruckus-card-menu-padding: 0.5rem 1rem;
 
-  /* Container
-     ######################################################################## */
+  /* ========================================================================
+     Checkbox                                                           CHE00
+     ======================================================================== */
+  
+  --ruckus-checkbox-background-color: hsl( 232, 64%, 64% );
+  --ruckus-checkbox-border-color: hsl( 232, 24%, 88% );
+  --ruckus-checkbox-border-radius: 0.25rem;
+  --ruckus-checkbox-border-style: solid;
+  --ruckus-checkbox-border-width: 0.0625rem;
+  --ruckus-checkbox-box-shadow: inset 0 0.0625rem 0 hsla( 232, 24%, 88%, 0.25 );
+  --ruckus-checkbox-hover-border-color: hsl( 232, 24%, 80% );
+  --ruckus-checkbox-focus-border-color: hsl( 232, 64%, 64% );
+  --ruckus-checkbox-focus-box-shadow: 0 0 0 0.125rem hsla( 232, 64%, 64%, 0.25 );
+  --ruckus-checkbox-font-size: 0.875rem;
+  --ruckus-checkbox-line-height: 1.5;
+  
+  /* ========================================================================
+     Column                                                             COL00
+     ======================================================================== */
+  
+  --ruckus-column-padding: 0.5rem;
+  --ruckus-column-small-padding: 0.25rem;
+  --ruckus-column-large-padding: 1rem;
+
+  /* ========================================================================
+     Container                                                          CON00
+     ======================================================================== */
 
   --ruckus-container-max-width: 960px;
-  --ruckus-container-small-max-width: 480px;
+  --ruckus-container-small-max-width: 640px;
   --ruckus-container-large-max-width: 1200px;
 
-  /* Divider
-     ######################################################################## */
+  /* ========================================================================
+     Divider                                                            DIV00
+     ======================================================================== */
 
   --ruckus-divider-border-color: hsl( 200, 16%, 88% );
   --ruckus-divider-border-style: solid;
-  --ruckus-divider-border-width: 1px;
+  --ruckus-divider-border-width: 0.0625rem;
 
-
-  /* Heading
-     ######################################################################## */
+  /* ========================================================================
+     Heading                                                            HEA00
+     ======================================================================== */
 
   --ruckus-heading-title-font-size: 2.5rem;
   --ruckus-heading-title-font-weight: 400;
@@ -218,46 +343,298 @@
   --ruckus-heading-menu-font-size: 1rem;
   --ruckus-heading-menu-font-weight: 700;
 
+  /* ========================================================================
+     HTML                                                               HTM00
+     ======================================================================== */
 
-  /* HTML
-     ######################################################################## */
-
-  --ruckus-html-background-color: hsl( 200, 16%, 96% );
-  --ruckus-html-color: hsl( 200, 16%, 32% );
+  --ruckus-html-background-color: hsl( 232, 24%, 96% );
+  --ruckus-html-color: hsl( 232, 24%, 48% );
   --ruckus-html-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --ruckus-html-font-size: 16px;
+  --ruckus-html-font-size: 20px;
   --ruckus-html-line-height: 1.5;
 
-  /* Link
-     ######################################################################## */
+  /* ========================================================================
+     Input                                                              INP00
+     ======================================================================== */
 
-  --ruckus-link-color: hsl( 96, 48%, 72% );
-  --ruckus-link-decoration-color: hsl( 240, 8%, 32% );
+   /* Default Input                                                      INP01
+      ======================================================================== */
+  --ruckus-input-background-color: transparent;
+  --ruckus-input-border-color: hsl( 232, 24%, 88% );
+  --ruckus-input-border-radius: 0.25rem;
+  --ruckus-input-border-style: solid;
+  --ruckus-input-border-width: 0.0625rem;
+  --ruckus-input-box-shadow: inset 0 0.0625rem 0 hsla( 232, 24%, 88%, 0.25 ); 
+  --ruckus-input-color: inherit;
+  --ruckus-input-font-size: 0.875rem;
+  --ruckus-input-line-height: 1.5;
+  --ruckus-input-padding: 0.25rem 0.5rem;
+  --ruckus-input-hover-background-color: transparent;
+  --ruckus-input-hover-border-color: hsl( 232, 24%, 80% );
+  --ruckus-input-hover-box-shadow: inset 0 0.0625rem 0 hsla( 232, 24%, 88%, 0.25 ); 
+  --ruckus-input-hover-color: inherit;
+  --ruckus-input-focus-background-color: transparent;
+  --ruckus-input-focus-border-color: hsl( 232, 64%, 64% );
+  --ruckus-input-focus-box-shadow: 0 0 0 0.125rem hsla( 232, 64%, 64%, 0.25 ); 
+  --ruckus-input-focus-color: inherit;
+  --ruckus-input-active-background-color: transparent;
+  --ruckus-input-active-border-color: hsl( 232, 64%, 64% );
+  --ruckus-input-active-box-shadow: 0 0 0 0.125rem hsla( 232, 64%, 64%, 0.25 ); 
+  --ruckus-input-active-color: inherit;
 
-  /* Section
-     ######################################################################## */
+  /* Error Input                                                        INP02
+     ======================================================================== */
+  --ruckus-input-error-background-color: transparent;
+  --ruckus-input-error-border-color: hsl( 344, 64%, 64% );
+  --ruckus-input-error-box-shadow: inset 0 0.0625rem 0 hsla( 344, 64%, 64%, 0.25 ); 
+  --ruckus-input-error-color: hsl( 344, 64%, 64% );
+  --ruckus-input-error-hover-background-color: transparent;
+  --ruckus-input-error-hover-border-color: hsl( 344, 64%, 56% );
+  --ruckus-input-error-hover-box-shadow: inset 0 0.0625rem 0 hsla( 344, 64%, 56%, 0.25 ); 
+  --ruckus-input-error-hover-color: hsl( 344, 64%, 64% );
+  --ruckus-input-error-focus-background-color: transparent;
+  --ruckus-input-error-focus-border-color: hsl( 344, 64%, 56% );
+  --ruckus-input-error-focus-box-shadow: 0 0 0 0.125rem hsla( 344, 64%, 56%, 0.25 ); 
+  --ruckus-input-error-focus-color: hsl( 344, 64%, 64% );
+  --ruckus-input-error-active-background-color: transparent;
+  --ruckus-input-error-active-border-color: hsl( 344, 64%, 56% );
+  --ruckus-input-error-active-box-shadow: 0 0 0 0.125rem hsla( 344, 64%, 56%, 0.25 ); 
+  --ruckus-input-error-active-color: hsl( 344, 64%, 64% );
+
+  /* ========================================================================
+     Label                                                              LAB00
+     ======================================================================== */
+
+  --ruckus-label-font-size: 0.875rem;
+  --ruckus-label-font-weight: 600;
+  --ruckus-label-line-height: 1.5;
+
+  /* ========================================================================
+     Link                                                               LIN00
+     ======================================================================== */
+
+  --ruckus-link-color: hsl( 232, 64%, 64% );
+  --ruckus-link-text-decoration: underline;
+  --ruckus-link-text-decoration-color: hsla( 232, 64%, 64%, 0.25 );
+
+  --ruckus-link-hover-color: hsl( 232, 64%, 64% );
+  --ruckus-link-hover-text-decoration: underline;
+  --ruckus-link-hover-text-decoration-color: hsl( 232, 64%, 64% );
+  
+  /* ========================================================================
+     Menu                                                               MEN00
+     ======================================================================== */
+
+  --ruckus-menu-link-background-color: transparent;
+  --ruckus-menu-link-color: inherit;
+  --ruckus-menu-link-hover-background-color: hsl( 232, 24%, 92% );
+  --ruckus-menu-link-hover-color: inherit;
+  --ruckus-menu-link-focus-background-color: hsl( 232, 24%, 88% );
+  --ruckus-menu-link-focus-color: inherit;
+  --ruckus-menu-link-active-background-color: hsl( 232, 64%, 88% );
+  --ruckus-menu-link-active-color: hsl( 232, 64%, 48% );
+  --ruckus-menu-link-font-size: 0.875rem;
+  --ruckus-menu-link-padding: 0.5rem 1rem;
+
+  /* ========================================================================
+     Modal
+     ======================================================================== */
+  
+  --ruckus-modal-background-color: hsla( 232, 24%, 96%, 0.75 );
+  --ruckus-modal-padding: 1rem;
+
+  /* ========================================================================
+     Navbar                                                             NAV00
+     ======================================================================== */
+
+  --ruckus-navbar-background-color: hsl( 232, 64%, 64% );
+  --ruckus-navbar-color: hsl( 232, 64%, 100% );
+  --ruckus-navbar-padding: var( --ruckus-spacing );
+
+  /* ========================================================================
+     Notification                                                       NOT00
+     ======================================================================== */
+  
+  /* Default Notification                                               NOT01
+     ======================================================================== */
+  --ruckus-notification-background-color: transparent;
+  --ruckus-notification-border-color: hsl( 232, 24%, 88% );
+  --ruckus-notification-border-style: solid;
+  --ruckus-notification-border-radius: 0;
+  --ruckus-notification-border-width: 0 0 0 0.25rem;
+  --ruckus-notification-color: inherit;
+  --ruckus-notification-font-size: 0.875rem;
+  --ruckus-notification-line-height: 1.5;
+  --ruckus-notification-padding: 0 0 0 0.75rem;
+  
+  
+  /* Primary Notification                                               NOT02
+     ======================================================================== */
+  --ruckus-notification-primary-background-color: var( --ruckus-notification-background-color );
+  --ruckus-notification-primary-border-color: hsl( 232, 64%, 64% );
+  --ruckus-notification-primary-color: var( --ruckus-notification-color );
+  
+  
+  /* Error Notification                                                 NOT03
+     ======================================================================== */
+  --ruckus-notification-error-background-color: transparent;
+  --ruckus-notification-error-border-color: hsl( 352, 80%, 64% );
+  --ruckus-notification-error-color: var( --ruckus-notification-color );  
+  
+  /* Small Notification                                                 NOT04
+     ======================================================================== */
+  --ruckus-notification-small-border-width: 0 0 0 0.25rem;
+  --ruckus-notification-small-font-size: 0.75rem;
+  --ruckus-notification-small-line-height: 1.5;
+  --ruckus-notification-small-padding: 0 0 0 0.25rem;
+
+  /* Large Notification                                                 NOT05
+     ======================================================================== */
+  --ruckus-notification-large-border-width: 0 0 0 0.25rem;
+  --ruckus-notification-large-font-size: 1rem;
+  --ruckus-notification-large-line-height: 1.5;
+  --ruckus-notification-large-padding: 0 0 0 1.25rem;
+
+  /* ========================================================================
+     Path                                                               PAT00
+     ======================================================================== */
+  
+  --ruckus-path-primary-fill: currentColor;
+  --ruckus-path-primary-opacity: 1;
+  --ruckus-path-secondary-fill: currentColor;
+  --ruckus-path-secondary-opacity: 0.5;
+  
+  /* ========================================================================
+     Row                                                                ROW00
+     ======================================================================== */
+     
+  --ruckus-row-margin: -0.5rem;
+  --ruckus-row-small-margin: -0.25rem;
+  --ruckus-row-large-margin: -1rem;
+
+  /* ========================================================================
+     Section                                                            SEC00
+     ======================================================================== */
 
   --ruckus-section-padding: 1rem;
   --ruckus-section-small-padding: 0.5rem;
   --ruckus-section-large-padding: 2rem;
 
-  /* Select
-     ######################################################################## */
+  /* ========================================================================
+     Select                                                             SEL00
+     ======================================================================== */
 
- --ruckus-select-background-color: hsl( 208, 16%,  100% );
- --ruckus-select-border-color: hsl( 208, 16%, 80% );
- --ruckus-select-border-radius: 2px;
+ --ruckus-select-background-color: hsl( 232, 24%,  100% );
+ --ruckus-select-border-color: hsl( 232, 24%, 88% );
+ --ruckus-select-border-radius: 0.25rem;
  --ruckus-select-border-style: solid;
- --ruckus-select-border-width: 1px;
- --ruckus-select-color: hsl( 208, 16%, 32% );
- --ruckus-select-font-size: 14px;
- --ruckus-select-padding: 4px 8px;
+ --ruckus-select-border-width: 0.0625rem;
+ --ruckus-select-color: hsl( 232, 24%, 32% );
+ --ruckus-select-font-size: 0.875rem;
+ --ruckus-select-padding: 0.25rem 0.5rem;
 
-  /* Stack
-     ######################################################################## */
+  /* ========================================================================
+     Stack                                                              STA00
+     ======================================================================== */
 
   --ruckus-stack-margin-bottom: 1rem;
   --ruckus-stack-small-margin-bottom: 0.5rem;
   --ruckus-stack-large-margin-bottom: 2rem;
 
+  /* ========================================================================
+     Tag                                                                TAG00
+     ======================================================================== */
+
+  /* Default Tag                                                        TAG01
+     ======================================================================== */
+  --ruckus-tag-background-color: hsl( 232, 24%, 100% );
+  --ruckus-tag-border-color: hsl( 232, 24%, 88% );
+  --ruckus-tag-border-radius: 0.125rem;
+  --ruckus-tag-border-style: solid;
+  --ruckus-tag-border-width: 0.0625rem;
+  --ruckus-tag-color: hsl( 232, 24%, 44% );
+  --ruckus-tag-font-size: 0.875rem;
+  --ruckus-tag-font-weight: 500;
+  --ruckus-tag-line-height: 1.5;
+  --ruckus-tag-padding: 0 0.25rem;
+  
+  /* Primary Tag                                                        TAG02
+     ======================================================================== */
+  --ruckus-tag-primary-background-color: hsl( 232, 64%, 64% );
+  --ruckus-tag-primary-border-color: transparent;
+  --ruckus-tag-primary-color: hsl( 232, 64%, 100% );
+  
+  /* Secondary Tag                                                      TAG03
+     ======================================================================== */
+  --ruckus-tag-secondary-background-color: hsl( 232, 24%, 40% );
+  --ruckus-tag-secondary-border-color: transparent;
+  --ruckus-tag-secondary-color: hsl( 232, 24%, 100% );
+  
+  /* Error Tag                                                          TAG04
+     ======================================================================== */
+  --ruckus-tag-error-background-color: hsl( 344, 64%, 64% );
+  --ruckus-tag-error-border-color: transparent;
+  --ruckus-tag-error-color: hsl( 344, 64%, 100% );
+
+  /* Success Tag                                                        TAG05
+     ======================================================================== */  
+  --ruckus-tag-success-background-color: hsl( 160, 48%, 64% );
+  --ruckus-tag-success-border-color: transparent;
+  --ruckus-tag-success-color: hsl( 160, 48%, 24% );
+
+  /* Warning Tag                                                        TAG06
+     ======================================================================== */  
+  --ruckus-tag-warning-background-color: hsl( 16, 64%, 72% );
+  --ruckus-tag-warning-border-color: transparent;
+  --ruckus-tag-warning-color: hsl( 16, 64%, 24% );
+
+  /* Extra-small Tag                                                    TAG07
+     ======================================================================== */
+  --ruckus-tag-xs-font-size: 0.625rem;
+  --ruckus-tag-xs-font-weight: 500;
+  --ruckus-tag-xs-line-height: 1.5;
+  --ruckus-tag-xs-padding: 0 0.25rem;
+
+  /* Small Tag                                                          TAG08
+     ======================================================================== */
+  --ruckus-tag-sm-font-size: 0.75rem;
+  --ruckus-tag-sm-font-weight: 500;
+  --ruckus-tag-sm-line-height: 1.5;
+  --ruckus-tag-sm-padding: 0 0.25rem;
+
+  /* Large Tag                                                          TAG09
+     ======================================================================== */
+  --ruckus-tag-lg-font-size: 1rem;
+  --ruckus-tag-lg-font-weight: 500;
+  --ruckus-tag-lg-line-height: 1.5;
+  --ruckus-tag-lg-padding: 0 0.25rem;
+
+  /* ========================================================================
+     Text Selection                                                     TEX00
+     ======================================================================== */
+
+  --ruckus-text-selection-background-color: hsl( 232, 64%, 88% );
+  --ruckus-text-selection-color: hsl( 232, 64%, 64% );
+
+  /* ========================================================================
+     Utilities                                                          UTI00
+     ======================================================================== */
+
+  /* Margin                                                             MAR00
+     ======================================================================== */
+  --ruckus-utility-margin: var( --ruckus-spacing );
+  --ruckus-utility-margin-small: var( --ruckus-spacing-sm );
+  --ruckus-utility-margin-large: var( --ruckus-spacing-lg );
+
+  /* Padding                                                            PAD00
+     ======================================================================== */
+  --ruckus-utility-padding: var( --ruckus-spacing );
+  --ruckus-utility-padding-small: var( --ruckus-spacing-sm );
+  --ruckus-utility-padding-large: var( --ruckus-spacing-lg );
+}
+
+@media (--desktop) {
+  :root {
+    --ruckus-html-font-size: 16px;
+  }
 }

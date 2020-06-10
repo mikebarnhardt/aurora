@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Modal
+   ========================================================================== */
+
+/**
+ *  While most frameworks label modals as components, I think of modals as a
+ *  layout element. It shows and hides content on a new layer. The content is
+ *  the component.
+ */
+
+.modal {
+  background-color: var( --ruckus-modal-background-color );
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  padding: var( --ruckus-modal-padding );
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.modal > * {
+  margin: auto;
+}

@@ -5,7 +5,9 @@ import Button from './button';
 import Card from './card';
 import Checkbox from './checkbox';
 import Footer from './footer';
+import Input from './input';
 import Sidebar from './sidebar';
+import Test from './test';
 import Welcome from './welcome';
 
 function App() {
@@ -33,7 +35,7 @@ function App() {
 
   return (
     <div className="layout layout--stretch layout--vertical">
-      <section className="section section--large">
+      <div className="navbar">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <h1 className="heading heading--content">
             <Link to="/">Ruckus</Link>
@@ -50,16 +52,18 @@ function App() {
             <option value="viera">Viera</option>
           </select>
         </div>
-      </section>
-      <div className="layout" style={{ flex: 1 }}>
+      </div>
+      <div className="layout" style={{ flex: '1 1 auto' }}>
         <Sidebar />
-        <main className="layout layout--vertical" style={{ flex: 1 }}>
-          <div className="section section--large" style={{ flex: 1}}>
+        <main className="layout layout--vertical" style={{ flex: '1 1 auto' }}>
+          <div className="section section--large" style={{ flex: '1 1 auto'}}>
             <Switch>
               <Route component={Welcome} exact path="/" />
+              <Route component={Test} path="/test" />
               <Route component={Button} path="/button" />
               <Route component={Card} path="/card" />
               <Route component={Checkbox} path="/checkbox" />
+              <Route component={Input} path="/input" />
             </Switch>
           </div>
           <Footer />

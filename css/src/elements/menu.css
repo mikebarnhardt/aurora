@@ -1,0 +1,47 @@
+/* =============================================================================
+   Menu
+   ========================================================================== */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Menu Item
+   ========================================================================== */
+
+.menu-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Menu Link
+   ========================================================================== */
+
+.menu-link {
+  background-color: var( --ruckus-menu-link-background-color );
+  color: var( --ruckus-menu-link-color );
+  display: block;
+  font-size: var( --ruckus-menu-link-font-size );
+  list-style: none;
+  padding: var( --ruckus-menu-link-padding );
+}
+
+.menu-link:hover {
+  background-color: var( --ruckus-menu-link-hover-background-color );
+  color: var( --ruckus-menu-link-hover-color );
+}
+
+.menu-link:focus {
+  background-color: var( --ruckus-menu-link-focus-background-color );
+  color: var( --ruckus-menu-link-focus-color );
+}
+
+.menu-link:active,
+.menu-link--active {
+  background-color: var( --ruckus-menu-link-active-background-color );
+  color: var( --ruckus-menu-link-active-color );
+}
