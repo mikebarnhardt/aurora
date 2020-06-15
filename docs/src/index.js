@@ -8,7 +8,7 @@ import Ruckus from './ruckus';
 import 'ruckus-css/dist/ruckus.css';
 
 // Import additional Ruckus themes for testing.
-import 'ruckus-themes/src/aurora.css';
+import 'ruckus-themes/dist/civics.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
