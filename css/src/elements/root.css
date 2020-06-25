@@ -465,6 +465,16 @@
      Navbar                                                             NAV00
      ======================================================================== */
 
+  --ruckus-nav-margin: 0 1rem 0 0;
+  --ruckus-nav-padding: 0;
+  
+  --ruckus-nav-item-margin: 0;
+  --ruckus-nav-item-padding: 0.5rem 1rem;
+
+  /* ========================================================================
+     Navbar                                                             NVB00
+     ======================================================================== */
+
   --ruckus-navbar-background-color: hsl( var(--ruckus-primary-hue), var(--ruckus-primary-sat), 64% );
   --ruckus-navbar-color: hsl( var(--ruckus-primary-hue), var(--ruckus-primary-sat), 100% );
   --ruckus-navbar-padding: 1rem;

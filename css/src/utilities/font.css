@@ -5,29 +5,29 @@
 /* Font Sizes
    ========================================================================== */
 
-.font-size--medium {
+.font-size--md {
   font-size: var(--ruckus-font-size);
 }
 
-.font-size--small {
-  font-size: var(--ruckus-font-size-small);
+.font-size--sm {
+  font-size: var(--ruckus-font-size-sm);
 }
 
-.font-size--large {
-  font-size: var(--ruckus-font-size-small);
+.font-size--lg {
+  font-size: var(--ruckus-font-size-lg);
 }
 
 @media (--desktop) {  
-  .desktop\:font-size--medium {
+  .desktop\:font-size--md {
     font-size: var(--ruckus-font-size);
   }
   
-  .desktop\:font-size--small {
-    font-size: var(--ruckus-font-size-small);
+  .desktop\:font-size--sm {
+    font-size: var(--ruckus-font-size-sm);
   }
   
-  .desktop\:font-size--large {
-    font-size: var(--ruckus-font-size-small);
+  .desktop\:font-size--lg {
+    font-size: var(--ruckus-font-size-lg);
   }
 }
 
