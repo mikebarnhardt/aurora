@@ -47,5 +47,6 @@
    ========================================================================== */
 @import 'utilities/display';
 @import 'utilities/flex';
+@import 'utilities/font';
 @import 'utilities/margin';
 @import 'utilities/padding';

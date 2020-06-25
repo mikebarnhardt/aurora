@@ -1,0 +1,61 @@
+/* =============================================================================
+   Font Utilities
+   ========================================================================== */
+
+/* Font Sizes
+   ========================================================================== */
+
+.font-size--medium {
+  font-size: var(--ruckus-font-size);
+}
+
+.font-size--small {
+  font-size: var(--ruckus-font-size-small);
+}
+
+.font-size--large {
+  font-size: var(--ruckus-font-size-small);
+}
+
+@media (--desktop) {  
+  .desktop\:font-size--medium {
+    font-size: var(--ruckus-font-size);
+  }
+  
+  .desktop\:font-size--small {
+    font-size: var(--ruckus-font-size-small);
+  }
+  
+  .desktop\:font-size--large {
+    font-size: var(--ruckus-font-size-small);
+  }
+}
+
+/* Text Alignment
+   ========================================================================== */
+
+.text-align--center {
+  text-align: center;
+}
+
+.text-align--left {
+  text-align: left;
+}
+
+.text-align--right {
+  text-align: right;
+}
+
+@media (--desktop) {
+  .desktop\:text-align--center {
+    text-align: center;
+  }
+
+  .desktop\:text-align--left {
+    text-align: left;
+  }
+
+  .desktop\:text-align--right {
+    text-align: right;
+  }
+}
