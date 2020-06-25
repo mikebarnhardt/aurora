@@ -459,6 +459,7 @@
      ======================================================================== */
   
   --ruckus-modal-background-color: hsla( var(--ruckus-default-hue), var(--ruckus-default-sat), 96%, 0.75 );
+  --ruckus-modal-color: hsl( var(--ruckus-default-hue), var(--ruckus-default-sat), 48% );
   --ruckus-modal-padding: 1rem;
 
   /* ========================================================================
