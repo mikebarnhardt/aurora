@@ -26,8 +26,11 @@
   flex: 1 1 auto;
 }
 
+.flex--stretch {
+  flex: 1 1 100%;
+}
+
 @media (--desktop) {
-  
   .desktop\:flex--column {
     flex-direction: column;
   }
@@ -48,8 +51,11 @@
     flex: 1 1 auto;
   }
   
+  .desktop\:flex--stretch {
+    flex: 1 1 100%;
+  }
+  
   .desktop\:flex--split {
     justify-content: space-between;
   }
-  
 }
