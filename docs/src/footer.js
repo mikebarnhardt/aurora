@@ -1,5 +1,5 @@
 import React from 'react';
-import pkg from 'ruckus-css/package.json';
+import pkg from 'ancient-css/package.json';
 
 function Footer() {
   return (
@@ -13,7 +13,7 @@ function Footer() {
     >
       <div>&copy; {new Date().getFullYear()} Mike Barnhardt</div>
       <div>
-        <a href="https://github.com/mikebarnhardt/ruckus">
+        <a href="https://github.com/mikebarnhardt/ancient">
           v{pkg.version}
         </a>
       </div>

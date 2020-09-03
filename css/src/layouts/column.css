@@ -3,15 +3,15 @@
    ========================================================================== */
 
 .column {
-  padding: var( --ruckus-column-padding );
+  padding: var( --ancient-column-padding );
 }
 
 .row.row--small > .column {
-  padding: var( --ruckus-column-small-padding );
+  padding: var( --ancient-column-small-padding );
 }
 
 .row.row--large > .column {
-  padding: var( --ruckus-column-large-padding );
+  padding: var( --ancient-column-large-padding );
 }
 
 @media (--desktop) {

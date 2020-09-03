@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import Ruckus from './ruckus';
+import Ancient from './ancient';
 
-// Import Ruckus main CSS.
-import 'ruckus-css/dist/ruckus.css';
+// Import ancient main CSS.
+import 'ancient-css/dist/ancient.css';
 
-// Import additional Ruckus themes for testing.
-import 'ruckus-themes/dist/civics.min.css';
+// Import additional ancient themes for testing.
+// import 'ancient-theme-civics/dist/civics.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Ruckus />
+      <Ancient />
     </Router>
   </React.StrictMode>,
   document.getElementById('js-react')

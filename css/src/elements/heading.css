@@ -13,17 +13,17 @@
 }
 
 .heading.heading--title {
-  font-size: var( --ruckus-heading-title-font-size );
-  font-weight: var( --ruckus-heading-title-font-weight );
+  font-size: var( --ancient-heading-title-font-size );
+  font-weight: var( --ancient-heading-title-font-weight );
 }
 
 .heading.heading--content {
-  font-size: var( --ruckus-heading-content-font-size );
-  font-weight: var( --ruckus-heading-content-font-weight );
+  font-size: var( --ancient-heading-content-font-size );
+  font-weight: var( --ancient-heading-content-font-weight );
 }
 
 .heading.heading--menu {
-  font-size: var( --ruckus-heading-menu-font-size );
-  font-weight: var( --ruckus-heading-menu-font-weight );
+  font-size: var( --ancient-heading-menu-font-size );
+  font-weight: var( --ancient-heading-menu-font-weight );
   padding: 8px 16px;
 }

@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .navbar {
-  background-color: var( --ruckus-navbar-background-color );
-  color: var( --ruckus-navbar-color );
-  padding: var( --ruckus-navbar-padding );
+  background-color: var( --ancient-navbar-background-color );
+  color: var( --ancient-navbar-color );
+  padding: var( --ancient-navbar-padding );
 }

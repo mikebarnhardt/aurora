@@ -1,0 +1,19 @@
+{
+  "author": "Mike Barnhardt <mikebarnhardt+github@gmail.com>",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1"
+  },
+  "description": "Civics theme for Ancient.",
+  "keywords": [
+    "css",
+    "ancient"
+  ],
+  "license": "MIT",
+  "name": "ancient-theme-civics",
+  "scripts": {
+    "build": "postcss --env=production --no-map src/civics.css --output dist/civics.min.css",
+    "start": "postcss --watch src/civics.css --output dist/civics.css"
+  },
+  "version": "0.0.0"
+}

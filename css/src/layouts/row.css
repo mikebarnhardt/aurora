@@ -4,15 +4,15 @@
 
 .row {
   display: block;
-  margin: var( --ruckus-row-margin );
+  margin: var( --ancient-row-margin );
 }
 
 .row.row--small {
-  margin: var( --ruckus-row-small-margin );
+  margin: var( --ancient-row-small-margin );
 }
 
 .row.row--large {
-  margin: var( --ruckus-row-large-margin );
+  margin: var( --ancient-row-large-margin );
 }
 
 @media (--desktop) {

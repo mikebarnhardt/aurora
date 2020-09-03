@@ -7,125 +7,125 @@
  */
 
 .padding {
-  padding: var( --ruckus-utility-padding );
+  padding: var( --ancient-utility-padding );
 }
 
 .padding--small {
-  padding: var( --ruckus-utility-padding-small );
+  padding: var( --ancient-utility-padding-small );
 }
 
 .padding--large {
-  padding: var( --ruckus-utility-padding-large );
+  padding: var( --ancient-utility-padding-large );
 }
 
 .padding-bottom {
-  padding-bottom: var( --ruckus-utility-padding );
+  padding-bottom: var( --ancient-utility-padding );
 }
 
 .padding-bottom--small {
-  padding-bottom: var( --ruckus-utility-padding-small );
+  padding-bottom: var( --ancient-utility-padding-small );
 }
 
 .padding-bottom--large {
-  padding-bottom: var( --ruckus-utility-padding-large );
+  padding-bottom: var( --ancient-utility-padding-large );
 }
 
 .padding-left {
-  padding-left: var( --ruckus-utility-padding );
+  padding-left: var( --ancient-utility-padding );
 }
 
 .padding-left--small {
-  padding-left: var( --ruckus-utility-padding-small );
+  padding-left: var( --ancient-utility-padding-small );
 }
 
 .padding-left--large {
-  padding-left: var( --ruckus-utility-padding-large );
+  padding-left: var( --ancient-utility-padding-large );
 }
 
 .padding-right {
-  padding-right: var( --ruckus-utility-padding );
+  padding-right: var( --ancient-utility-padding );
 }
 
 .padding-right--small {
-  padding-right: var( --ruckus-utility-padding-small );
+  padding-right: var( --ancient-utility-padding-small );
 }
 
 .padding-right--large {
-  padding-right: var( --ruckus-utility-padding-large );
+  padding-right: var( --ancient-utility-padding-large );
 }
 
 .padding-top {
-  padding-top: var( --ruckus-utility-padding );
+  padding-top: var( --ancient-utility-padding );
 }
 
 .padding-top--small {
-  padding-top: var( --ruckus-utility-padding-small );
+  padding-top: var( --ancient-utility-padding-small );
 }
 
 .padding-top--large {
-  padding-top: var( --ruckus-utility-padding-large );
+  padding-top: var( --ancient-utility-padding-large );
 }
 
 @media (--desktop) {
 
   .desktop\:padding {
-    padding: var( --ruckus-utility-padding );
+    padding: var( --ancient-utility-padding );
   }
 
   .desktop\:padding--small {
-    padding: var( --ruckus-utility-padding-small );
+    padding: var( --ancient-utility-padding-small );
   }
 
   .desktop\:padding--large {
-    padding: var( --ruckus-utility-padding-large );
+    padding: var( --ancient-utility-padding-large );
   }
 
   .desktop\:padding-bottom {
-    padding-bottom: var( --ruckus-utility-padding );
+    padding-bottom: var( --ancient-utility-padding );
   }
 
   .desktop\:padding-bottom--small {
-    padding-bottom: var( --ruckus-utility-padding-small );
+    padding-bottom: var( --ancient-utility-padding-small );
   }
 
   .desktop\:padding-bottom--large {
-    padding-bottom: var( --ruckus-utility-padding-large );
+    padding-bottom: var( --ancient-utility-padding-large );
   }
 
   .desktop\:padding-left {
-    padding-left: var( --ruckus-utility-padding );
+    padding-left: var( --ancient-utility-padding );
   }
 
   .desktop\:padding-left--small {
-    padding-left: var( --ruckus-utility-padding-small );
+    padding-left: var( --ancient-utility-padding-small );
   }
 
   .desktop\:padding-left--large {
-    padding-left: var( --ruckus-utility-padding-large );
+    padding-left: var( --ancient-utility-padding-large );
   }
 
   .desktop\:padding-right {
-    padding-right: var( --ruckus-utility-padding );
+    padding-right: var( --ancient-utility-padding );
   }
 
   .desktop\:padding-right--small {
-    padding-right: var( --ruckus-utility-padding-small );
+    padding-right: var( --ancient-utility-padding-small );
   }
 
   .desktop\:padding-right--large {
-    padding-right: var( --ruckus-utility-padding-large );
+    padding-right: var( --ancient-utility-padding-large );
   }
 
   .desktop\:padding-top {
-    padding-top: var( --ruckus-utility-padding );
+    padding-top: var( --ancient-utility-padding );
   }
 
   .desktop\:padding-top--small {
-    padding-top: var( --ruckus-utility-padding-small );
+    padding-top: var( --ancient-utility-padding-small );
   }
 
   .desktop\:padding-top--large {
-    padding-top: var( --ruckus-utility-padding-large );
+    padding-top: var( --ancient-utility-padding-large );
   }
 
 }

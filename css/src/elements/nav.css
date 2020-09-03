@@ -7,16 +7,16 @@
  */
 
 .nav {
-  margin: var(--ruckus-nav-margin);
-  padding: var(--ruckus-nav-padding);
+  margin: var(--ancient-nav-margin);
+  padding: var(--ancient-nav-padding);
 }
 
 /* NavItem
    ========================================================================== */
 
 .nav-item {
-  margin: var(--ruckus-nav-item-margin);
-  padding: var(--ruckus-nav-item-padding);
+  margin: var(--ancient-nav-item-margin);
+  padding: var(--ancient-nav-item-padding);
 }
 
 /* Remove padding if a sub-element has its own padding, such as inputs. */

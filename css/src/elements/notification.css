@@ -16,15 +16,15 @@
 /* Default                                                               QV01
    ========================================================================== */
 .notification {
-  background-color: var( --ruckus-notification-background-color );
-  border-color: var( --ruckus-notification-border-color );
-  border-radius: var( --ruckus-notification-border-radius );
-  border-style: var( --ruckus-notification-border-style );
-  border-width: var( --ruckus-notification-border-width );
-  color: var( --ruckus-notification-color );
-  font-size: var( --ruckus-notification-font-size );
-  line-height: var( --ruckus-notification-line-height );
-  padding: var( --ruckus-notification-padding );
+  background-color: var( --ancient-notification-background-color );
+  border-color: var( --ancient-notification-border-color );
+  border-radius: var( --ancient-notification-border-radius );
+  border-style: var( --ancient-notification-border-style );
+  border-width: var( --ancient-notification-border-width );
+  color: var( --ancient-notification-color );
+  font-size: var( --ancient-notification-font-size );
+  line-height: var( --ancient-notification-line-height );
+  padding: var( --ancient-notification-padding );
 }
 
 /* ==========================================================================
@@ -34,17 +34,17 @@
 /* Primary                                                               QV03
    ========================================================================== */
 .notification.notification--primary {
-  background-color: var( --ruckus-notification-primary-background-color );
-  border-color: var( --ruckus-notification-primary-border-color );
-  color: var( --ruckus-notification-primary-color );
+  background-color: var( --ancient-notification-primary-background-color );
+  border-color: var( --ancient-notification-primary-border-color );
+  color: var( --ancient-notification-primary-color );
 }
 
 /* Error                                                                 QV04
    ========================================================================== */
 .notification.notification--error {
-  background-color: var( --ruckus-notification-error-background-color );
-  border-color: var( --ruckus-notification-error-border-color );
-  color: var( --ruckus-notification-error-color );
+  background-color: var( --ancient-notification-error-background-color );
+  border-color: var( --ancient-notification-error-border-color );
+  color: var( --ancient-notification-error-color );
 }
 
 /* ==========================================================================
@@ -54,16 +54,16 @@
 /* Small                                                                 QV06
    ========================================================================== */
 .notification.notification--small {
-  border-width: var( --ruckus-notification-small-border-width );
-  font-size: var( --ruckus-notification-small-font-size );
-  line-height: var( --ruckus-notification-small-line-height );
-  padding: var( --ruckus-notification-small-padding );
+  border-width: var( --ancient-notification-small-border-width );
+  font-size: var( --ancient-notification-small-font-size );
+  line-height: var( --ancient-notification-small-line-height );
+  padding: var( --ancient-notification-small-padding );
 }
 
 /* Large                                                                 QV07
    ========================================================================== */
 .notification.notification--large {
-  font-size: var( --ruckus-notification-large-font-size );
-  line-height: var( --ruckus-notification-large-line-height );
-  padding: var( --ruckus-notification-large-padding );
+  font-size: var( --ancient-notification-large-font-size );
+  line-height: var( --ancient-notification-large-line-height );
+  padding: var( --ancient-notification-large-padding );
 }

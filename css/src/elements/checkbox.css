@@ -14,8 +14,8 @@
 
 .checkbox > label {
   cursor: pointer;
-  font-size: var( --ruckus-checkbox-font-size );
-  line-height: var( --ruckus-checkbox-line-height );
+  font-size: var( --ancient-checkbox-font-size );
+  line-height: var( --ancient-checkbox-line-height );
   padding-left: 1.75rem;
 }
 
@@ -24,11 +24,11 @@
  */
 
 .checkbox > label::before {
-  border-color: var( --ruckus-checkbox-border-color );
-  border-radius: var( --ruckus-checkbox-border-radius );
-  border-style: var( --ruckus-checkbox-border-style );
-  border-width: var( --ruckus-checkbox-border-width );
-  box-shadow: var( --ruckus-checkbox-box-shadow );
+  border-color: var( --ancient-checkbox-border-color );
+  border-radius: var( --ancient-checkbox-border-radius );
+  border-style: var( --ancient-checkbox-border-style );
+  border-width: var( --ancient-checkbox-border-width );
+  box-shadow: var( --ancient-checkbox-box-shadow );
   content: "";
   display: inline-block;
   height: 0.75rem;
@@ -39,11 +39,11 @@
 }
 
 .checkbox > label:hover::before {
-  border-color: var( --ruckus-checkbox-hover-border-color );
+  border-color: var( --ancient-checkbox-hover-border-color );
 }
 
 .checkbox > label::after {
-  background-color: var( --ruckus-checkbox-background-color );
+  background-color: var( --ancient-checkbox-background-color );
   border-radius: 0.125rem;
   content: "";
   display: inline-block;
@@ -56,8 +56,8 @@
 }
 
 .checkbox > input:focus + label::before {
-  border-color: var( --ruckus-checkbox-focus-border-color );
-  box-shadow: var( --ruckus-checkbox-focus-box-shadow );
+  border-color: var( --ancient-checkbox-focus-border-color );
+  box-shadow: var( --ancient-checkbox-focus-box-shadow );
 }
 
 .checkbox > input:checked + label::after {

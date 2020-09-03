@@ -3,72 +3,72 @@
    ========================================================================== */
 
 .tag {
-  background-color: var( --ruckus-tag-background-color );
-  border-color: var( --ruckus-tag-border-color );
-  border-radius: var( --ruckus-tag-border-radius );
-  border-style: var( --ruckus-tag-border-style );
-  border-width: var( --ruckus-tag-border-width );
-  color: var( --ruckus-tag-color );
+  background-color: var( --ancient-tag-background-color );
+  border-color: var( --ancient-tag-border-color );
+  border-radius: var( --ancient-tag-border-radius );
+  border-style: var( --ancient-tag-border-style );
+  border-width: var( --ancient-tag-border-width );
+  color: var( --ancient-tag-color );
   display: inline-block;
-  font-size: var( --ruckus-tag-font-size );
-  font-weight: var( --ruckus-tag-font-weight );
-  line-height: var( --ruckus-tag-line-height );
-  padding: var( --ruckus-tag-padding );
+  font-size: var( --ancient-tag-font-size );
+  font-weight: var( --ancient-tag-font-weight );
+  line-height: var( --ancient-tag-line-height );
+  padding: var( --ancient-tag-padding );
 }
 
 /* Color Variants
    ========================================================================== */
 
 .tag.tag--primary {  
-  background-color: var( --ruckus-tag-primary-background-color );
-  border-color: var( --ruckus-tag-primary-border-color );
-  color: var( --ruckus-tag-primary-color );
+  background-color: var( --ancient-tag-primary-background-color );
+  border-color: var( --ancient-tag-primary-border-color );
+  color: var( --ancient-tag-primary-color );
 }
 
 .tag.tag--secondary {  
-  background-color: var( --ruckus-tag-secondary-background-color );
-  border-color: var( --ruckus-tag-secondary-border-color );
-  color: var( --ruckus-tag-secondary-color );
+  background-color: var( --ancient-tag-secondary-background-color );
+  border-color: var( --ancient-tag-secondary-border-color );
+  color: var( --ancient-tag-secondary-color );
 }
 
 .tag.tag--error {  
-  background-color: var( --ruckus-tag-error-background-color );
-  border-color: var( --ruckus-tag-error-border-color );
-  color: var( --ruckus-tag-error-color );
+  background-color: var( --ancient-tag-error-background-color );
+  border-color: var( --ancient-tag-error-border-color );
+  color: var( --ancient-tag-error-color );
 }
 
 .tag.tag--success {  
-  background-color: var( --ruckus-tag-success-background-color );
-  border-color: var( --ruckus-tag-success-border-color );
-  color: var( --ruckus-tag-success-color );
+  background-color: var( --ancient-tag-success-background-color );
+  border-color: var( --ancient-tag-success-border-color );
+  color: var( --ancient-tag-success-color );
 }
 
 .tag.tag--warning {  
-  background-color: var( --ruckus-tag-warning-background-color );
-  border-color: var( --ruckus-tag-warning-border-color );
-  color: var( --ruckus-tag-warning-color );
+  background-color: var( --ancient-tag-warning-background-color );
+  border-color: var( --ancient-tag-warning-border-color );
+  color: var( --ancient-tag-warning-color );
 }
 
 /* Size Variants
    ========================================================================== */
 
 .tag.tag--xs {
-  font-size: var( --ruckus-tag-xs-font-size );
-  font-weight: var( --ruckus-tag-xs-font-weight );
-  line-height: var( --ruckus-tag-xs-line-height );
-  padding: var( --ruckus-tag-xs-padding );
+  font-size: var( --ancient-tag-xs-font-size );
+  font-weight: var( --ancient-tag-xs-font-weight );
+  line-height: var( --ancient-tag-xs-line-height );
+  padding: var( --ancient-tag-xs-padding );
 }
 
 .tag.tag--sm {
-  font-size: var( --ruckus-tag-sm-font-size );
-  font-weight: var( --ruckus-tag-sm-font-weight );
-  line-height: var( --ruckus-tag-sm-line-height );
-  padding: var( --ruckus-tag-sm-padding );
+  font-size: var( --ancient-tag-sm-font-size );
+  font-weight: var( --ancient-tag-sm-font-weight );
+  line-height: var( --ancient-tag-sm-line-height );
+  padding: var( --ancient-tag-sm-padding );
 }
 
 .tag.tag--lg {
-  font-size: var( --ruckus-tag-lg-font-size );
-  font-weight: var( --ruckus-tag-lg-font-weight );
-  line-height: var( --ruckus-tag-lg-line-height );
-  padding: var( --ruckus-tag-lg-padding );
+  font-size: var( --ancient-tag-lg-font-size );
+  font-weight: var( --ancient-tag-lg-font-weight );
+  line-height: var( --ancient-tag-lg-line-height );
+  padding: var( --ancient-tag-lg-padding );
 }

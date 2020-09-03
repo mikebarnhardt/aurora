@@ -2,7 +2,7 @@
 # .gitignore
 ################################################################################
 
-# Ruckus will ignore the following files and folders by default. This file is
+# Ancient will ignore the following files and folders by default. This file is
 # meant to be a catch-all and sub-directories may contain their own .gitignore
 # files.
 

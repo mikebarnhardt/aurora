@@ -1,0 +1,319 @@
+/* =============================================================================
+   Civics Theme
+   ========================================================================== */
+
+.theme--civics {
+  /* ========================================================================
+     Colors
+     ======================================================================== */
+  --ancient-default-hue: 224;
+  --ancient-default-sat: 24%;
+  --ancient-primary-hue: 224;
+  --ancient-primary-sat: 64%;
+  --ancient-secondary-hue: 224;
+  --ancient-secondary-sat: 24%;
+  --ancient-error-hue: 352;
+  --ancient-error-sat: 56%;
+  --ancient-success-hue: 120;
+  --ancient-success-sat: 40%;
+  --ancient-warning-hue: 24;
+  --ancient-warning-sat: 64%;
+  
+  --ancient-outline-opacity: 0.5;
+
+  /* ===========================================================================
+     Button
+     ======================================================================== */
+
+  /* Default Button
+     ======================================================================== */
+  --ancient-button-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+  --ancient-button-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 32% );
+  --ancient-button-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-default-hue), var(--ancient-default-sat), 16%, var(--ancient-shadow-opacity) );
+  --ancient-button-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+  --ancient-button-hover-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 28% );
+  --ancient-button-hover-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 40% );
+  --ancient-button-hover-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-default-hue), var(--ancient-default-sat), 16%, var(--ancient-shadow-opacity) );
+  --ancient-button-hover-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+  --ancient-button-focus-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+  --ancient-button-focus-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  --ancient-button-focus-box-shadow:  0 0 0 var(--ancient-outline-width) hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 64%, var(--ancient-outline-opacity) );
+  --ancient-button-focus-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+  --ancient-button-active-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+  --ancient-button-active-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 40% );
+  --ancient-button-active-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-default-hue), var(--ancient-default-sat), 16%, var(--ancient-shadow-opacity) );
+  --ancient-button-active-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+
+  /* Primary Button
+     =======================================================================  */
+  --ancient-button-primary-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-button-primary-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  --ancient-button-primary-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 64%, var(--ancient-shadow-opacity) );
+  --ancient-button-primary-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 100% );
+  --ancient-button-primary-hover-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 60% );
+  --ancient-button-primary-hover-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 72% );
+  --ancient-button-primary-hover-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 72%, var(--ancient-shadow-opacity) );
+  --ancient-button-primary-hover-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 100% );
+  --ancient-button-primary-focus-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-button-primary-focus-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 72% );
+  --ancient-button-primary-focus-box-shadow:  0 0 0 var(--ancient-outline-width) hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 56%, var(--ancient-outline-opacity) );
+  --ancient-button-primary-focus-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 100% );
+  --ancient-button-primary-active-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-button-primary-active-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 72% );
+  --ancient-button-primary-active-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 48%, var(--ancient-shadow-opacity) );
+  --ancient-button-primary-active-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 100% );
+
+  /* Secondary Button                                                   BUT03
+     ======================================================================== */
+  --ancient-button-secondary-background-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 80% );
+  --ancient-button-secondary-border-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 88% );
+  --ancient-button-secondary-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 88%, var(--ancient-shadow-opacity) );
+  --ancient-button-secondary-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 24% );
+  --ancient-button-secondary-hover-background-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 84% );
+  --ancient-button-secondary-hover-border-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 96% );
+  --ancient-button-secondary-hover-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 96%, var(--ancient-shadow-opacity) );
+  --ancient-button-secondary-hover-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 24% );
+  --ancient-button-secondary-focus-background-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 84% );
+  --ancient-button-secondary-focus-border-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 96% );
+  --ancient-button-secondary-focus-box-shadow:  0 0 0 var(--ancient-outline-width) hsla( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 96%, var(--ancient-outline-opacity) );
+  --ancient-button-secondary-focus-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 24% );
+  --ancient-button-secondary-active-background-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 80% );
+  --ancient-button-secondary-active-border-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 96% );
+  --ancient-button-secondary-active-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 96%, var(--ancient-shadow-opacity) );
+  --ancient-button-secondary-active-color: hsl( var(--ancient-secondary-hue), var(--ancient-secondary-sat), 24% );
+
+  /* Error Button                                                       BUT04
+     ======================================================================== */
+  --ancient-button-error-background-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-button-error-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 56% );
+  --ancient-button-error-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-error-hue), var(--ancient-error-sat), 56%, var(--ancient-shadow-opacity) );
+  --ancient-button-error-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 100% );
+  --ancient-button-error-hover-background-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 68% );
+  --ancient-button-error-hover-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 48% );
+  --ancient-button-error-hover-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-error-hue), var(--ancient-error-sat), 48%, var(--ancient-shadow-opacity) );
+  --ancient-button-error-hover-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 100% );
+  --ancient-button-error-focus-background-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-button-error-focus-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 48% );
+  --ancient-button-error-focus-box-shadow:  0 0 0 var(--ancient-outline-width) hsla( var(--ancient-error-hue), var(--ancient-error-sat), 48%, var(--ancient-outline-opacity) );
+  --ancient-button-error-focus-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 100% );
+  --ancient-button-error-active-background-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-button-error-active-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 40% );
+  --ancient-button-error-active-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-error-hue), var(--ancient-error-sat), 40%, var(--ancient-shadow-opacity) );
+  --ancient-button-error-active-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 100% );
+
+  /* Success Button                                                     BUT05
+     ======================================================================== */
+  --ancient-button-success-background-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 72% );
+  --ancient-button-success-border-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 64% );
+  --ancient-button-success-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-success-hue), var(--ancient-success-sat), 64%, var(--ancient-shadow-opacity) );
+  --ancient-button-success-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 24% );
+  --ancient-button-success-hover-background-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 76% );
+  --ancient-button-success-hover-border-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 56% );
+  --ancient-button-success-hover-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-success-hue), var(--ancient-success-sat), 56%, var(--ancient-shadow-opacity) );
+  --ancient-button-success-hover-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 24% );
+  --ancient-button-success-focus-background-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 72% );
+  --ancient-button-success-focus-border-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 56% );
+  --ancient-button-success-focus-box-shadow:  0 0 0 var(--ancient-outline-width) hsla( var(--ancient-success-hue), var(--ancient-success-sat), 56%, var(--ancient-outline-opacity) );
+  --ancient-button-success-focus-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 24% );
+  --ancient-button-success-active-background-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 72% );
+  --ancient-button-success-active-border-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 48% );
+  --ancient-button-success-active-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-success-hue), var(--ancient-success-sat), 48%, var(--ancient-shadow-opacity) );
+  --ancient-button-success-active-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 24% );
+
+  /* Warning Button                                                     BUT06
+     ======================================================================== */
+  --ancient-button-warning-background-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 72% );
+  --ancient-button-warning-border-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 64% );
+  --ancient-button-warning-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-warning-hue), var(--ancient-warning-sat), 64%, var(--ancient-shadow-opacity) );
+  --ancient-button-warning-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 24% );
+  --ancient-button-warning-hover-background-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 76% );
+  --ancient-button-warning-hover-border-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 56% );
+  --ancient-button-warning-hover-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-warning-hue), var(--ancient-warning-sat), 56%, var(--ancient-shadow-opacity) );
+  --ancient-button-warning-hover-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 24% );
+  --ancient-button-warning-focus-background-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 72% );
+  --ancient-button-warning-focus-border-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 56% );
+  --ancient-button-warning-focus-box-shadow:  0 0 0 var(--ancient-outline-width) hsla( var(--ancient-warning-hue), var(--ancient-warning-sat), 56%, var(--ancient-outline-opacity) );
+  --ancient-button-warning-focus-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 24% );
+  --ancient-button-warning-active-background-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 72% );
+  --ancient-button-warning-active-border-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 48% );
+  --ancient-button-warning-active-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-warning-hue), var(--ancient-warning-sat), 48%, var(--ancient-shadow-opacity) );
+  --ancient-button-warning-active-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 24% );
+
+  /* ========================================================================
+     Card                                                               CAR00
+     ======================================================================== */
+
+  --ancient-card-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+  --ancient-card-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 32% );
+  --ancient-card-box-shadow: 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-default-hue), var(--ancient-default-sat), var(--ancient-card-border-color), var(--ancient-shadow-opacity) );
+  --ancient-card-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+  --ancient-card-divider-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 28% );
+  --ancient-card-action-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 26% );
+  --ancient-card-action-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 48% );
+  
+  --ancient-card-menu-background-color: transparent;
+  --ancient-card-menu-color: inherit;
+  --ancient-card-menu-hover-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 26% );
+  --ancient-card-menu-hover-color: inherit;
+  --ancient-card-menu-focus-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 26% );
+  --ancient-card-menu-focus-color: inherit;
+  --ancient-card-menu-active-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 28% );
+  --ancient-card-menu-active-color: inherit;
+  --ancient-card-menu-divider-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 28% );
+
+  /* ========================================================================
+     Checkbox                                                           CHE00
+     ======================================================================== */
+  
+  --ancient-checkbox-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-checkbox-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 88% );
+  --ancient-checkbox-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-primary-hue), var(--ancient-default-sat), 88%, var(--ancient-shadow-opacity) );
+  --ancient-checkbox-hover-border-color: hsl( var(--ancient-primary-hue), var(--ancient-default-sat), 80% );
+  --ancient-checkbox-focus-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-checkbox-focus-box-shadow: 0 0 0 var(--ancient-outline-width) hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 56%, var(--ancient-outline-opacity) );
+
+  /* ========================================================================
+     Divider                                                            DIV00
+     ======================================================================== */
+
+  --ancient-divider-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+
+  /* ========================================================================
+     HTML                                                               HTM00
+     ======================================================================== */
+
+  --ancient-html-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 16% );
+  --ancient-html-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+
+  /* ========================================================================
+     Input                                                              INP00
+     ======================================================================== */
+
+   /* Default Input                                                      INP01
+      ======================================================================== */
+  --ancient-input-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 32% );
+  --ancient-input-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-default-hue), var(--ancient-default-sat), 24%, var(--ancient-shadow-opacity) ); 
+  --ancient-input-hover-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 40% );
+  --ancient-input-hover-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-default-hue), var(--ancient-default-sat), 24%, var(--ancient-shadow-opacity) ); 
+  --ancient-input-focus-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  --ancient-input-focus-box-shadow: 0 0 0 var(--ancient-outline-width) hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 64%, var(--ancient-outline-opacity) ); 
+  --ancient-input-active-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  --ancient-input-active-box-shadow: 0 0 0 var(--ancient-outline-width) hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 64%, var(--ancient-outline-opacity) ); 
+
+  /* Error Input                                                        INP02
+     ======================================================================== */
+  --ancient-input-error-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-input-error-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-error-hue), var(--ancient-error-sat), 64%, var(--ancient-shadow-opacity) ); 
+  --ancient-input-error-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-input-error-hover-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 56% );
+  --ancient-input-error-hover-box-shadow: inset 0 var(--ancient-shadow-depth) 0 hsla( var(--ancient-error-hue), var(--ancient-error-sat), 56%, var(--ancient-shadow-opacity) ); 
+  --ancient-input-error-hover-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-input-error-focus-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 56% );
+  --ancient-input-error-focus-box-shadow: 0 0 0 var(--ancient-outline-width) hsla( var(--ancient-error-hue), var(--ancient-error-sat), 56%, var(--ancient-outline-opacity) ); 
+  --ancient-input-error-focus-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-input-error-active-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 56% );
+  --ancient-input-error-active-box-shadow: 0 0 0 var(--ancient-outline-width) hsla( var(--ancient-error-hue), var(--ancient-error-sat), 56%, var(--ancient-outline-opacity) ); 
+  --ancient-input-error-active-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+
+  /* ========================================================================
+     Link                                                               LIN00
+     ======================================================================== */
+
+  --ancient-link-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  --ancient-link-text-decoration-color: hsla( var(--ancient-primary-hue), var(--ancient-primary-sat), 64%, var(--ancient-outline-opacity) );
+
+  --ancient-link-hover-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  --ancient-link-hover-text-decoration-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 64% );
+  
+  /* ========================================================================
+     Menu                                                               MEN00
+     ======================================================================== */
+
+  --ancient-menu-link-hover-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 18% );
+  --ancient-menu-link-focus-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 18% );
+  --ancient-menu-link-active-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 20% );
+
+  /* ========================================================================
+     Modal
+     ======================================================================== */
+  
+  --ancient-modal-background-color: hsla( var(--ancient-default-hue), var(--ancient-default-sat), 16%, 0.75 );
+  --ancient-modal-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+
+  /* ========================================================================
+     Navbar                                                             NAV00
+     ======================================================================== */
+
+  --ancient-navbar-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-navbar-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 100% );
+
+  /* ========================================================================
+     Notification                                                       NOT00
+     ======================================================================== */
+  
+  /* Default Notification                                               NOT01
+     ======================================================================== */
+  --ancient-notification-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+  
+  
+  /* Primary Notification                                               NOT02
+     ======================================================================== */
+  --ancient-notification-primary-border-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  
+  
+  /* Error Notification                                                 NOT03
+     ======================================================================== */
+  --ancient-notification-error-border-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+
+  /* ========================================================================
+     Select                                                             SEL00
+     ======================================================================== */
+
+  --ancient-select-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat),  100% );
+  --ancient-select-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 88% );
+  --ancient-select-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 48% );
+
+  /* ========================================================================
+     Tag                                                                TAG00
+     ======================================================================== */
+
+  /* Default Tag                                                        TAG01
+     ======================================================================== */
+  --ancient-tag-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 24% );
+  --ancient-tag-border-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 32% );
+  --ancient-tag-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 80% );
+  
+  /* Primary Tag                                                        TAG02
+     ======================================================================== */
+  --ancient-tag-primary-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+  --ancient-tag-primary-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 100% );
+  
+  /* Secondary Tag                                                      TAG03
+     ======================================================================== */
+  --ancient-tag-secondary-background-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 40% );
+  --ancient-tag-secondary-color: hsl( var(--ancient-default-hue), var(--ancient-default-sat), 100% );
+  
+  /* Error Tag                                                          TAG04
+     ======================================================================== */
+  --ancient-tag-error-background-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 64% );
+  --ancient-tag-error-color: hsl( var(--ancient-error-hue), var(--ancient-error-sat), 100% );
+
+  /* Success Tag                                                        TAG05
+     ======================================================================== */  
+  --ancient-tag-success-background-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 72% );
+  --ancient-tag-success-color: hsl( var(--ancient-success-hue), var(--ancient-success-sat), 24% );
+
+  /* Warning Tag                                                        TAG06
+     ======================================================================== */  
+  --ancient-tag-warning-background-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 72% );
+  --ancient-tag-warning-color: hsl( var(--ancient-warning-hue), var(--ancient-warning-sat), 24% );
+
+  /* ========================================================================
+     Text Selection                                                     TEX00
+     ======================================================================== */
+
+  --ancient-text-selection-background-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 88% );
+  --ancient-text-selection-color: hsl( var(--ancient-primary-hue), var(--ancient-primary-sat), 56% );
+
+}
+

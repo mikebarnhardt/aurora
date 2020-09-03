@@ -23,7 +23,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "name": "ruckus-docs",
+  "name": "ancient-docs",
   "private": true,
   "scripts": {
     "start": "react-scripts start",

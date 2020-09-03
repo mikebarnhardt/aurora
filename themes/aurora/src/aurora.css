@@ -1,0 +1,199 @@
+/* =============================================================================
+   Aurora
+   ========================================================================== */
+
+/**
+ *  A theme for ancient inspired by Skyrim's music.
+ */
+
+.theme--aurora {
+
+  --aurora-primary-hue: 232;
+  --aurora-secondary-hue: 160;
+
+  /* Button
+     ======================================================================== */
+
+  /* Default */
+  --ancient-button-background-color: hsl( var( --aurora-primary-hue ), 24%, 24% );
+  --ancient-button-border-color: hsl( var( --aurora-primary-hue ), 24%, 32% );
+  --ancient-button-box-shadow: 0 1px 0 hsla( var( --aurora-primary-hue ), 24%, 24%, 0.5 );
+  --ancient-button-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+  --ancient-button-hover-background-color: hsl( var( --aurora-primary-hue ), 24%, 36% );
+  --ancient-button-hover-border-color: hsl( var( --aurora-primary-hue ), 24%, 16% );
+  --ancient-button-hover-box-shadow: 0 1px 0 hsla( var( --aurora-primary-hue ), 24%, 16%, 0.5 );
+  --ancient-button-hover-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+  --ancient-button-focus-background-color: var( --ancient-button-background-color );
+  --ancient-button-focus-border-color: hsl( var( --aurora-primary-hue ), 64%, 56% );
+  --ancient-button-focus-box-shadow:  0 0 0 2px hsla( var( --aurora-primary-hue ), 64%, 56%, 0.5 );
+  --ancient-button-focus-color: hsl( 96, 48%, 16% );
+  --ancient-button-active-background-color: hsl( var( --aurora-primary-hue ), 24%, 96% );
+  --ancient-button-active-border-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+  --ancient-button-active-box-shadow: inset 0 1px 0 hsl( var( --aurora-primary-hue ), 24%, 88% );
+  --ancient-button-active-color: hsl( var( --aurora-primary-hue ), 24%, 48% );
+
+  /* Subtle */
+  --ancient-button-primary-background-color: hsl( var( --aurora-primary-hue ), 56%, 64% );
+  --ancient-button-primary-border-color: hsl( var( --aurora-primary-hue ), 56%, 72% );
+  --ancient-button-primary-box-shadow: 0 1px 0 hsla( var( --aurora-primary-hue ), 64%, 56%, 0.5 );
+  --ancient-button-primary-color:  hsl( var( --aurora-primary-hue ), 64%, 100% );
+  --ancient-button-primary-hover-background-color: hsl( var( --aurora-primary-hue ), 64%, 68% );
+  --ancient-button-primary-hover-border-color: hsl( var( --aurora-primary-hue ), 64%, 48% );
+  --ancient-button-primary-hover-box-shadow: 0 1px 0 hsla( var( --aurora-primary-hue ), 64%, 48%, 0.5 );
+  --ancient-button-primary-hover-color: hsl( var( --aurora-primary-hue ), 64%, 100% );
+  --ancient-button-primary-focus-background-color: hsl( var( --aurora-primary-hue ), 64%, 64% );
+  --ancient-button-primary-focus-border-color: hsl( var( --aurora-primary-hue ), 64%, 56% );
+  --ancient-button-primary-focus-box-shadow: 0 0 0 2px hsla( var( --aurora-primary-hue ), 64%, 56%, 0.5 );
+  --ancient-button-primary-focus-color: hsl( var( --aurora-primary-hue ), 64%, 100% );
+  --ancient-button-primary-active-background-color: hsl( var( --aurora-primary-hue ), 64%, 60% );
+  --ancient-button-primary-active-border-color: hsl( var( --aurora-primary-hue ), 64%, 40% );
+  --ancient-button-primary-active-box-shadow: inset 0 1px 0 hsl( var( --aurora-primary-hue ), 64%, 56% );
+  --ancient-button-primary-active-color: hsl( var( --aurora-primary-hue ), 64%, 100% );
+
+  /* Secondary */
+  --ancient-button-secondary-background-color: hsl( var( --aurora-secondary-hue ), 56%, 56% );
+  --ancient-button-secondary-border-color: hsl( var( --aurora-secondary-hue ), 56%, 64% );
+  --ancient-button-secondary-box-shadow: 0 1px 0 hsla( var( --aurora-secondary-hue ), 64%, 56%, 0.5 );
+  --ancient-button-secondary-color:  hsl( var( --aurora-secondary-hue ), 64%, 24% );
+  --ancient-button-secondary-hover-background-color: hsl( var( --aurora-secondary-hue ), 24%, 44% );
+  --ancient-button-secondary-hover-border-color: hsl( var( --aurora-secondary-hue ), 24%, 24% );
+  --ancient-button-secondary-hover-box-shadow: 0 1px 0 hsla( var( --aurora-secondary-hue ), 24%, 24%, 0.5 );
+  --ancient-button-secondary-hover-color: hsl( var( --aurora-secondary-hue ), 24%, 100% );
+  --ancient-button-secondary-focus-background-color: hsl( var( --aurora-secondary-hue ), 24%, 40% );
+  --ancient-button-secondary-focus-border-color: hsl( var( --aurora-secondary-hue ), 24%, 32% );
+  --ancient-button-secondary-focus-box-shadow: 0 0 0 2px hsla( var( --aurora-secondary-hue ), 24%, 32%, 0.5 );
+  --ancient-button-secondary-focus-color: hsl( var( --aurora-secondary-hue ), 24%, 100% );
+  --ancient-button-secondary-active-background-color: hsl( var( --aurora-secondary-hue ), 24%, 36% );
+  --ancient-button-secondary-active-border-color: hsl( var( --aurora-secondary-hue ), 24%, 16% );
+  --ancient-button-secondary-active-box-shadow: inset 0 1px 0 hsl( var( --aurora-secondary-hue ), 24%, 12% );
+  --ancient-button-secondary-active-color: hsl( var( --aurora-secondary-hue ), 24%, 100% );
+
+  /* Error */
+  --ancient-button-error-background-color: hsl( 344, 48%, 56% );
+  --ancient-button-error-border-color: hsl( 344, 48%, 64% );
+  --ancient-button-error-box-shadow: 0 1px 0 hsla( 344, 64%, 48%, 0.5 );
+  --ancient-button-error-color:  hsl( 344, 64%, 100% );
+  --ancient-button-error-hover-background-color: hsl( 344, 64%, 68% );
+  --ancient-button-error-hover-border-color: hsl( 344, 64%, 40% );
+  --ancient-button-error-hover-box-shadow: 0 1px 0 hsla( 344, 64%, 40%, 0.5 );
+  --ancient-button-error-hover-color: hsl( 344, 64%, 100% );
+  --ancient-button-error-focus-background-color: hsl( 344, 64%, 64% );
+  --ancient-button-error-focus-border-color: hsl( 344, 64%, 40% );
+  --ancient-button-error-focus-box-shadow: 0 0 0 2px hsla( 344, 64%, 40%, 0.5 );
+  --ancient-button-error-focus-color: hsl( 344, 64%, 100% );
+  --ancient-button-error-active-background-color: hsl( 344, 64%, 60% );
+  --ancient-button-error-active-border-color: hsl( 344, 64%, 32% );
+  --ancient-button-error-active-box-shadow: inset 0 1px 0 hsl( 344, 64%, 56% );
+  --ancient-button-error-active-color: hsl( 344, 64%, 100% );
+
+  /* Success */
+  --ancient-button-success-background-color: hsl( 160, 48%, 56% );
+  --ancient-button-success-border-color: hsl( 160, 48%, 64% );
+  --ancient-button-success-box-shadow: 0 1px 0 hsla( 160, 48%, 48%, 0.5 );
+  --ancient-button-success-color:  hsl( 160, 48%, 24% );
+  --ancient-button-success-hover-background-color: hsl( 160, 48%, 68% );
+  --ancient-button-success-hover-border-color: hsl( 160, 48%, 40% );
+  --ancient-button-success-hover-box-shadow: 0 1px 0 hsla( 160, 48%, 40%, 0.5 );
+  --ancient-button-success-hover-color: hsl( 160, 48%, 24% );
+  --ancient-button-success-focus-background-color: hsl( 160, 48%, 64% );
+  --ancient-button-success-focus-border-color: hsl( 160, 48%, 40% );
+  --ancient-button-success-focus-box-shadow: 0 0 0 2px hsla( 160, 48%, 40%, 0.5 );
+  --ancient-button-success-focus-color: hsl( 160, 48%, 24% );
+  --ancient-button-success-active-background-color: hsl( 160, 48%, 60% );
+  --ancient-button-success-active-border-color: hsl( 160, 48%, 32% );
+  --ancient-button-success-active-box-shadow: inset 0 1px 0 hsl( 160, 48%, 56% );
+  --ancient-button-success-active-color: hsl( 160, 48%, 24% );
+
+  /* Warning */
+  --ancient-button-warning-background-color: hsl( 16, 48%, 64% );
+  --ancient-button-warning-border-color: hsl( 16, 48%, 72% );
+  --ancient-button-warning-box-shadow: 0 1px 0 hsla( 16, 64%, 56%, 0.5 );
+  --ancient-button-warning-color:  hsl( 16, 64%, 24% );
+  --ancient-button-warning-hover-background-color: hsl( 16, 64%, 76% );
+  --ancient-button-warning-hover-border-color: hsl( 16, 64%, 48% );
+  --ancient-button-warning-hover-box-shadow: 0 1px 0 hsla( 16, 64%, 48%, 0.5 );
+  --ancient-button-warning-hover-color: hsl( 16, 64%, 24% );
+  --ancient-button-warning-focus-background-color: hsl( 16, 64%, 72% );
+  --ancient-button-warning-focus-border-color: hsl( 16, 64%, 48% );
+  --ancient-button-warning-focus-box-shadow: 0 0 0 2px hsla( 16, 64%, 48%, 0.5 );
+  --ancient-button-warning-focus-color: hsl( 16, 64%, 24% );
+  --ancient-button-warning-active-background-color: hsl( 16, 64%, 68% );
+  --ancient-button-warning-active-border-color: hsl( 16, 64%, 40% );
+  --ancient-button-warning-active-box-shadow: inset 0 1px 0 hsl( 16, 64%, 64% );
+  --ancient-button-warning-active-color: hsl( 16, 64%, 24% );
+
+  /* Card
+     ======================================================================== */
+
+  --ancient-card-background-color: hsl( var( --aurora-primary-hue ), 24%, 20% );
+  --ancient-card-border-color: hsl( var( --aurora-primary-hue ), 24%, 28% );
+  --ancient-card-box-shadow: 0 1px 0 hsl( var( --aurora-primary-hue ), 24%, 16% );
+  --ancient-card-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+  --ancient-card-divider-color: hsl( var( --aurora-primary-hue ), 24%, 28% );
+  --ancient-card-action-background-color: hsl( var( --aurora-primary-hue ), 24%, 22% );
+  --ancient-card-action-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+
+  /* Divider
+     ======================================================================== */
+
+  --ancient-divider-border-color: hsl( var( --aurora-primary-hue ), 24%, 20% );
+
+  /* HTML
+     ======================================================================== */
+
+  --ancient-html-background-color: hsl( var( --aurora-primary-hue ), 24%, 16% );
+  --ancient-html-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+
+  /* Input
+     ======================================================================== */
+
+  --ancient-input-border-color: hsl( var( --aurora-primary-hue ), 24%, 32% );
+  --ancient-input-box-shadow: inset 0 1px 0 hsla( var( --aurora-primary-hue ), 24%, 16%, 0.5 ); 
+
+  --ancient-input-hover-border-color: hsl( var( --aurora-primary-hue ), 24%, 40% );
+  --ancient-input-hover-box-shadow: inset 0 1px 0 hsla( var( --aurora-primary-hue ), 24%, 16%, 0.5 );
+
+  --ancient-input-focus-border-color: hsl( var( --aurora-primary-hue ), 64%, 64% );
+  --ancient-input-focus-box-shadow: 0 0 0 2px hsla( var( --aurora-primary-hue ), 64%, 64%, 0.5 ); 
+
+  --ancient-input-active-border-color: hsl( var( --aurora-primary-hue ), 64%, 64% );
+  --ancient-input-active-box-shadow: 0 0 0 2px hsla( var( --aurora-primary-hue ), 64%, 64%, 0.5 ); 
+
+  /* Link
+     ======================================================================== */
+
+  --ancient-link-color: hsl( 96, 48%, 72% );
+  --ancient-link-decoration-color: hsl( 240, 8%, 32% );
+
+  /* Navbar
+     ======================================================================== */
+
+  --ancient-navbar-background-color: hsl( var( --aurora-secondary-hue ), 64%, 64% );
+  --ancient-navbar-color: hsl( var( --aurora-secondary-hue ), 64%, 24% );
+
+  /* Notification
+     ======================================================================== */
+  
+  --ancient-notification-border-color: hsl( var( --aurora-primary-hue ), 24%, 88% );
+  --ancient-notification-primary-border-color: hsl( var( --aurora-primary-hue ), 64%, 64% );
+  --ancient-notification-error-border-color: hsl( 352, 80%, 64% );
+
+  /* Select
+     ======================================================================== */
+
+   --ancient-select-background-color: hsl( var( --aurora-primary-hue ), 24%,  24% );
+   --ancient-select-border-color: hsl( var( --aurora-primary-hue ), 24%, 32% );
+   --ancient-select-color: hsl( var( --aurora-primary-hue ), 24%, 80% );
+
+  /* Tag
+     ======================================================================== */
+
+  --ancient-tag-background-color: hsl( var( --aurora-primary-hue ), 24%, 88% );
+  --ancient-tag-color: hsl( var( --aurora-primary-hue ), 24%, 44% );
+  
+  --ancient-tag-error-background-color: hsl( 344, 64%, 64% );
+  --ancient-tag-error-color: hsl( 344, 64%, 100% );
+  
+  --ancient-tag-success-background-color: hsl( 160, 48%, 64% );
+  --ancient-tag-success-color: hsl( 160, 48%, 24% );
+}

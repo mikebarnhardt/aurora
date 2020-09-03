@@ -3,13 +3,13 @@
    ########################################################################## */
 
 .stack > :not(:last-child) {
-  margin-bottom: var( --ruckus-stack-margin-bottom );
+  margin-bottom: var( --ancient-stack-margin-bottom );
 }
 
 .stack.stack--small > :not(:last-child) {
-  margin-bottom: var( --ruckus-stack-small-margin-bottom );
+  margin-bottom: var( --ancient-stack-small-margin-bottom );
 }
 
 .stack.stack--large > :not(:last-child) {
-  margin-bottom: var( --ruckus-stack-large-margin-bottom );
+  margin-bottom: var( --ancient-stack-large-margin-bottom );
 }

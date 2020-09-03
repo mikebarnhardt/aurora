@@ -11,20 +11,20 @@ import Test from './test';
 import Welcome from './welcome';
 
 function App() {
-  const [ theme, setTheme ] = React.useState('ruckus');
+  const [theme, setTheme] = React.useState('ancient');
   const previousTheme = React.useRef();
 
   React.useEffect(
     () => {
       // Prevent `theme--undefined` when a previous theme doesn't exist.
-      if ( previousTheme.current && previousTheme.current !== 'ruckus' ) {
+      if ( previousTheme.current && previousTheme.current !== 'ancient' ) {
         document.documentElement.classList.toggle(
           `theme--${previousTheme.current}`
         );
       }
 
-      // Ruckus theme is built-in. Only add the class for extra themes.
-      if ( theme !== 'ruckus' ) {
+      // ancient theme is built-in. Only add the class for extra themes.
+      if ( theme !== 'ancient' ) {
         document.documentElement.classList.toggle(`theme--${theme}`);
       }
 
@@ -38,7 +38,7 @@ function App() {
       <div className="navbar">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <h1 className="heading heading--content">
-            <Link to="/">Ruckus</Link>
+            <Link to="/">ancient</Link>
           </h1>
 
           <select
@@ -48,7 +48,7 @@ function App() {
           >
             <option value="aurora">Aurora</option>
             <option value="dagger">Dagger</option>
-            <option value="ruckus">Ruckus (Default)</option>
+            <option value="ancient">ancient (Default)</option>
             <option value="viera">Viera</option>
           </select>
         </div>

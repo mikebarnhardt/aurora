@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .divider {
-  border-bottom-color: var( --ruckus-divider-border-color );
-  border-bottom-style: var( --ruckus-divider-border-style );
-  border-bottom-width: var( --ruckus-divider-border-width );
+  border-bottom-color: var( --ancient-divider-border-color );
+  border-bottom-style: var( --ancient-divider-border-style );
+  border-bottom-width: var( --ancient-divider-border-width );
 }

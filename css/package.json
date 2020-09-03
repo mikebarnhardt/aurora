@@ -1,7 +1,7 @@
 {
   "author": "Mike Barnhardt <mikebarnhardt+github@gmail.com>",
   "bugs": {
-    "url": "https://github.com/mikebarnhardt/ruckus/issues"
+    "url": "https://github.com/mikebarnhardt/ancient/issues"
   },
   "description": "",
   "devDependencies": {
@@ -12,21 +12,21 @@
     "postcss-custom-media": "^7.0.8",
     "postcss-import": "^12.0.1"
   },
-  "homepage": "https://github.com/mikebarnhardt/ruckus#readme",
+  "homepage": "https://github.com/mikebarnhardt/ancient#readme",
   "keywords": [
     "css",
-    "ruckus"
+    "ancient"
   ],
   "license": "MIT",
-  "main": "dist/ruckus.min.css",
-  "name": "ruckus-css",
+  "main": "dist/ancient.min.css",
+  "name": "ancient-css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikebarnhardt/ruckus.git"
+    "url": "git+https://github.com/mikebarnhardt/ancient.git"
   },
   "scripts": {
-    "build": "postcss --env=production --no-map src/ruckus.css --output dist/ruckus.min.css",
-    "start": "postcss --watch src/ruckus.css --output dist/ruckus.css"
+    "build": "postcss --env=production --no-map src/ancient.css --output dist/ancient.min.css",
+    "start": "postcss --watch src/ancient.css --output dist/ancient.css"
   },
   "version": "0.1.8"
 }

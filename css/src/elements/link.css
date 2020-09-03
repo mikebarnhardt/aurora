@@ -16,18 +16,18 @@ a {
 }
 
 .link {
-  color: var( --ruckus-link-color );
-  text-decoration: var( --ruckus-link-text-decoration );
-  text-decoration-color: var( --ruckus-link-text-decoration-color );
+  color: var( --ancient-link-color );
+  text-decoration: var( --ancient-link-text-decoration );
+  text-decoration-color: var( --ancient-link-text-decoration-color );
 }
 
 .link:hover {
-  color: var( --ruckus-link-hover-color );
-  text-decoration: var( --ruckus-link-hover-text-decoration );
-  text-decoration-color: var(--ruckus-link-hover-text-decoration-color);
+  color: var( --ancient-link-hover-color );
+  text-decoration: var( --ancient-link-hover-text-decoration );
+  text-decoration-color: var(--ancient-link-hover-text-decoration-color);
 }
 
 .link:focus {
-  background-color: var( --ruckus-text-selection-background-color );
-  color: var( --ruckus-text-selection-color );
+  background-color: var( --ancient-text-selection-background-color );
+  color: var( --ancient-text-selection-color );
 }

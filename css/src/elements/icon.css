@@ -30,11 +30,11 @@
  */
 
 .path--primary {
-  fill: var( --ruckus-path-primary-fill ); /* 1 */
-  opacity: var( --ruckus-path-primary-opacity );
+  fill: var( --ancient-path-primary-fill ); /* 1 */
+  opacity: var( --ancient-path-primary-opacity );
 }
 
 .path--secondary {
-  fill: var( --ruckus-path-secondary-fill ); /* 1 */
-  opacity: var( --ruckus-path-secondary-opacity ); /* 2 */
+  fill: var( --ancient-path-secondary-fill ); /* 1 */
+  opacity: var( --ancient-path-secondary-opacity ); /* 2 */
 }

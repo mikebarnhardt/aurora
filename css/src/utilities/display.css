@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Display Utilities
-   ========================================================================== */
-
 .block {
   display: block;
 }
@@ -28,6 +24,36 @@
 
 .invisible {
   visibility: hidden;
+}
+
+@media (--tablet) {
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:inline {
+    display: inline;
+  }
+
+  .tablet\:inline-block {
+    display: inline-block;
+  }
+
+  .tablet\:flex {
+    display: flex;
+  }
+
+  .tablet\:inline-flex {
+    display: inline-flex;
+  }
+  
+  .tablet\:hide {
+    display: none;
+  }
+
+  .tablet\:invisible {
+    visibility: hidden;
+  }
 }
 
 @media (--desktop) {

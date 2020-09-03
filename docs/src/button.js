@@ -22,13 +22,30 @@ function Button() {
           {' '}
           <button className="button button--primary" type="button">Primary</button>
           {' '}
-          <button className="button button--secondary" type="button">Secondary</button>
-          {' '}
           <button className="button button--error" type="button">Error</button>
           {' '}
           <button className="button button--success" type="button">Success</button>
           {' '}
           <button className="button button--warning" type="button">Warning</button>
+        </section>
+      </div>
+
+      <div className="card">
+        <section className="card-section">
+          <h2 className="heading heading--content">Outlined Buttons</h2>
+          <p>Button elements with the default class of <code>button</code>.</p>
+        </section>
+        <div className="card-divider" />
+        <section className="card-section">
+          <button className="button button--outline" type="button">Default</button>
+          {' '}
+          <button className="button button--outline button--primary" type="button">Primary</button>
+          {' '}
+          <button className="button button--outline button--error" type="button">Error</button>
+          {' '}
+          <button className="button button--outline button--success" type="button">Success</button>
+          {' '}
+          <button className="button button--outline button--warning" type="button">Warning</button>
         </section>
       </div>
       

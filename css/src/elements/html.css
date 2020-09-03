@@ -1,14 +1,10 @@
-/* #############################################################################
-   HTML
-   ########################################################################## */
-
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: var( --ruckus-html-background-color );
-  color: var( --ruckus-html-color );
-  font-family: var( --ruckus-html-font-family );
-  font-size: var( --ruckus-html-font-size );
-  line-height: var( --ruckus-html-line-height );
+  background-color: var(--ancient-html-background-color, white);
+  color: var(--ancient-html-color, hsl(216, 24%, 16%));
+  font-family: var(--ancient-html-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif);
+  font-size: var(--ancient-html-font-size, 16px);
+  line-height: var(--ancient-html-line-height, 1.5);
   text-rendering: optimizeLegibility;
 }

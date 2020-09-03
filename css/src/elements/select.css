@@ -3,13 +3,13 @@
    ========================================================================== */
 
 .select {
-  background-color: var( --ruckus-select-background-color );
-  border-color: var( --ruckus-select-border-color );
-  border-radius: var( --ruckus-select-border-radius );
-  border-style: var( --ruckus-select-border-style );
-  border-width: var( --ruckus-select-border-width );
-  color: var( --ruckus-select-color );
+  background-color: var( --ancient-select-background-color );
+  border-color: var( --ancient-select-border-color );
+  border-radius: var( --ancient-select-border-radius );
+  border-style: var( --ancient-select-border-style );
+  border-width: var( --ancient-select-border-width );
+  color: var( --ancient-select-color );
   font: inherit;
-  font-size: var( --ruckus-select-font-size );
-  padding: var( --ruckus-select-padding );
+  font-size: var( --ancient-select-font-size );
+  padding: var( --ancient-select-padding );
 }

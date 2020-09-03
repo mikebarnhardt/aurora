@@ -8,10 +8,10 @@ function Test( ) {
   return (
     <div className="stack stack--large">
       <div className="container container--small stack stack--large">
-        <h1 className="heading heading--title">Ruckus Demo</h1>
+        <h1 className="heading heading--title">ancient Demo</h1>
         <p>
           This is a demonstration page using various elements and layouts from
-          Ruckus for easier development. It will probably be removed after
+          ancient for easier development. It will probably be removed after
           enough testing and documentation have been written.
         </p>
 
@@ -161,9 +161,9 @@ function Test( ) {
                   className="button button--block"
                   href="/authenticate/facebook"
                   style={{
-                    '--ruckus-button-background-color': 'hsl( 216, 48%, 48% )',
-                    '--ruckus-button-border-color': 'hsl( 216, 48%, 40% )',
-                    '--ruckus-button-color': 'hsl( 216, 48%, 100% )'
+                    '--ancient-button-background-color': 'hsl( 216, 48%, 48% )',
+                    '--ancient-button-border-color': 'hsl( 216, 48%, 40% )',
+                    '--ancient-button-color': 'hsl( 216, 48%, 100% )'
                   }}
                 >
                   Sign Up Using Facebook
@@ -177,9 +177,9 @@ function Test( ) {
                   className="button button--block"
                   href="/authenticate/google"
                   style={{
-                    '--ruckus-button-background-color': 'hsl( 8, 64%, 56% )',
-                    '--ruckus-button-border-color': 'hsl( 8, 64%, 48% )',
-                    '--ruckus-button-color': 'hsl( 32, 48%, 100% )'
+                    '--ancient-button-background-color': 'hsl( 8, 64%, 56% )',
+                    '--ancient-button-border-color': 'hsl( 8, 64%, 48% )',
+                    '--ancient-button-color': 'hsl( 32, 48%, 100% )'
                   }}
                 >
                   Sign Up Using Google

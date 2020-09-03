@@ -1,11 +1,3 @@
-/* =============================================================================
-   Flex Utilities
-   ========================================================================== */
-
-/**
- *  Utilities for adjusting flex properties across media queries.
- */
-
 .flex--column {
   flex-direction: column;
 }

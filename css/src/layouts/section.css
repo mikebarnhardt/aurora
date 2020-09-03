@@ -3,13 +3,13 @@
    ########################################################################## */
 
 .section {
-  padding: var( --ruckus-section-padding );
+  padding: var( --ancient-section-padding );
 }
 
 .section.section--small {
-  padding: var( --ruckus-section-small-padding );
+  padding: var( --ancient-section-small-padding );
 }
 
 .section.section--large {
-  padding: var( --ruckus-section-large-padding );
+  padding: var( --ancient-section-large-padding );
 }

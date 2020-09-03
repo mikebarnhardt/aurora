@@ -3,32 +3,32 @@
    ========================================================================== */
 
 .card {
-  background-color: var( --ruckus-card-background-color );
-  border-color: var( --ruckus-card-border-color );
-  border-radius: var( --ruckus-card-border-radius );
-  border-style: var( --ruckus-card-border-style );
-  border-width: var( --ruckus-card-border-width );
-  box-shadow: var( --ruckus-card-box-shadow );
-  color: var( --ruckus-card-color );
+  background-color: var( --ancient-card-background-color );
+  border-color: var( --ancient-card-border-color );
+  border-radius: var( --ancient-card-border-radius );
+  border-style: var( --ancient-card-border-style );
+  border-width: var( --ancient-card-border-width );
+  box-shadow: var( --ancient-card-box-shadow );
+  color: var( --ancient-card-color );
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 .card-divider {
-  border-bottom-color: var( --ruckus-card-divider-color );
-  border-bottom-style: var( --ruckus-card-divider-style );
-  border-bottom-width: var( --ruckus-card-divider-width );
+  border-bottom-color: var( --ancient-card-divider-color );
+  border-bottom-style: var( --ancient-card-divider-style );
+  border-bottom-width: var( --ancient-card-divider-width );
 }
 
 .card-section {
   flex: 1 1 auto;
-  padding: var( --ruckus-card-section-padding );
+  padding: var( --ancient-card-section-padding );
 }
 
 .card-section--action {
-  background-color: var( --ruckus-card-action-background-color );
-  color: var( --ruckus-card-action-color );
+  background-color: var( --ancient-card-action-background-color );
+  color: var( --ancient-card-action-color );
 }
 
 .card-figure {
@@ -71,33 +71,33 @@
 }
 
 .card-menu.card-menu--dividers > .card-menu-link:not(:last-child) {
-  border-bottom-color: var( --ruckus-card-menu-divider-border-color );
-  border-bottom-style: var( --ruckus-card-menu-divider-border-style );
-  border-bottom-width: var( --ruckus-card-menu-divider-border-width );
+  border-bottom-color: var( --ancient-card-menu-divider-border-color );
+  border-bottom-style: var( --ancient-card-menu-divider-border-style );
+  border-bottom-width: var( --ancient-card-menu-divider-border-width );
 }
 
 .card-menu-link {
-  background-color: var( --ruckus-card-menu-background-color );
-  color: var( --ruckus-card-menu-color );
+  background-color: var( --ancient-card-menu-background-color );
+  color: var( --ancient-card-menu-color );
   display: block;
-  font-size: var( --ruckus-card-menu-font-size );
-  line-height: var( --ruckus-card-menu-line-height );
+  font-size: var( --ancient-card-menu-font-size );
+  line-height: var( --ancient-card-menu-line-height );
   list-style: none;
-  padding: var( --ruckus-card-menu-padding );
+  padding: var( --ancient-card-menu-padding );
 }
 
 .card-menu-link:hover {
-  background-color: var( --ruckus-card-menu-hover-background-color );
-  color: var( --ruckus-card-menu-hover-color );
+  background-color: var( --ancient-card-menu-hover-background-color );
+  color: var( --ancient-card-menu-hover-color );
 }
 
 .card-menu-link:focus {
-  background-color: var( --ruckus-card-menu-focus-background-color );
-  color: var( --ruckus-card-menu-focus-color );
+  background-color: var( --ancient-card-menu-focus-background-color );
+  color: var( --ancient-card-menu-focus-color );
 }
 
 .card-menu-link:active,
 .card-menu-link.card-menu-link--active {
-  background-color: var( --ruckus-card-menu-active-background-color );
-  color: var( --ruckus-card-menu-active-color );
+  background-color: var( --ancient-card-menu-active-background-color );
+  color: var( --ancient-card-menu-active-color );
 }

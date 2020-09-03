@@ -22,26 +22,26 @@
    ========================================================================== */
 
 .menu-link {
-  background-color: var( --ruckus-menu-link-background-color );
-  color: var( --ruckus-menu-link-color );
+  background-color: var( --ancient-menu-link-background-color );
+  color: var( --ancient-menu-link-color );
   display: block;
-  font-size: var( --ruckus-menu-link-font-size );
+  font-size: var( --ancient-menu-link-font-size );
   list-style: none;
-  padding: var( --ruckus-menu-link-padding );
+  padding: var( --ancient-menu-link-padding );
 }
 
 .menu-link:hover {
-  background-color: var( --ruckus-menu-link-hover-background-color );
-  color: var( --ruckus-menu-link-hover-color );
+  background-color: var( --ancient-menu-link-hover-background-color );
+  color: var( --ancient-menu-link-hover-color );
 }
 
 .menu-link:focus {
-  background-color: var( --ruckus-menu-link-focus-background-color );
-  color: var( --ruckus-menu-link-focus-color );
+  background-color: var( --ancient-menu-link-focus-background-color );
+  color: var( --ancient-menu-link-focus-color );
 }
 
 .menu-link:active,
 .menu-link--active {
-  background-color: var( --ruckus-menu-link-active-background-color );
-  color: var( --ruckus-menu-link-active-color );
+  background-color: var( --ancient-menu-link-active-background-color );
+  color: var( --ancient-menu-link-active-color );
 }

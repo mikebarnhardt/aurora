@@ -9,13 +9,13 @@
  */
 
 .modal {
-  background-color: var( --ruckus-modal-background-color );
-  color: var( --ruckus-modal-color );
+  background-color: var( --ancient-modal-background-color );
+  color: var( --ancient-modal-color );
   display: flex;
   flex-direction: column;
   height: 100vh;
   left: 0;
-  padding: var( --ruckus-modal-padding );
+  padding: var( --ancient-modal-padding );
   position: fixed;
   top: 0;
   width: 100vw;

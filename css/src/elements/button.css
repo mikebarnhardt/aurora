@@ -1,283 +1,265 @@
-/* ==========================================================================
-   Button
-   ========================================================================== */
-   
-/**
- *  Quickview: Use CTRL+F or your editors `find` feature to go to a section.
- *  ============================================================================
- *  QV01  Button Defaults
- *  QV02  Color Variants
- *  QV03  Button Primary
- *  QV04  Button Secondary
- *  QV05  Button Error
- *  QV06  Button Success
- *  QV07  Button Warning
- */
-
-/* Button Defaults                                                       QV01
-   ========================================================================== */
-
 .button {
-  background-color: var( --ruckus-button-background-color );
-  border-color: var( --ruckus-button-border-color );
-  border-radius: var( --ruckus-button-border-radius );
-  border-style: var( --ruckus-button-border-style );
-  border-width: var( --ruckus-button-border-width );
-  box-shadow: var( --ruckus-button-box-shadow );
-  color: var( --ruckus-button-color );
+  background-color: var(--ancient-button-background-color, hsl(216, 24%, 32%));
+  border-radius: var(--ancient-button-border-radius, 0.25rem);
+  border-style: var(--ancient-button-border-style, solid);
+  border-width: var(--ancient-button-border-width, 0);
+  box-shadow: var(--ancient-button-box-shadow, 0 0.25rem 0.5rem hsl(216, 24%, 88%));
+  color: var(--ancient-button-color, hsl(216, 24%, 96%));
   cursor: pointer;
   display: inline-block;
   font: inherit;
-  font-size: var( --ruckus-button-font-size );
-  font-weight: var( --ruckus-button-font-weight );
-  padding: var( --ruckus-button-padding );
-  transition: var( --ruckus-button-transition );
+  font-size: var(--ancient-button-font-size, 1rem);
+  font-weight: var(--ancient-button-font-weight, 700);
+  padding: var(--ancient-button-padding, 0.5rem 1rem);
+  transition: var(--ancient-button-transition, all 160ms ease);
 }
 
 .button:hover {
-  background-color: var( --ruckus-button-hover-background-color );
-  border-color: var( --ruckus-button-hover-border-color );
-  box-shadow: var( --ruckus-button-hover-box-shadow );
-  color: var( --ruckus-button-hover-color );
-  transition: var( --ruckus-button-hover-transition );
+  background-color: var(--ancient-button-hover-background-color, hsl(216, 24%, 36%));
+  border-color: var(--ancient-button-hover-border-color, hsl(216, 24%, 64%));
+  box-shadow: var(--ancient-button-hover-box-shadow, 0 0.5rem 1rem hsl(216, 24%, 80%));
+  color: var(--ancient-button-hover-color, hsl(216, 24%, 96%));
+  transition: var(--ancient-button-hover-transition, all 160ms ease);
 }
 
 .button:focus {
-  background-color: var( --ruckus-button-focus-background-color );
-  border-color: var( --ruckus-button-focus-border-color );
-  box-shadow: var( --ruckus-button-focus-box-shadow );
-  color: var( --ruckus-button-focus-color );
+  background-color: var(--ancient-button-focus-background-color, hsl(216, 24%, 32%));
+  border-color: var(--ancient-button-focus-border-color, hsl(216, 24%, 64%));
+  box-shadow: var(--ancient-button-focus-box-shadow, 0 0 0 0.25rem hsl(216, 24%, 80%));
+  color: var(--ancient-button-focus-color, hsl(216, 24%, 96%));
   outline: none;
-  transition: var( --ruckus-button-focus-transition );
+  transition: var(--ancient-button-focus-transition, all 160ms ease);
 }
 
 .button:active {
-  background-color: var( --ruckus-button-active-background-color );
-  border-color: var( --ruckus-button-active-border-color );
-  box-shadow: var( --ruckus-button-active-box-shadow );
-  color: var( --ruckus-button-active-color );
-  transition: var( --ruckus-button-active-transition );
+  background-color: var(--ancient-button-active-background-color);
+  border-color: var(--ancient-button-active-border-color);
+  box-shadow: var(--ancient-button-active-box-shadow);
+  color: var(--ancient-button-active-color);
+  transition: var(--ancient-button-active-transition, all 160ms ease);
 }
 
-/* ==========================================================================
-   Color Variants                                                        QV02
-   ========================================================================== */
 
-/* Button Primary                                                        QV03
-   ========================================================================== */
 
+
+/*  PRIMARY
+    ========================================================================= */
 .button.button--primary {
-  background-color: var( --ruckus-button-primary-background-color );
-  border-color: var( --ruckus-button-primary-border-color );
-  box-shadow: var( --ruckus-button-primary-box-shadow );
-  color: var( --ruckus-button-primary-color );
-  transition: var( --ruckus-button-primary-transition );
-  text-shadow: 0 1px rgba( 255, 255, 255, 0.2 );
+  background-color: var(--ancient-button-primary-background-color, hsl(216, 64%, 56%));
+  border-color: var(--ancient-button-primary-border-color, hsl(216, 64%, 80%));
+  box-shadow: var(--ancient-button-primary-box-shadow, 0 0.25rem 0.5rem hsl(216, 64%, 88%));
+  color: var(--ancient-button-primary-color, white);
+  transition: var(--ancient-button-primary-transition, all 160ms ease);
 }
 
 .button.button--primary:hover {
-  background-color: var( --ruckus-button-primary-hover-background-color );
-  border-color: var( --ruckus-button-primary-hover-border-color );
-  box-shadow: var( --ruckus-button-primary-hover-box-shadow );
-  color: var( --ruckus-button-primary-hover-color );
-  transition: var( --ruckus-button-primary-hover-transition );
+  background-color: var(--ancient-button-primary-hover-background-color);
+  border-color: var(--ancient-button-primary-hover-border-color, hsl(216, 64%, 64%));
+  box-shadow: var(--ancient-button-primary-hover-box-shadow);
+  color: var(--ancient-button-primary-hover-color);
+  transition: var(--ancient-button-primary-hover-transition);
 }
 
 .button.button--primary:focus {
-  background-color: var( --ruckus-button-primary-focus-background-color );
-  border-color: var( --ruckus-button-primary-focus-border-color );
-  box-shadow: var( --ruckus-button-primary-focus-box-shadow );
-  color: var( --ruckus-button-primary-focus-color );
-  transition: var( --ruckus-button-primary-focus-transition );
+  background-color: var(--ancient-button-primary-focus-background-color);
+  border-color: var(--ancient-button-primary-focus-border-color);
+  box-shadow: var(--ancient-button-primary-focus-box-shadow);
+  color: var(--ancient-button-primary-focus-color);
+  transition: var(--ancient-button-primary-focus-transition);
 }
 
 .button.button--primary:active {
-  background-color: var( --ruckus-button-primary-active-background-color );
-  border-color: var( --ruckus-button-primary-active-border-color );
-  box-shadow: var( --ruckus-button-primary-active-box-shadow );
-  color: var( --ruckus-button-primary-active-color );
-  transition: var( --ruckus-button-primary-active-transition );
+  background-color: var(--ancient-button-primary-active-background-color);
+  border-color: var(--ancient-button-primary-active-border-color);
+  box-shadow: var(--ancient-button-primary-active-box-shadow);
+  color: var(--ancient-button-primary-active-color);
+  transition: var(--ancient-button-primary-active-transition);
 }
 
-/* Button Secondary                                                      QV04
-   ========================================================================== */
 
-.button.button--secondary {
-  background-color: var( --ruckus-button-secondary-background-color );
-  border-color: var( --ruckus-button-secondary-border-color );
-  box-shadow: var( --ruckus-button-secondary-box-shadow );
-  color: var( --ruckus-button-secondary-color );
-  transition: var( --ruckus-button-secondary-transition );
-  text-shadow: 0 1px rgba( 255, 255, 255, 0.2 );
-}
 
-.button.button--secondary:hover {
-  background-color: var( --ruckus-button-secondary-hover-background-color );
-  border-color: var( --ruckus-button-secondary-hover-border-color );
-  box-shadow: var( --ruckus-button-secondary-hover-box-shadow );
-  color: var( --ruckus-button-secondary-hover-color );
-  transition: var( --ruckus-button-secondary-hover-transition );
-}
-
-.button.button--secondary:focus {
-  background-color: var( --ruckus-button-secondary-focus-background-color );
-  border-color: var( --ruckus-button-secondary-focus-border-color );
-  box-shadow: var( --ruckus-button-secondary-focus-box-shadow );
-  color: var( --ruckus-button-secondary-focus-color );
-  transition: var( --ruckus-button-secondary-focus-transition );
-}
-
-.button.button--secondary:active {
-  background-color: var( --ruckus-button-secondary-active-background-color );
-  border-color: var( --ruckus-button-secondary-active-border-color );
-  box-shadow: var( --ruckus-button-secondary-active-box-shadow );
-  color: var( --ruckus-button-secondary-active-color );
-  transition: var( --ruckus-button-secondary-active-transition );
-}
-
-/* Button Error                                                          QV05
-   ========================================================================== */
-
+/*  ERROR
+    ========================================================================= */
 .button.button--error {
-  background-color: var( --ruckus-button-error-background-color );
-  border-color: var( --ruckus-button-error-border-color );
-  box-shadow: var( --ruckus-button-error-box-shadow );
-  color: var( --ruckus-button-error-color );
-  transition: var( --ruckus-button-error-transition );
-  text-shadow: 0 1px rgba( 255, 255, 255, 0.2 );
+  background-color: var(--ancient-button-error-background-color, hsl(352, 64%, 56%));
+  border-color: var(--ancient-button-error-border-color, hsl(352, 64%, 80%));
+  box-shadow: var(--ancient-button-error-box-shadow);
+  color: var(--ancient-button-error-color, white);
+  transition: var(--ancient-button-error-transition);
+  text-shadow: 0 1px rgba( 255, 255, 255, 0.2);
 }
 
 .button.button--error:hover {
-  background-color: var( --ruckus-button-error-hover-background-color );
-  border-color: var( --ruckus-button-error-hover-border-color );
-  box-shadow: var( --ruckus-button-error-hover-box-shadow );
-  color: var( --ruckus-button-error-hover-color );
-  transition: var( --ruckus-button-error-hover-transition );
+  background-color: var(--ancient-button-error-hover-background-color);
+  border-color: var(--ancient-button-error-hover-border-color);
+  box-shadow: var(--ancient-button-error-hover-box-shadow);
+  color: var(--ancient-button-error-hover-color);
+  transition: var(--ancient-button-error-hover-transition);
 }
 
 .button.button--error:focus {
-  background-color: var( --ruckus-button-error-focus-background-color );
-  border-color: var( --ruckus-button-error-focus-border-color );
-  box-shadow: var( --ruckus-button-error-focus-box-shadow );
-  color: var( --ruckus-button-error-focus-color );
-  transition: var( --ruckus-button-error-focus-transition );
+  background-color: var(--ancient-button-error-focus-background-color);
+  border-color: var(--ancient-button-error-focus-border-color);
+  box-shadow: var(--ancient-button-error-focus-box-shadow);
+  color: var(--ancient-button-error-focus-color);
+  transition: var(--ancient-button-error-focus-transition);
 }
 
 .button.button--error:active {
-  background-color: var( --ruckus-button-error-active-background-color );
-  border-color: var( --ruckus-button-error-active-border-color );
-  box-shadow: var( --ruckus-button-error-active-box-shadow );
-  color: var( --ruckus-button-error-active-color );
-  transition: var( --ruckus-button-error-active-transition );
+  background-color: var(--ancient-button-error-active-background-color);
+  border-color: var(--ancient-button-error-active-border-color);
+  box-shadow: var(--ancient-button-error-active-box-shadow);
+  color: var(--ancient-button-error-active-color);
+  transition: var(--ancient-button-error-active-transition);
 }
 
-/* Button Success                                                        QV06
-   ========================================================================== */
 
+
+
+/*  SUCCESS
+    ========================================================================= */
 .button.button--success {
-  background-color: var( --ruckus-button-success-background-color );
-  border-color: var( --ruckus-button-success-border-color );
-  box-shadow: var( --ruckus-button-success-box-shadow );
-  color: var( --ruckus-button-success-color );
-  transition: var( --ruckus-button-success-transition );
-  text-shadow: 0 1px rgba( 255, 255, 255, 0.2 );
+  background-color: var(--ancient-button-success-background-color);
+  border-color: var(--ancient-button-success-border-color);
+  box-shadow: var(--ancient-button-success-box-shadow);
+  color: var(--ancient-button-success-color);
+  transition: var(--ancient-button-success-transition);
+  text-shadow: 0 1px rgba( 255, 255, 255, 0.2);
 }
 
 .button.button--success:hover {
-  background-color: var( --ruckus-button-success-hover-background-color );
-  border-color: var( --ruckus-button-success-hover-border-color );
-  box-shadow: var( --ruckus-button-success-hover-box-shadow );
-  color: var( --ruckus-button-success-hover-color );
-  transition: var( --ruckus-button-success-hover-transition );
+  background-color: var(--ancient-button-success-hover-background-color);
+  border-color: var(--ancient-button-success-hover-border-color);
+  box-shadow: var(--ancient-button-success-hover-box-shadow);
+  color: var(--ancient-button-success-hover-color);
+  transition: var(--ancient-button-success-hover-transition);
 }
 
 .button.button--success:focus {
-  background-color: var( --ruckus-button-success-focus-background-color );
-  border-color: var( --ruckus-button-success-focus-border-color );
-  box-shadow: var( --ruckus-button-success-focus-box-shadow );
-  color: var( --ruckus-button-success-focus-color );
-  transition: var( --ruckus-button-success-focus-transition );
+  background-color: var(--ancient-button-success-focus-background-color);
+  border-color: var(--ancient-button-success-focus-border-color);
+  box-shadow: var(--ancient-button-success-focus-box-shadow);
+  color: var(--ancient-button-success-focus-color);
+  transition: var(--ancient-button-success-focus-transition);
 }
 
 .button.button--success:active {
-  background-color: var( --ruckus-button-success-active-background-color );
-  border-color: var( --ruckus-button-success-active-border-color );
-  box-shadow: var( --ruckus-button-success-active-box-shadow );
-  color: var( --ruckus-button-success-active-color );
-  transition: var( --ruckus-button-success-active-transition );
+  background-color: var(--ancient-button-success-active-background-color);
+  border-color: var(--ancient-button-success-active-border-color);
+  box-shadow: var(--ancient-button-success-active-box-shadow);
+  color: var(--ancient-button-success-active-color);
+  transition: var(--ancient-button-success-active-transition);
 }
 
-/* Button Warning                                                        QV07
-   ========================================================================== */
 
+
+
+/*  WARNING
+    ========================================================================= */
 .button.button--warning {
-  background-color: var( --ruckus-button-warning-background-color );
-  border-color: var( --ruckus-button-warning-border-color );
-  box-shadow: var( --ruckus-button-warning-box-shadow );
-  color: var( --ruckus-button-warning-color );
-  transition: var( --ruckus-button-warning-transition );
-  text-shadow: 0 1px rgba( 255, 255, 255, 0.2 );
+  background-color: var(--ancient-button-warning-background-color);
+  border-color: var(--ancient-button-warning-border-color);
+  box-shadow: var(--ancient-button-warning-box-shadow);
+  color: var(--ancient-button-warning-color);
+  transition: var(--ancient-button-warning-transition);
+  text-shadow: 0 1px rgba( 255, 255, 255, 0.2);
 }
 
 .button.button--warning:hover {
-  background-color: var( --ruckus-button-warning-hover-background-color );
-  border-color: var( --ruckus-button-warning-hover-border-color );
-  box-shadow: var( --ruckus-button-warning-hover-box-shadow );
-  color: var( --ruckus-button-warning-hover-color );
-  transition: var( --ruckus-button-warning-hover-transition );
+  background-color: var(--ancient-button-warning-hover-background-color);
+  border-color: var(--ancient-button-warning-hover-border-color);
+  box-shadow: var(--ancient-button-warning-hover-box-shadow);
+  color: var(--ancient-button-warning-hover-color);
+  transition: var(--ancient-button-warning-hover-transition);
 }
 
 .button.button--warning:focus {
-  background-color: var( --ruckus-button-warning-focus-background-color );
-  border-color: var( --ruckus-button-warning-focus-border-color );
-  box-shadow: var( --ruckus-button-warning-focus-box-shadow );
-  color: var( --ruckus-button-warning-focus-color );
-  transition: var( --ruckus-button-warning-focus-transition );
+  background-color: var(--ancient-button-warning-focus-background-color);
+  border-color: var(--ancient-button-warning-focus-border-color);
+  box-shadow: var(--ancient-button-warning-focus-box-shadow);
+  color: var(--ancient-button-warning-focus-color);
+  transition: var(--ancient-button-warning-focus-transition);
 }
 
 .button.button--warning:active {
-  background-color: var( --ruckus-button-warning-active-background-color );
-  border-color: var( --ruckus-button-warning-active-border-color );
-  box-shadow: var( --ruckus-button-warning-active-box-shadow );
-  color: var( --ruckus-button-warning-active-color );
-  transition: var( --ruckus-button-warning-active-transition );
+  background-color: var(--ancient-button-warning-active-background-color);
+  border-color: var(--ancient-button-warning-active-border-color);
+  box-shadow: var(--ancient-button-warning-active-box-shadow);
+  color: var(--ancient-button-warning-active-color);
+  transition: var(--ancient-button-warning-active-transition);
 }
 
-/* Sizes
-   ========================================================================== */
 
+
+
+/*  SIZES
+    ========================================================================= */
 .button.button--small {
-  border-width: var( --ruckus-button-small-border-width );
-  font-size: var( --ruckus-button-small-font-size );
-  line-height: var( --ruckus-button-small-line-height );
-  padding: var( --ruckus-button-small-padding );
+  border-width: var(--ancient-button-small-border-width, 0);
+  font-size: var(--ancient-button-small-font-size, 0.875rem);
+  line-height: var(--ancient-button-small-line-height, 1.7142857143);
+  padding: var(--ancient-button-small-padding, 0.25rem 0.5rem);
 }
 
 .button.button--large {
-  border-width: var( --ruckus-button-large-border-width );
-  font-size: var( --ruckus-button-large-font-size );
-  line-height: var( --ruckus-button-large-line-height );
-  padding: var( --ruckus-button-large-padding );
+  border-width: var(--ancient-button-large-border-width, 0);
+  font-size: var(--ancient-button-large-font-size, 1.125rem);
+  line-height: var(--ancient-button-large-line-height, 1.3333333333);
+  padding: var(--ancient-button-large-padding, 1rem 1.5rem);
 }
 
-/* Disabled
-   ========================================================================== */
+.button.button--outline {
+  padding: var(--ancient-button-outline-padding, 0.4375rem 0.9375rem);
+}
 
+.button.button--outline.button--small {
+  padding: var(--ancient-button-outline-padding-small, 0.4375rem 0.9375rem);
+}
+
+.button.button--outline.button--large {
+  padding: var(--ancient-button-outline-padding-large, 0.4375rem 0.9375rem);
+}
+
+.button.button--outline {
+  background-color: transparent;
+  border-width: var(--ancient-button-outline-border-width, 1px);
+  box-shadow: var(--ancient-button-outline-border-width, none);
+  color: var(--ancient-button-outline-color, hsl(216, 24%, 32%));
+}
+
+.button.button--outline:focus {
+  background-color: transparent;
+  border-width: var(--ancient-button-outline-border-width, 1px);
+  box-shadow: var(--ancient-button-outline-box-shadow, 0 0 0 0.25rem hsl(216, 24%, 88%));
+  color: var(--ancient-button-outline-color, hsl(216, 24%, 16%));
+}
+
+.button.button--outline.button--primary {
+  color: var(--ancient-button-outline-primary-color, hsl(216, 96%, 64%));
+}
+
+
+
+
+/*  DISABLED
+    ========================================================================= */
 .button[disabled],
 .button[disabled]:hover,
 .button[disabled]:focus,
 .button[disabled]:active {
-  background-color: var( --ruckus-button-background-color );
-  border-color: var( --ruckus-button-border-color );
-  box-shadow: var( --ruckus-button-box-shadow );
-  color: var( --ruckus-button-color );
+  background-color: var(--ancient-button-background-color);
+  border-color: var(--ancient-button-border-color);
+  box-shadow: var(--ancient-button-box-shadow);
+  color: var(--ancient-button-color);
   cursor: not-allowed;
-  opacity: 0.48;
+  opacity: 0.5;
 }
 
-/* Miscellaneous Variants and Utility
-   ========================================================================== */
 
+
+
+/*  UTILITY
+    ========================================================================= */
 .button.button--block {
   display: block;
   text-align: center;
@@ -287,4 +269,5 @@
 .button.button--flex {
   align-items: center;
   display: inline-flex;
+  justify-content: center;
 }

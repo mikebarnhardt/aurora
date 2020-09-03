@@ -6,7 +6,7 @@ function Sidebar() {
     <div
       className="hide desktop:block padding-top padding-bottom stack"
       style={{
-        borderRight: '1px solid var( --ruckus-divider-border-color )',
+        borderRight: '1px solid var( --ancient-divider-border-color )',
         minWidth: '16rem',
         overflow: 'scroll'
       }}

@@ -1,16 +1,10 @@
-/* ==========================================================================
-   Ruckus CSS
-   ========================================================================== */
-
-/* Globals
-   ========================================================================== */
+/*  GLOBALS */
 @import 'globals/box-sizing';
 @import 'globals/custom-media';
 @import 'globals/reset';
 @import 'globals/text-selection';
 
-/* Layouts
-   ========================================================================== */
+/*  LAYOUTS */
 @import 'layouts/column';
 @import 'layouts/container';
 @import 'layouts/dropdown';
@@ -22,8 +16,7 @@
 @import 'layouts/space';
 @import 'layouts/stack';
 
-/* Elements
-   ========================================================================== */
+/*  ELEMENTS  */
 @import 'elements/button';
 @import 'elements/card';
 @import 'elements/checkbox';
@@ -40,12 +33,11 @@
 @import 'elements/navbar';
 @import 'elements/notification';
 @import 'elements/radio';
-@import 'elements/root';
+/* @import 'elements/root'; */
 @import 'elements/select';
 @import 'elements/tag';
 
-/* Utilities
-   ========================================================================== */
+/*  UTILITIES */
 @import 'utilities/display';
 @import 'utilities/flex';
 @import 'utilities/font';
