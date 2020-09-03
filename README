@@ -1,0 +1,11 @@
+AURORA
+
+A CSS library with some add-ons: themes, icons, illustrations, and patterns.
+
+POSTCSS
+
+I wanted to get away with pure CSS, but the DX was bad. I use PostCSS for: imports, custom media queries, CSS variable fallbacks, and auto-prefixing.
+
+WHY CSS?
+
+I'm not here to debate CSS-in-JS libraries. Everything has a drawback.
