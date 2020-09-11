@@ -1,0 +1,31 @@
+.modal {
+  background-color: var(--modal-background-color);
+  bottom: 0;
+  color: var(--modal-color);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(-1rem);
+  transition: all 160ms;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.modal.modal--hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal.modal--visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}

@@ -1,0 +1,33 @@
+/**
+ *  menu-item.css
+ */
+
+.menu-item {
+  border-radius: var(--menu-item-border-radius);
+  display: block;
+  padding: var(--menu-item-padding);
+}
+
+.menu-item.menu-item--link:hover {
+  background-color: var(--menu-item-background-color-hover);
+  color: var(--menu-item-color-hover);
+}
+
+.menu-item.menu-item--link:focus {
+  background-color: var(--menu-item-background-color-focus);
+  color: var(--menu-item-color-focus);
+}
+
+.menu-item.menu-item--link:active {
+  background-color: var(--menu-item-background-color-active);
+  color: var(--menu-item-color-active);
+}
+
+/**
+ *  menut-item / title
+ */
+.menu-item.menu-item--title {
+  font-size: var(--menu-item-title-font-size);
+  font-weight: var(--menu-item-title-font-weight);
+  line-height: var(--menu-item-title-line-height);
+}

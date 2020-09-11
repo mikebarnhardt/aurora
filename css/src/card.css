@@ -1,0 +1,194 @@
+/* =============================================================================
+   Card
+   ========================================================================== */
+
+.card {
+  background-color: var(--card-background-color);
+  border-color: var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  border-style: var(--card-border-style);
+  border-width: var(--card-border-width);
+  box-shadow: var(--card-box-shadow);
+  color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 80ms;
+}
+
+.card-divider {
+  border-bottom-color: var(--card-divider-color);
+  border-bottom-style: var(--card-divider-style);
+  border-bottom-width: var(--card-divider-width);
+  transition: all 160ms ease;
+}
+
+.card-section.card-section--sm {
+  padding: var(--card-section-sm-padding);
+}
+
+.card-section.card-section--md {
+  padding: var(--card-section-md-padding);
+}
+
+.card-section.card-section--lg {
+  padding: var(--card-section-lg-padding);
+}
+
+.card-section--action {
+  background-color: var(--card-action-background-color);
+  color: var(--card-action-color);
+}
+
+.card-figure {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.card-figure--4x3 {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 75%;
+  position: relative;
+}
+
+.card-figure--1x1 {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.card-figure > img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Card Menu
+   ========================================================================== */
+
+/**
+ * @NOTE
+ * Card menus are a duplicate of menu with a more appropriate color scheme.
+ * I'm still not sure if I want to keep it separate or create a modifier
+ * (.menu--card) so it will stay here for now.
+ */
+
+.card-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-menu > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-menu.card-menu--dividers > .card-menu-link:not(:last-child) {
+  border-bottom-color: var(--card-menu-divider-border-color);
+  border-bottom-style: var(--card-menu-divider-border-style);
+  border-bottom-width: var(--card-menu-divider-border-width);
+}
+
+.card-menu-link {
+  background-color: var(--card-menu-background-color);
+  color: var(--card-menu-color);
+  display: block;
+  font-size: var(--card-menu-font-size);
+  line-height: var(--card-menu-line-height);
+  list-style: none;
+  padding: var(--card-menu-padding);
+}
+
+.card-menu-link:hover {
+  background-color: var(--card-menu-hover-background-color);
+  color: var(--card-menu-hover-color);
+}
+
+.card-menu-link:focus {
+  background-color: var(--card-menu-focus-background-color);
+  color: var(--card-menu-focus-color);
+}
+
+.card-menu-link:active,
+.card-menu-link.card-menu-link--active {
+  background-color: var(--card-menu-active-background-color);
+  color: var(--card-menu-active-color);
+}
+
+.card.card--primary {
+  background-color: hsl(232, 64%, 56%);
+  background-image: url('/wave.png'), linear-gradient(175deg, hsl(216, 80%, 64%), hsl(232, 64%, 56%));
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  color: white;
+  
+  --card-divider-color: rgba(255, 255, 255, 0.2);
+}
+
+.card.card--secondary {
+  background-color: hsl(352, 64%, 56%);
+  background-image: url('/wave.png'), linear-gradient(175deg, hsl(8, 80%, 64%), hsl(352, 64%, 56%));
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  color: white;
+
+  --card-divider-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+/**
+ *  card / tablet
+ */
+@media (--tablet) {
+  .card-section.card-section--sm\@tablet {
+    padding: var(--card-section-sm-padding);
+  }
+  
+  .card-section.card-section--md\@tablet {
+    padding: var(--card-section-md-padding);
+  }
+
+  .card-section.card-section--lg\@tablet {
+    padding: var(--card-section-lg-padding);
+  }
+}
+
+
+
+
+/**
+ *  card / desktop
+ */
+@media (--desktop) {
+  .card-section.card-section--sm\@desktop {
+    padding: var(--card-section-sm-padding);
+  }
+
+  .card-section.card-section--md\@desktop {
+    padding: var(--card-section-md-padding);
+  }
+
+  .card-section.card-section--lg\@desktop {
+    padding: var(--card-section-lg-padding);
+  }
+}

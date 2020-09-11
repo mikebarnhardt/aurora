@@ -1,0 +1,548 @@
+/**
+ *  theme.css
+ *
+ *  default theme for ancient
+ *
+ *  1   required for "postcss-css-variables" to process fallback values
+ *  2   allows the dark theme variant to extend the light theme variant
+ */
+
+/**
+ *  .theme--ancient
+ *
+ *  light theme
+ */
+:root, /* [1] */
+.theme--ancient, /* [2] */
+.theme--ancient.theme--light {
+  /**
+   *  banner
+   */
+   --banner-background-color: hsl(232, 32%, 96%);
+   --banner-text-color: hsl(232, 32%, 32%);
+   --banner-primary-background-color: hsl(232, 64%, 56%);
+   --banner-primary-background-gradient: linear-gradient(170deg, hsl(200, 80%, 56%), hsl(232, 64%, 56%));
+   --banner-primary-text-color: white;
+   --banner-secondary-background-color: hsl(352, 64%, 56%);
+   --banner-secondary-background-gradient: linear-gradient(170deg, hsl(16, 64%, 56%), hsl(352, 64%, 56%));
+   --banner-secondary-text-color: white;
+
+  /**
+   *  button defaults
+   */
+  --button-border-style: solid;
+  --button-transition: all 80ms;
+  --button-background-color-default: hsl(232, 32%, 92%);
+  --button-background-color-hover: hsl(232, 32%, 96%);
+  --button-background-color-focus: hsl(232, 32%, 32%);
+  --button-background-color-active: hsl(232, 32%, 88%);
+  --button-focus-outline: 0 0 0 0.25rem hsla(232, 32%, 32%, 0.25);
+  --button-text-color-default: hsl(232, 32%, 32%);
+  --button-text-color-hover: hsl(232, 32%, 32%);
+  --button-text-color-focus: hsl(232, 32%, 96%);
+  --button-text-color-active: hsl(232, 32%, 32%);
+
+  /**
+   *  button primary
+   */
+  --button-primary-background-color-default: hsl(232, 56%, 56%);
+  --button-primary-background-color-hover: hsl(232, 56%, 64%);
+  --button-primary-background-color-focus: hsl(232, 56%, 56%);
+  --button-primary-background-color-active: hsl(232, 56%, 48%);
+  --button-primary-focus-outline: 0 0 0 0.25rem hsla(232, 56%, 56%, 0.25);
+  --button-primary-text-color-default: white;
+  --button-primary-text-color-hover: white;
+  --button-primary-text-color-focus: white;
+  --button-primary-text-color-active: white;
+
+  /**
+   *  button secondary
+   */
+  --button-secondary-background-color-default: hsl(176, 48%, 56%);
+  --button-secondary-background-color-hover: hsl(176, 48%, 64%);
+  --button-secondary-background-color-focus: hsl(176, 48%, 56%);
+  --button-secondary-background-color-active: hsl(176, 48%, 48%);
+  --button-secondary-focus-outline: 0 0 0 0.25rem hsla(176, 48%, 56%, 0.25);
+  --button-secondary-text-color-default: white;
+  --button-secondary-text-color-hover: white;
+  --button-secondary-text-color-focus: white;
+  --button-secondary-text-color-active: white;
+
+  /**
+   *  button subtle error
+   */
+  --button-error-background-color-default: hsl(352, 64%, 92%);
+  --button-error-background-color-hover: hsl(352, 64%, 96%);
+  --button-error-background-color-focus: hsl(352, 64%, 56%);
+  --button-error-background-color-active: hsl(352, 64%, 88%);
+  --button-error-focus-outline: 0 0 0 0.25rem hsla(352, 64%, 56%, 0.25);
+  --button-error-text-color-default: hsl(352, 64%, 32%);
+  --button-error-text-color-hover: hsl(352, 64%, 32%);
+  --button-error-text-color-focus: white;
+  --button-error-text-color-active: hsl(352, 64%, 32%);
+
+  /**
+   *  button success
+   */
+  --button-success-background-color-default: hsl(160, 48%, 92%);
+  --button-success-background-color-hover: hsl(160, 48%, 96%);
+  --button-success-background-color-focus: hsl(160, 48%, 64%);
+  --button-success-background-color-active: hsl(160, 48%, 88%);
+  --button-success-focus-outline: 0 0 0 0.25rem hsla(160, 48%, 64%, 0.25);
+  --button-success-text-color-default: hsl(160, 48%, 32%);
+  --button-success-text-color-hover: hsl(160, 48%, 32%);
+  --button-success-text-color-focus: white;
+  --button-success-text-color-active: hsl(160, 48%, 32%);
+
+  /**
+   *  button warning
+   */
+  --button-warning-background-color-default: hsl(16, 72%, 92%);
+  --button-warning-background-color-hover: hsl(16, 72%, 96%);
+  --button-warning-background-color-focus: hsl(16, 72%, 72%);
+  --button-warning-background-color-active: hsl(16, 72%, 88%);
+  --button-warning-focus-outline: 0 0 0 0.25rem hsla(16, 72%, 72%, 0.25);
+  --button-warning-text-color-default: hsl(16, 72%, 32%);
+  --button-warning-text-color-hover: hsl(16, 72%, 32%);
+  --button-warning-text-color-focus: white;
+  --button-warning-text-color-active: hsl(16, 72%, 32%);
+
+  --button-md-border-radius: 0.25rem;
+  --button-md-font-size: 1rem;
+  --button-md-line-height: 1.5;
+  --button-md-padding: 0.75rem 1.5rem;
+  --button-md-icon-padding: 1rem;
+  --button-sm-border-radius: 0.25rem;
+  --button-sm-font-size: 0.875rem;
+  --button-sm-line-height: 1.7142857143;
+  --button-sm-padding: 0.25rem 0.5rem;
+  --button-sm-icon-padding: 0.5625rem;
+  --button-lg-border-radius: 0.5rem;
+  --button-lg-font-size: 1.125rem;
+  --button-lg-line-height: 1.3333333333;
+  --button-lg-icon-padding: 1.5rem;
+  --button-outline-md-border-width: 1px;
+  --button-outline-sm-border-width: 1px;
+  --button-outline-lg-border-width: 2px;
+  --button-outline-sm-padding: 0.1875rem 0.4375rem;
+  --button-outline-md-padding: 0.4375rem 0.9375rem;
+  --button-outline-lg-padding: 0.9375rem 1.4375rem;
+
+  /**
+   *  Card
+   */
+  --card-background-color: white;
+  --card-border-color: hsl(232, 16%, 96%);
+  --card-border-radius: 0.5rem;
+  --card-border-style: solid;
+  --card-border-width: 1px;
+  --card-box-shadow: none;
+  --card-color: hsl(232, 16%, 32%);
+  --card-section-sm-padding: 0.75rem;
+  --card-section-md-padding: 1.5rem;
+  --card-section-lg-padding: 3rem;
+  --card-divider-color: hsl(232, 16%, 96%);
+  --card-divider-style: solid;
+  --card-divider-width: 1px;
+
+  /**
+   *  Column
+   */
+  --column-gutter: 1.5rem;
+  --column-gutter-xs: 0.375rem;
+  --column-gutter-sm: 0.75rem;
+  --column-gutter-lg: 3rem;
+  --column-gutter-xl: 6rem;
+
+  /**
+   *  Container
+   */
+  --container-width: 800px;
+  --container-width-xs: 480px;
+  --container-width-sm: 640px;
+  --container-width-lg: 960px;
+  --container-width-xl: 1120px;
+
+  /**
+   *  divider
+   */
+  --divider-border-color: hsl(232, 32%, 96%);
+  --divider-border-style: solid;
+  --divider-border-width: 1px;
+
+  /**
+   *  Grid
+   */
+  --grid-gutter: -1.5rem;
+  --grid-gutter-xs: -0.375rem;
+  --grid-gutter-sm: -0.75rem;
+  --grid-gutter-lg: -3rem;
+  --grid-gutter-xl: -6rem;
+
+  /**
+   *  HTML
+   */
+  --html-background-color: white;
+  --html-color: hsl(232, 32%, 32%);
+  --html-font-size: 16px;
+  --html-line-height: 1.5;
+
+  /**
+   *  Input
+   */
+  --input-border-style: solid;
+  --input-transition: all 160ms ease;
+  --input-base-border-color-default: hsl(232, 32%, 88%);
+  --input-base-border-color-hover: hsl(232, 32%, 72%);
+  --input-base-border-color-focus: hsl(232, 64%, 64%);
+  --input-base-border-color-active: hsl(232, 64%, 64%);
+  --input-base-box-shadow-default: none;
+  --input-base-box-shadow-hover: none;
+  --input-base-box-shadow-focus: 0 0 0 0.25rem hsla(232, 64%, 64%, 0.25);
+  --input-base-box-shadow-active: 0 0 0 0.25rem hsla(232, 64%, 64%, 0.25);
+  --input-base-text-color-default: inherit;
+  --input-base-text-color-hover: inherit;
+  --input-base-text-color-focus: inherit;
+  --input-base-text-color-active: inherit;
+  --input-error-border-color-default: hsl(352, 64%, 72%);
+  --input-error-border-color-hover: hsl(352, 64%, 64%);
+  --input-error-border-color-focus: hsl(352, 64%, 56%);
+  --input-error-border-color-active: hsl(352, 64%, 56%);
+  --input-error-box-shadow-default: none;
+  --input-error-box-shadow-hover: none;
+  --input-error-box-shadow-focus: 0 0 0 0.25rem hsla(352, 64%, 56%, 0.25);
+  --input-error-box-shadow-active: 0 0 0 0.25rem hsla(352, 64%, 56%, 0.25);
+  --input-error-text-color-default: inherit;
+  --input-error-text-color-hover: inherit;
+  --input-error-text-color-focus: inherit;
+  --input-error-text-color-active: inherit;
+  --input-success-border-color-default: hsl(160, 64%, 64%);
+  --input-success-border-color-hover: hsl(160, 64%, 56%);
+  --input-success-border-color-focus: hsl(160, 64%, 48%);
+  --input-success-border-color-active: hsl(160, 64%, 48%);
+  --input-success-box-shadow-default: none;
+  --input-success-box-shadow-hover: none;
+  --input-success-box-shadow-focus: 0 0 0 0.25rem hsla(160, 64%, 48%, 0.25);
+  --input-success-box-shadow-active: 0 0 0 0.25rem hsla(160, 64%, 48%, 0.25);
+  --input-success-text-color-default: inherit;
+  --input-success-text-color-hover: inherit;
+  --input-success-text-color-focus: inherit;
+  --input-success-text-color-active: inherit;
+  --input-warning-border-color-default: hsl(16, 72%, 72%);
+  --input-warning-border-color-hover: hsl(16, 72%, 64%);
+  --input-warning-border-color-focus: hsl(16, 72%, 56%);
+  --input-warning-border-color-active: hsl(16, 72%, 56%);
+  --input-warning-box-shadow-default: none;
+  --input-warning-box-shadow-hover: none;
+  --input-warning-box-shadow-focus: 0 0 0 0.25rem hsla(16, 72%, 56%, 0.25);
+  --input-warning-box-shadow-active: 0 0 0 0.25rem hsla(16, 72%, 56%, 0.25);
+  --input-warning-text-color-default: inherit;
+  --input-warning-text-color-hover: inherit;
+  --input-warning-text-color-focus: inherit;
+  --input-warning-text-color-active: inherit;
+  --input-sm-border-radius: 0.25rem;
+  --input-md-border-radius: 0.25rem;
+  --input-lg-border-radius: 0.5rem;
+  --input-sm-border-width: 1px;
+  --input-md-border-width: 1px;
+  --input-lg-border-width: 2px;
+  --input-sm-font-size: 0.875rem;
+  --input-md-font-size: 1rem;
+  --input-lg-font-size: 1.125rem;
+  --input-sm-padding: 0.375rem 0.75rem;
+  --input-md-padding: 0.75rem 1.5rem;
+  --input-lg-padding: 1.125rem 1.875rem;
+  --input-padding-icon: 3.25rem;
+  --input-padding-icon-sm: 2.25rem;
+  --input-padding-icon-lg: 4.125rem;
+
+  /**
+   *  link
+   */
+  --link-text-color: hsl(232, 64%, 56%);
+  --link-text-decoration: underline;
+  --link-text-decoration-color: hsl(232, 64%, 88%);
+  --link-text-color-hover: hsl(232, 64%, 56%);
+  --link-text-decoration-hover: underline;
+  --link-text-decoration-color-hover: hsl(232, 64%, 56%);
+
+  /**
+   *  menu
+   */
+  --menu-item-border-radius: 0.25rem;
+  --menu-item-padding: 0.75rem 1.5rem;
+  --menu-item-background-color-hover: hsl(232, 32%, 96%);
+  --menu-item-background-color-focus: hsl(232, 32%, 96%);
+  --menu-item-background-color-active: hsl(232, 32%, 88%);
+  --menu-item-title-font-size: 1rem;
+  --menu-item-title-font-weight: 700;
+  --menu-item-title-line-height: 1.5;
+
+  /**
+   *  Modal
+   */
+  --modal-background-color: hsla(232, 64%, 56%, 0.75);
+  --modal-color: hsl(232, 32%, 96%);
+  --modal-padding: 2rem;
+
+  /**
+   *  nav-bar
+   */
+  --nav-bar-primary-background-color: hsl(232, 64%, 56%);
+  --nav-bar-primary-text-color: white;
+  
+  /**
+  *  nav
+  */
+  --nav-margin: 0 0.75rem;
+  --nav-padding: 0.75rem;
+  
+  /**
+   *  nav-item
+   */
+  --nav-item-background-color-default: transparent;
+  --nav-item-text-color-default: inherit;
+  --nav-item-border-radius: 0.25rem;
+  --nav-item-margin: 0 0.375rem 0 0;
+  --nav-item-padding: 0.75rem;
+
+  /**
+   *  Notification
+   */
+  --notification-error-background-color: hsl(352, 64%, 92%);
+  --notification-error-text-color: hsl(352, 64%, 32%);
+  --notification-success-background-color: hsl(160, 48%, 92%);
+  --notification-success-text-color: hsl(160, 48%, 32%);
+  --notification-warning-background-color: hsl(16, 72%, 92%);
+  --notification-warning-text-color: hsl(16, 72%, 32%);
+  --notification-sm-border-radius: 0.25rem;
+  --notification-md-border-radius: 0.25rem;
+  --notification-lg-border-radius: 0.5rem;
+  --notification-sm-font-size: 0.875rem;
+  --notification-md-font-size: 1rem;
+  --notification-lg-font-size: 1.125rem;
+  --notification-sm-line-height: 1.7;
+  --notification-md-line-height: 1.5;
+  --notification-lg-line-height: 1.333333333;
+  --notification-sm-padding: 0.25rem 0.5rem;
+  --notification-md-padding: 0.5rem 1rem;
+  --notification-lg-padding: 1rem 1.5rem;
+
+  /**
+   *  Section
+   */
+  --section-padding: 1.5rem;
+  --section-padding-xs: 0.375rem;
+  --section-padding-sm: 0.75rem;
+  --section-padding-lg: 3rem;
+  --section-padding-xl: 6rem 3rem;
+
+  /**
+   *  Stack
+   */
+  --stack-xs-margin: 0.375rem;
+  --stack-sm-margin: 0.75rem;
+  --stack-margin: 1.5rem;
+  --stack-lg-margin: 3rem;
+  --stack-xl-margin: 6rem;
+
+  /**
+   *  Stack
+   */
+  --space-xs-margin: 0.375rem;
+  --space-sm-margin: 0.75rem;
+  --space-md-margin: 1.5rem;
+  --space-lg-margin: 3rem;
+  --space-xl-margin: 6rem;
+
+  /**
+   *  strong
+   */
+  --strong-font-weight: 700;
+
+  /**
+   *  tag
+   */
+  --tag-background-color: hsl(232, 32%, 96%);
+  --tag-border-color: hsl(232, 16%, 88%);
+  --tag-border-radius: 0.125rem;
+  --tag-border-radius-xs: 0.125rem;
+  --tag-border-radius-sm: 0.125rem;
+  --tag-border-radius-lg: 0.5rem;
+  --tag-border-radius-xl: 0.5rem;
+  --tag-border-style: solid;
+  --tag-border-width: 0;
+  --tag-color: hsl(232, 16%, 32%);
+  --tag-font-size: 1rem;
+  --tag-font-size-xs: 0.75rem;
+  --tag-font-size-sm: 0.875rem;
+  --tag-line-height: 1.5;
+  --tag-line-height-xs: 1rem;
+  --tag-line-height-sm: 1.7142857143;
+  --tag-line-height-lg: 1.3333333333;
+  --tag-line-height-xl: 1.2;
+  --tag-padding: 0 0.25rem;
+  --tag-background-color: hsl(232, 32%, 92%);
+  --tag-text-color: hsl(232, 32%, 32%);
+  --tag-primary-background-color: hsl(232, 64%, 92%);
+  --tag-primary-text-color: hsl(232, 64%, 32%);
+  --tag-error-background-color: hsl(352, 64%, 92%);
+  --tag-error-text-color: hsl(352, 64%, 32%);
+  --tag-success-background-color: hsl(160, 48%, 92%);
+  --tag-success-text-color: hsl(160, 48%, 32%);
+  --tag-warning-background-color: hsl(16, 72%, 92%);
+  --tag-warning-text-color: hsl(16, 72%, 32%);
+  --tag-padding-xs: 0 0.25rem;
+  --tag-padding-sm: 0.25rem 0.5rem;
+  --tag-padding-lg: 1rem 1.5rem;
+  --tag-padding-xl: 1.5rem 2rem;
+
+  --text-selection-background-color: hsl(232, 64%, 96%);
+  --text-selection-color: hsl(232, 64%, 56%);
+
+  /**
+   *  Title
+   */
+  --title-headline-font-size: 2.5rem;
+  --title-headline-font-weight: 400;
+  --title-text-font-size: 1.5rem;
+  --title-text-font-weight: 600;
+  --title-sub-text-font-size: 1rem;
+  --title-sub-text-font-weight: 700;
+  
+  --toggle-background-color-default: hsl(232, 32%, 80%);
+  --toggle-background-color-hover: hsl(232, 32%, 64%);
+  --toggle-checked-background-color: hsl(232, 64%, 56%);
+  --toggle-slider-color: white;
+}
+
+/**
+ *  Dark Theme
+ */
+.theme--ancient.theme--dark {
+  --banner-background-color: hsl(232, 32%, 12%);
+  --banner-text-color: hsl(232, 32%, 96%);
+  --banner-primary-background-color: hsl(232, 64%, 64%);
+  --banner-primary-background-gradient: linear-gradient(165deg, hsl(200, 64%, 64%), hsl(232, 64%, 64%));
+  --banner-primary-text-color: white;
+  --banner-secondary-background-color: hsl(352, 64%, 64%);
+  --banner-secondary-background-gradient: linear-gradient(165deg, hsl(16, 64%, 64%), hsl(352, 64%, 64%));
+  --banner-secondary-text-color: white;
+
+  /**
+   *  Box
+   */
+  --box-base-background-color: hsl(232, 32%, 20%);
+  --box-subtle-base-background-color: hsl(232, 32%, 20%);
+  --box-subtle-base-text-color: hsl(232, 32%, 96%);
+  --box-subtle-primary-background-color: hsl(232, 32%, 20%);
+  --box-subtle-primary-text-color: hsl(232, 64%, 80%);
+  --box-subtle-error-background-color: hsl(232, 32%, 20%);
+  --box-subtle-error-text-color: hsl(352, 64%, 80%);
+  --box-subtle-success-background-color: hsl(232, 32%, 20%);
+  --box-subtle-success-text-color: hsl(160, 48%, 80%);
+  --box-subtle-warning-background-color: hsl(232, 32%, 20%);
+  --box-subtle-warning-text-color: hsl(16, 72%, 80%);
+  
+  --button-background-color-default: hsl(232, 32%, 24%);
+  --button-background-color-hover: hsl(232, 32%, 28%);
+  --button-background-color-focus: hsl(232, 32%, 88%);
+  --button-background-color-active: hsl(232, 32%, 24%);
+  --button-focus-outline: 0 0 0 0.25rem hsla(232, 32%, 96%, 0.25);
+  --button-text-color-default: hsl(232, 32%, 96%);
+  --button-text-color-hover: hsl(232, 32%, 96%);
+  --button-text-color-focus: hsl(232, 32%, 32%);
+  --button-text-color-active: hsl(232, 32%, 96%);
+  --button-primary-background-color-default: hsl(232, 64%, 64%);
+  --button-primary-background-color-hover: hsl(232, 64%, 68%);
+  --button-primary-background-color-focus: hsl(232, 64%, 64%);
+  --button-primary-background-color-active: hsl(232, 64%, 60%);
+  --button-primary-focus-outline: 0 0 0 0.25rem hsla(232, 64%, 64%, 0.25);
+  --button-primary-text-color-default: hsl(232, 64%, 100%);
+  --button-primary-text-color-hover: hsl(232, 64%, 100%);
+  --button-primary-text-color-focus: hsl(232, 64%, 100%);
+  --button-primary-text-color-active: hsl(232, 64%, 100%);
+  --button-secondary-background-color-default: hsl(176, 64%, 64%);
+  --button-secondary-background-color-hover: hsl(176, 64%, 72%);
+  --button-secondary-background-color-focus: hsl(176, 64%, 64%);
+  --button-secondary-background-color-active: hsl(176, 64%, 56%);
+  --button-secondary-focus-outline: 0 0 0 0.25rem hsla(176, 64%, 64%, 0.25);
+  --button-secondary-text-color-default: hsl(176, 64%, 24%);
+  --button-secondary-text-color-hover: hsl(176, 64%, 24%);
+  --button-secondary-text-color-focus: hsl(176, 64%, 24%);
+  --button-secondary-text-color-active: hsl(176, 64%, 24%);
+  --button-error-background-color-default: hsl(352, 64%, 80%);
+  --button-error-background-color-hover: hsl(352, 64%, 84%);
+  --button-error-background-color-focus: hsl(352, 64%, 64%);
+  --button-error-background-color-active: hsl(352, 64%, 76%);
+  --button-error-focus-outline: 0 0 0 0.25rem hsla(352, 64%, 64%, 0.25);
+  --button-error-text-color-default: hsl(352, 64%, 24%);
+  --button-error-text-color-hover: hsl(352, 64%, 24%);
+  --button-error-text-color-focus: hsl(352, 64%, 16%);
+  --button-error-text-color-active: hsl(352, 64%, 24%);
+  --button-success-background-color-default: hsl(160, 48%, 80%);
+  --button-success-background-color-hover: hsl(160, 48%, 84%);
+  --button-success-background-color-focus: hsl(160, 48%, 56%);
+  --button-success-background-color-active: hsl(160, 48%, 76%);
+  --button-success-focus-outline: 0 0 0 0.25rem hsla(160, 48%, 64%, 0.25);
+  --button-success-text-color-default: hsl(160, 48%, 24%);
+  --button-success-text-color-hover: hsl(160, 48%, 24%);
+  --button-success-text-color-focus: hsl(160, 48%, 16%);
+  --button-success-text-color-active: hsl(160, 48%, 24%);
+  --button-warning-background-color-default: hsl(16, 72%, 80%);
+  --button-warning-background-color-hover: hsl(16, 72%, 84%);
+  --button-warning-background-color-focus: hsl(16, 72%, 64%);
+  --button-warning-background-color-active: hsl(16, 72%, 76%);
+  --button-warning-focus-outline: 0 0 0 0.25rem hsla(16, 72%, 64%, 0.25);
+  --button-warning-text-color-default: hsl(16, 72%, 24%);
+  --button-warning-text-color-hover: hsl(16, 72%, 24%);
+  --button-warning-text-color-focus: hsl(16, 72%, 16%);
+  --button-warning-text-color-active: hsl(16, 72%, 24%);
+
+  /**
+   *  card
+   */
+  --card-background-color: hsl(232, 32%, 20%);
+  --card-border-color: hsl(232, 32%, 24%);
+  --card-border-width: 0;
+  --card-color: hsl(232, 32%, 96%);
+  --card-divider-color: hsl(232, 32%, 24%);
+  --card-section-padding: 1.5rem;
+
+  --divider-border-color: hsl(232, 32%, 20%);
+
+  /**
+   *  input
+   */
+  --input-base-border-color-default: hsl(232, 32%, 32%);
+  --input-base-border-color-hover: hsl(232, 32%, 40%);
+  --input-base-border-color-focus: hsl(232, 64%, 64%);
+  --input-base-border-color-active: hsl(232, 64%, 64%);
+  --input-error-border-color-default: hsl(352, 64%, 64%);
+  --input-error-border-color-hover: hsl(352, 64%, 64%);
+  --input-error-border-color-focus: hsl(352, 64%, 64%);
+  --input-error-border-color-active: hsl(352, 64%, 64%);
+
+  /**
+   *  menu
+   */
+  --menu-item-background-color-hover: hsl(232, 32%, 20%);
+
+  --notification-error-background-color: hsl(352, 64%, 80%);
+  --notification-error-text-color: hsl(352, 64%, 24%);
+  --notification-success-background-color: hsl(160, 48%, 80%);
+  --notification-success-text-color: hsl(160, 48%, 24%);
+  --notification-warning-background-color: hsl(16, 72%, 80%);
+  --notification-warning-text-color: hsl(16, 72%, 24%);
+
+  /**
+   *  HTML
+   */
+  --html-background-color: hsl(232, 32%, 16%);
+  --html-color: hsl(232, 32%, 96%);
+  
+  --toggle-background-color-default: hsl(232, 32%, 20%);
+  --toggle-background-color-hover: hsl(232, 32%, 24%);
+  --toggle-checked-background-color: hsl(232, 64%, 64%);
+  --toggle-slider-color: hsl(232, 32%, 32%);
+}

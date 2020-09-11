@@ -1,9 +1,0 @@
-/* =============================================================================
-   Navbar
-   ========================================================================== */
-
-.navbar {
-  background-color: var( --ancient-navbar-background-color );
-  color: var( --ancient-navbar-color );
-  padding: var( --ancient-navbar-padding );
-}

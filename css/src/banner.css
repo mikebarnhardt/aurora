@@ -1,0 +1,32 @@
+/**
+ *  banner.css
+ */
+
+/**
+ *  banner colors
+ */
+.banner {
+  background-color: var(--banner-background-color);
+  color: var(--banner-text-color);
+}
+
+.banner.banner--primary {
+  background-color: var(--banner-primary-background-color);
+  color: var(--banner-primary-text-color);
+}
+
+.banner.banner--secondary {
+  background-color: var(--banner-secondary-background-color);
+  color: var(--banner-secondary-text-color);
+}
+
+/**
+ *  banner heros
+ */
+.banner.banner--hero.banner--primary {
+  background-image: var(--banner-primary-background-gradient);
+}
+
+.banner.banner--hero.banner--secondary {
+  background-image: var(--banner-secondary-background-gradient);
+}

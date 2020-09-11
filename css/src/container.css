@@ -1,0 +1,61 @@
+/**
+ *  container.css
+ */
+
+.container {
+  width: 100%;
+}
+
+@media (--tablet) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--container-width);
+  }
+
+  .container.container--left {
+    margin-left: 0;
+  }
+
+  .container.container--right {
+    margin-right: 0;
+  }
+
+  .container.container--xs,
+  .container.container--xs\@tablet {
+    max-width: var(--container-width-xs);
+  }
+
+  .container.container--sm,
+  .container.container--sm\@tablet {
+    max-width: var(--container-width-sm);
+  }
+
+  .container.container--lg,
+  .container.container--lg\@tablet {
+    max-width: var(--container-width-lg);
+  }
+
+  .container.container--xl,
+  .container.container--xl\@tablet {
+    max-width: var(--container-width-xl);
+  }
+}
+
+@media (--desktop) {
+  .container.container--xs\@desktop {
+    max-width: var(--container-max-width-xs);
+  }
+
+  .container.container--sm\@desktop {
+    max-width: var(--container-max-width-sm);
+  }
+
+  .container.container--lg\@desktop {
+    max-width: var(--container-max-width-lg);
+  }
+
+  .container.container--xl\@desktop {
+    max-width: var(--container-max-width-xl);
+  }
+}

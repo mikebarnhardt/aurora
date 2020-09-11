@@ -1,0 +1,19 @@
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--html-background-color);
+  color: var(--html-color);
+  font-family: var(--html-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif);
+  font-size: var(--html-font-size);
+  line-height: var(--html-line-height);
+  text-rendering: optimizeLegibility;
+  transition: all 80ms;
+}
+
+html.font-size--sm {
+  font-size: 14px;
+}
+
+html.font-size--lg {
+  font-size: 18px;
+}

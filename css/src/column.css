@@ -1,0 +1,156 @@
+/**
+ *  column.css
+ *
+ *  Columns for use inside of the grid.
+ */
+
+/**
+ *  Column / Default
+ */
+.grid > .column {
+  padding-left: var(--column-gutter);
+}
+
+.grid.grid--xs > .column {
+  padding-left: var(--column-gutter-xs);
+}
+
+.grid.grid--sm > .column {
+  padding-left: var(--column-gutter-sm);
+}
+
+.grid.grid--lg > .column {
+  padding-left: var(--column-gutter-lg);
+}
+
+.grid.grid--xl > .column {
+  padding-left: var(--column-gutter-xl);
+}
+
+.column {
+  flex: 0 0 100%;
+}
+
+.column.column--25 {
+  flex: 0 0 25%;
+}
+
+.column.column--33 {
+  flex: 0 0 33.33%;
+}
+
+.column.column--50 {
+  flex: 0 0 50%;
+}
+
+.column.column--66 {
+  flex: 0 0 66.67%;
+}
+
+/**
+ *  Column / Tablet
+ */
+@media (--tablet) {
+  .column {
+    flex: none;
+  }
+
+  .grid > .column {
+    padding-left: var(--column-gutter);
+  }
+
+  .grid.grid--xs > .column,
+  .grid.grid--xs\@tablet > .column {
+    padding-left: var(--column-gutter-xs);
+  }
+
+  .grid.grid--sm > .column,
+  .grid.grid--sm\@tablet > .column {
+    padding-left: var(--column-gutter-sm);
+  }
+
+  .grid.grid--lg > .column,
+  .grid.grid--lg\@tablet > .column {
+    padding-left: var(--column-gutter-lg);
+  }
+
+  .grid.grid--xl > .column,
+  .grid.grid--xl\@tablet > .column {
+    padding-left: var(--column-gutter-xl);
+  }
+
+  /**
+   * Column / Tablet / Widths
+   */
+  .column.column--25,
+  .column.column--25\@tablet {
+    flex: 0 0 25%;
+  }
+
+  .column.column--33,
+  .column.column--33\@tablet {
+    flex: 0 0 33.33%;
+  }
+
+  .column.column--50,
+  .column.column--50\@tablet {
+    flex: 0 0 50%;
+  }
+
+  .column.column--66,
+  .column.column--66\@tablet {
+    flex: 0 0 66.67%;
+  }
+
+  .column.column--100,
+  .column.column--100\@tablet {
+    flex: 0 0 100%;
+  }
+}
+
+
+
+
+/**
+ *  Column / Desktop
+ */
+@media (--desktop) {
+  .grid.grid--xs\@desktop > .column {
+    padding-left: var(--column-gutter-xs);
+  }
+
+  .grid.grid--sm\@desktop > .column {
+    padding-left: var(--column-gutter-sm);
+  }
+
+  .grid.grid--lg\@desktop > .column {
+    padding-left: var(--column-gutter-lg);
+  }
+
+  .grid.grid--xl\@desktop > .column {
+    padding-left: var(--column-gutter-xl);
+  }
+
+  /**
+   * Column / Desktop / Widths
+   */
+  .column.column--25\@desktop {
+    flex: 0 0 25%;
+  }
+
+  .column.column--33\@desktop {
+    flex: 0 0 33.33%;
+  }
+
+  .column.column--50\@desktop {
+    flex: 0 0 50%;
+  }
+
+  .column.column--66\@desktop {
+    flex: 0 0 66.67%;
+  }
+
+  .column.column--100\@desktop {
+    flex: 0 0 100%;
+  }
+}

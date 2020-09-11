@@ -1,0 +1,22 @@
+/**
+ *  nav-bar.css
+ */
+
+/**
+ *  nav-bar defaults
+ */
+.nav-bar {
+  align-items: center;
+  background-color: var(--nav-bar-base-background-color);
+  color: var(--nav-bar-base-text-color);
+  display: flex;
+  padding: var(--nav-bar-padding);
+}
+
+/**
+ *  nav-bar primary
+ */
+.nav-bar.nav-bar--primary {
+  background-color: var(--nav-bar-primary-background-color);
+  color: var(--nav-bar-primary-text-color);
+}

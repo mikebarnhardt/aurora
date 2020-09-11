@@ -1,0 +1,63 @@
+.space.space--xs {
+  margin-bottom: var(--space-xs-margin);
+}
+
+.space.space--sm {
+  margin-bottom: var(--space-sm-margin);
+}
+
+.space.space--md {
+  margin-bottom: var(--space-md-margin);
+}
+
+.space.space--lg {
+  margin-bottom: var(--space-lg-margin);
+}
+
+.space.space--xl {
+  margin-bottom: var(--space-xl-margin);
+}
+
+@media (--tablet) {
+  .space.space--xs\@tablet {
+    margin-bottom: var(--space-xs-margin);
+  }
+
+  .space.space--sm\@tablet {
+    margin-bottom: var(--space-sm-margin);
+  }
+
+  .space.space--md\@tablet {
+    margin-bottom: var(--space-md-margin);
+  }
+
+  .space.space--lg\@tablet {
+    margin-bottom: var(--space-lg-margin);
+  }
+
+  .space.space--xl\@tablet {
+    margin-bottom: var(--space-xl-margin);
+  }
+}
+
+@media (--desktop) {
+  .space.space--xs\@desktop {
+    margin-bottom: var(--space-xs-margin);
+  }
+
+  .space.space--sm\@desktop {
+    margin-bottom: var(--space-sm-margin);
+  }
+
+  .space.space--md\@desktop {
+    margin-bottom: var(--space-md-margin);
+  }
+
+  .space.space--lg\@desktop {
+    margin-bottom: var(--space-lg-margin);
+  }
+
+  .space.space--xl\@desktop {
+    margin-bottom: var(--space-xl-margin);
+  }
+}

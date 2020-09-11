@@ -4,18 +4,18 @@
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.1"
   },
-  "description": "Civics theme for Ancient.",
+  "description": "Behelit theme for Ancient.",
   "keywords": [
     "ancient",
-    "civics",
+    "behelit",
     "css",
     "theme"
   ],
   "license": "MIT",
-  "name": "ancient-theme-civics",
+  "name": "ancient-theme-behelit",
   "scripts": {
-    "build": "postcss --env=production --no-map src/civics.css --output dist/civics.min.css",
-    "start": "postcss --watch src/civics.css --output dist/civics.css"
+    "build": "postcss --env=production --no-map src/behelit.css --output dist/behelit.min.css",
+    "start": "postcss --watch src/behelit.css --output dist/behelit.css"
   },
   "version": "0.0.0"
 }

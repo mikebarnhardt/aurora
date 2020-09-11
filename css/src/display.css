@@ -1,0 +1,87 @@
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.hide {
+  display: none;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+@media (--tablet) {
+  .block\@tablet {
+    display: block;
+  }
+
+  .inline\@tablet {
+    display: inline;
+  }
+
+  .inline-block\@tablet {
+    display: inline-block;
+  }
+
+  .flex\@tablet {
+    display: flex;
+  }
+
+  .inline-flex\@tablet {
+    display: inline-flex;
+  }
+  
+  .hide\@tablet {
+    display: none;
+  }
+
+  .invisible\@tablet {
+    visibility: hidden;
+  }
+}
+
+@media (--desktop) {
+  .block\@desktop {
+    display: block;
+  }
+
+  .inline\@desktop {
+    display: inline;
+  }
+
+  .inline-block\@desktop {
+    display: inline-block;
+  }
+
+  .flex\@desktop {
+    display: flex;
+  }
+
+  .inline-flex\@desktop {
+    display: inline-flex;
+  }
+  
+  .hide\@desktop {
+    display: none;
+  }
+
+  .invisible\@desktop {
+    visibility: hidden;
+  }
+}

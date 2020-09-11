@@ -1,0 +1,26 @@
+/**
+ *  select.css
+ */
+
+/**
+ *  default
+ */
+.select {
+  background-color: transparent;
+  border-color: var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  border-style: var(--input-border-style);
+  border-width: var(--input-border-width);
+  color: var(--input-color);
+  font: inherit;
+  font-size: var(--input-font-size);
+  line-height: var(--input-line-height);
+  padding: var(--input-padding);
+}
+
+/**
+ *  default / colors
+ */
+.select.select--primary {
+   border-color: var(--input-border-color-primary);
+}

@@ -1,0 +1,90 @@
+/**
+ *  section.css
+ *
+ *  Distinguishes content areas using whitespace.
+ */
+
+.section {
+  padding: var(--section-padding);
+}
+
+/**
+ *  Section Sizes
+ */
+.section.section--xs {
+  padding: var(--section-padding-xs);
+}
+
+.section.section--sm {
+  padding: var(--section-padding-sm);
+}
+
+.section.section--lg {
+  padding: var(--section-padding-lg);
+}
+
+.section.section--xl {
+  padding: var(--section-padding-xl);
+}
+
+
+
+
+/**
+ *  Section / Tablet
+ */
+@media (--tablet) {
+  .section {
+    padding: var(--section-padding);
+  }
+
+  /**
+   *  Section / Tablet / Sizes
+   */
+  .section.section--xs\@tablet {
+    padding: var(--section-padding-xs);
+  }
+
+  .section.section--sm\@tablet {
+    padding: var(--section-padding-sm);
+  }
+
+  .section.section--lg\@tablet {
+    padding: var(--section-padding-lg);
+  }
+
+  .section.section--xl\@tablet {
+    padding: var(--section-padding-xl);
+  }
+}
+
+
+
+
+/**
+ *  Section / Desktop
+ */
+@media (--desktop) {
+  .section {
+    padding: var(--section-padding);
+  }
+
+  /**
+   *  Section / Desktop / Sizes
+   */
+  .section.section--xs\@desktop {
+    padding: var(--section-padding-xs);
+  }
+
+  .section.section--sm\@desktop {
+    padding: var(--section-padding-sm);
+  }
+
+  .section.section--lg\@desktop {
+    padding: var(--section-padding-lg);
+  }
+
+  .section.section--xl\@desktop {
+    padding: var(--section-padding-xl);
+  }
+}

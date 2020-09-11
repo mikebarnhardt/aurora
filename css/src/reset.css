@@ -1,0 +1,17 @@
+/**
+ *  reset.css
+ *
+ *  Get rid of annoying default behaviors.
+ */
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: none;
+}
+
+p {
+  margin: 0;
+}

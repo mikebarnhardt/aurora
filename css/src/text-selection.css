@@ -1,0 +1,4 @@
+::selection {
+  background-color: var(--text-selection-background-color);
+  color: var(--text-selection-color);
+}

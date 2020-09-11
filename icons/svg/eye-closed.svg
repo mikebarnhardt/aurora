@@ -1,0 +1,6 @@
+<svg viewBox="0 0 16 16">
+	<path stroke="currentColor" stroke-linecap="round" d="M15,8c-3.55,4.565-10.45,4.565-14,0" />
+	<line stroke="currentColor" stroke-linecap="round" x1="8" y1="11.773" x2="8" y2="13.773" />
+	<line stroke="currentColor" stroke-linecap="round" x1="4.407" y1="10.86" x2="3.593" y2="12.687" />
+	<line stroke="currentColor" stroke-linecap="round" x1="11.593" y1="10.86" x2="12.407" y2="12.687" />
+</svg>

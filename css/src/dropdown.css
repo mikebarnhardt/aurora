@@ -1,0 +1,27 @@
+/**
+ *  dropdown.css
+ */
+
+.dropdown {
+  background-color: hsl(232, 32%, 16%);
+  border-radius: 0.5rem;
+  color: white;
+  min-width: 16rem;
+  margin-top: 1.5rem;
+  max-width: 24rem;
+  padding: 0.75rem 0;;
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown::after {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: hsl(232, 32%, 16%);
+  position: absolute;
+  content: '';
+  left: 1.5rem;
+  top: 0;
+  transform: translateY(-50%) rotate(45deg);
+}

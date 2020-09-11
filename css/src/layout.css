@@ -1,0 +1,37 @@
+/**
+ *  layout.css
+ */
+ 
+.layout {
+  display: flex;
+}
+
+/**
+ *  layout / root
+ *
+ *  Extends the layout to the full height of the browser window. This should be
+ *  used as high up in the DOM as possible (usually directly under your SPA
+ *  root node.)
+ */
+.layout.layout--root {
+  height: 100vh;
+}
+
+.layout.layout--fill {
+  flex: 1;
+}
+
+.layout.layout--column {
+  flex-direction: column;
+}
+
+.layout.layout--fixed {
+  height: 100%;
+  overflow: hidden;
+}
+
+.layout.layout--scroll {
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

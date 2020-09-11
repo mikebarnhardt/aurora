@@ -1,0 +1,11 @@
+.measure {
+  max-width: 65ch;
+}
+
+.measure.measure--sm {
+  max-width: 45ch;
+}
+
+.measure.measure--lg {
+  max-width: 85ch;
+}

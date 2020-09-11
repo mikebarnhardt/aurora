@@ -1,0 +1,47 @@
+/**
+ *  notification.css
+ */
+
+/**
+ *  notification defaults
+ */
+.notification {}
+
+.notification.notification--error {
+  background-color: var(--notification-error-background-color);
+  color: var(--notification-error-text-color);
+}
+
+.notification.notification--success {
+  background-color: var(--notification-success-background-color);
+  color: var(--notification-success-text-color);
+}
+
+.notification.notification--warning {
+  background-color: var(--notification-warning-background-color);
+  color: var(--notification-warning-text-color);
+}
+
+/**
+ *  notification sizes
+ */
+.notification.notification--sm {
+  border-radius: var(--notification-sm-border-radius);
+  font-size: var(--notification-sm-font-size);
+  line-height: var(--notification-sm-line-height);
+  padding: var(--notification-sm-padding);
+}
+
+.notification.notification--md {
+  border-radius: var(--notification-md-border-radius);
+  font-size: var(--notification-md-font-size);
+  line-height: var(--notification-md-line-height);
+  padding: var(--notification-md-padding);
+}
+
+.notification.notification--lg {
+  border-radius: var(--notification-lg-border-radius);
+  font-size: var(--notification-lg-font-size);
+  line-height: var(--notification-lg-line-height);
+  padding: var(--notification-lg-padding);
+}

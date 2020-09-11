@@ -1,0 +1,54 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+.animate\:fade-in {
+  animation-duration: 80ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-name: fade-in;
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-1.5rem);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate\:fade-down {
+  animation-duration: 80ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-name: fade-down;
+}
+
+@keyframes scale-up {
+  from {
+    opacity: 0;
+    transform: scale(75%);
+  }
+  
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+.animate\:scale-up {
+  animation-duration: 80ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-name: scale-up;
+}
