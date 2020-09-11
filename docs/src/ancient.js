@@ -3,6 +3,11 @@ import {Link, NavLink, Route, Switch} from 'react-router-dom';
 
 import Portal from './Portal';
 
+const THEMES = {
+  'behelit': 'https://unpkg.com/ancient-theme-behelit@0.0.0/dist/behelit.min.css',
+  'civics': 'https://unpkg.com/ancient-theme-civics@0.0.0/dist/civics.min.css',
+};
+
 function Ancient() {
   const [coords, setCoords] = React.useState({});
   const [dropdownStatus, setDropdownStatus] = React.useState('closed');
@@ -28,6 +33,14 @@ function Ancient() {
     document.documentElement.classList.toggle(`theme--${theme}`);
     setTheme(newTheme);
   }
+  
+  React.useEffect(
+    () => {
+      const link = document.querySelector('#js-theme');
+      link.setAttribute('href', THEMES[theme]);
+    },
+    [theme]
+  )
   
   React.useEffect(
     () => {
@@ -295,7 +308,7 @@ function Ancient() {
                               <div className="container container--sm@tablet">
                                 <div className="card animate:fade-down" style={{'--card-border-width': 0}}>
                                   <figure className="card-figure card-figure--1x1">
-                                    <img src="/blanc.jpg" />
+                                    <img src={`${process.env.PUBLIC_URL}/blanc.jpg`} />
                                   </figure>
                                   <div className="card-section card-section--md stack stack--sm">
                                     <h1 className="title title--text">Hyperdimension Neptunia Blanc Figure</h1>
@@ -459,7 +472,7 @@ function Ancient() {
                     <div className="column column--50@tablet">
                       <div className="card">
                         <figure className="card-figure card-figure--1x1">
-                          <img src="/cat-maid.png" />
+                          <img src={`${process.env.PUBLIC_URL}/cat-maid.png`} />
                         </figure>
                         <div className="card-section card-section--md stack stack--sm">
                           <h1 className="title title--text">Card</h1>
@@ -481,7 +494,7 @@ function Ancient() {
                     <div className="column column--50@tablet">
                       <div className="card">
                         <figure className="card-figure card-figure--1x1">
-                          <img src="/iori.png" />
+                          <img src={`${process.env.PUBLIC_URL}/iori.png`} />
                         </figure>
                         <div className="card-section card-section--md stack stack--sm">
                           <h1 className="title title--text">Card</h1>
@@ -541,7 +554,7 @@ function Ancient() {
                     <div className="column column--50@tablet">
                       <a className="card card--primary" href="#">
                         <figure className="card-figure card-figure--1x1">
-                          <img src="/pyra.jpg" />
+                          <img src={`${process.env.PUBLIC_URL}/pyra.jpg`} />
                         </figure>
                         <div className="card-section card-section--md stack stack--sm">
                           <h1 className="title title--text">Pyra</h1>
@@ -559,7 +572,7 @@ function Ancient() {
                     <div className="column column--50@tablet">
                       <div className="card card--secondary">
                         <figure className="card-figure card-figure--1x1">
-                          <img src="/mythra.jpg" />
+                          <img src={`${process.env.PUBLIC_URL}/mythra.jpg`} />
                         </figure>
                         <div className="card-section card-section--md stack stack--sm">
                           <h1 className="title title--text">Mythra</h1>
