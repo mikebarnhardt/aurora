@@ -28,5 +28,5 @@
     "build": "postcss --env=production --no-map src/ancient.css --output dist/ancient.min.css",
     "start": "postcss --watch src/ancient.css --output dist/ancient.css"
   },
-  "version": "0.1.8"
+  "version": "0.1.0"
 }
