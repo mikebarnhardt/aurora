@@ -17,5 +17,5 @@
     "build": "postcss --env=production --no-map src/behelit.css --output dist/behelit.min.css",
     "start": "postcss --watch src/behelit.css --output dist/behelit.css"
   },
-  "version": "0.0.0"
+  "version": "0.1.0"
 }
