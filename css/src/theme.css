@@ -288,6 +288,8 @@
   /**
    *  nav-bar
    */
+  --nav-bar-background-color: transparent;
+  --nav-bar-text-color: inherit;
   --nav-bar-primary-background-color: hsl(232, 64%, 56%);
   --nav-bar-primary-text-color: white;
   
@@ -528,6 +530,15 @@
    */
   --menu-item-background-color-hover: hsl(232, 32%, 20%);
 
+  /**
+   *  nav-bar
+   */
+  --nav-bar-primary-background-color: hsl(232, 64%, 56%);
+  --nav-bar-primary-text-color: white;
+
+  /**
+   *  notification
+   */
   --notification-error-background-color: hsl(352, 64%, 80%);
   --notification-error-text-color: hsl(352, 64%, 24%);
   --notification-success-background-color: hsl(160, 48%, 80%);
@@ -540,7 +551,10 @@
    */
   --html-background-color: hsl(232, 32%, 16%);
   --html-color: hsl(232, 32%, 96%);
-  
+
+  /**
+   *  toggle
+   */
   --toggle-background-color-default: hsl(232, 32%, 20%);
   --toggle-background-color-hover: hsl(232, 32%, 24%);
   --toggle-checked-background-color: hsl(232, 64%, 64%);

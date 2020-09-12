@@ -198,8 +198,6 @@
   /**
    *  Nav
    */
-  --nav-bar-base-background-color: hsl(216, 16%, 16%);
-  --nav-bar-base-text-color: hsl(216, 16%, 96%);
   --nav-bar-primary-background-color: hsl(352, 64%, 56%);
   --nav-bar-primary-text-color: white;
 
