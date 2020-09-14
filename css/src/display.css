@@ -1,87 +1,33 @@
-.block {
-  display: block;
-}
-
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.flex {
-  display: flex;
-}
-
-.inline-flex {
-  display: inline-flex;
-}
-
-.hide {
-  display: none;
-}
-
-.invisible {
-  visibility: hidden;
-}
+.block { display: block }
+.flex { display: flex }
+.hide { display: none }
+.inline { display: inline }
+.inline-block { display: inline-block }
+.inline-flex { display: inline-flex }
+.visibility--collapse { visibility: collapse }
+.visibility--hidden { visibility: hidden }
+.visibility--visible { visibility: visible }
 
 @media (--tablet) {
-  .block\@tablet {
-    display: block;
-  }
-
-  .inline\@tablet {
-    display: inline;
-  }
-
-  .inline-block\@tablet {
-    display: inline-block;
-  }
-
-  .flex\@tablet {
-    display: flex;
-  }
-
-  .inline-flex\@tablet {
-    display: inline-flex;
-  }
-  
-  .hide\@tablet {
-    display: none;
-  }
-
-  .invisible\@tablet {
-    visibility: hidden;
-  }
+  .tablet\:block { display: block }
+  .tablet\:flex { display: flex }
+  .tablet\:hide { display: none }
+  .tablet\:inline-block { display: inline-block }
+  .tablet\:inline-flex { display: inline-flex }
+  .tablet\:inline { display: inline }
+  .tablet\:visibility--collapse { visibility: collapse }
+  .tablet\:visibility--hidden { visibility: hidden }
+  .tablet\:visibility--visible { visibility: visible }
 }
 
 @media (--desktop) {
-  .block\@desktop {
-    display: block;
-  }
-
-  .inline\@desktop {
-    display: inline;
-  }
-
-  .inline-block\@desktop {
-    display: inline-block;
-  }
-
-  .flex\@desktop {
-    display: flex;
-  }
-
-  .inline-flex\@desktop {
-    display: inline-flex;
-  }
-  
-  .hide\@desktop {
-    display: none;
-  }
-
-  .invisible\@desktop {
-    visibility: hidden;
-  }
+  .desktop\:block { display: block }
+  .desktop\:flex { display: flex }
+  .desktop\:hide { display: none }
+  .desktop\:inline-block { display: inline-block }
+  .desktop\:inline-flex { display: inline-flex }
+  .desktop\:inline { display: inline }
+  .desktop\:visibility--collapse { visibility: collapse }
+  .desktop\:visibility--hidden { visibility: hidden }
+  .desktop\:visibility--visible { visibility: visible }
 }

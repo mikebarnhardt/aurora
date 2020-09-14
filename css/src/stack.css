@@ -7,72 +7,24 @@
  *  instead.
  */
 
-.stack > :not(:last-child) {
-  margin-bottom: var(--stack-margin);
-}
+.stack > :not(:last-child) { margin-bottom: var(--stack-margin) }
+.stack.stack--xs > :not(:last-child) { margin-bottom: var(--stack-xs-margin) }
+.stack.stack--sm > :not(:last-child) { margin-bottom: var(--stack-sm-margin) }
+.stack.stack--lg > :not(:last-child) { margin-bottom: var(--stack-lg-margin) }
+.stack.stack--xl > :not(:last-child) { margin-bottom: var(--stack-xl-margin) }
 
-.stack.stack--xs > :not(:last-child) {
-  margin-bottom: var(--stack-xs-margin);
-}
-
-.stack.stack--sm > :not(:last-child) {
-  margin-bottom: var(--stack-sm-margin);
-}
-
-.stack.stack--lg > :not(:last-child) {
-  margin-bottom: var(--stack-lg-margin);
-}
-
-.stack.stack--xl > :not(:last-child) {
-  margin-bottom: var(--stack-xl-margin);
-}
-
-/**
- *  @tablet
- */
 @media (--tablet) {
-  .stack.tablet\:stack--none > :not(:last-child) {
-    margin-bottom: 0;
-  }
-
-  .stack.tablet\:stack--xs > :not(:last-child) {
-    margin-bottom: var(--stack-xs-margin);
-  }
-
-  .stack.tablet\:stack--sm > :not(:last-child) {
-    margin-bottom: var(--stack-sm-margin);
-  }
-
-  .stack.tablet\:stack--lg > :not(:last-child) {
-    margin-bottom: var(--stack-lg-margin);
-  }
-
-  .stack.tablet\:stack--xl > :not(:last-child) {
-    margin-bottom: var(--stack-xl-margin);
-  }
+  .stack.tablet\:stack--none > :not(:last-child) { margin-bottom: 0 }
+  .stack.tablet\:stack--xs > :not(:last-child) { margin-bottom: var(--stack-xs-margin) }
+  .stack.tablet\:stack--sm > :not(:last-child) { margin-bottom: var(--stack-sm-margin) }
+  .stack.tablet\:stack--lg > :not(:last-child) { margin-bottom: var(--stack-lg-margin) }
+  .stack.tablet\:stack--xl > :not(:last-child) { margin-bottom: var(--stack-xl-margin) }
 }
 
-/**
- *  @desktop
- */
 @media (--desktop) {
-  .stack.desktop\:stack--none > :not(:last-child) {
-    margin-bottom: 0;
-  }
-
-  .stack.desktop\:stack--xs > :not(:last-child) {
-    margin-bottom: var(--stack-xs-margin);
-  }
-
-  .stack.desktop\:stack--sm > :not(:last-child) {
-    margin-bottom: var(--stack-sm-margin);
-  }
-
-  .stack.desktop\:stack--lg > :not(:last-child) {
-    margin-bottom: var(--stack-lg-margin);
-  }
-
-  .stack.desktop\:stack--xl > :not(:last-child) {
-    margin-bottom: var(--stack-xl-margin);
-  }
+  .stack.desktop\:stack--none > :not(:last-child) { margin-bottom: 0 }
+  .stack.desktop\:stack--xs > :not(:last-child) { margin-bottom: var(--stack-xs-margin) }
+  .stack.desktop\:stack--sm > :not(:last-child) { margin-bottom: var(--stack-sm-margin) }
+  .stack.desktop\:stack--lg > :not(:last-child) { margin-bottom: var(--stack-lg-margin) }
+  .stack.desktop\:stack--xl > :not(:last-child) { margin-bottom: var(--stack-xl-margin) }
 }

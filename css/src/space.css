@@ -1,63 +1,25 @@
-.space.space--xs {
-  margin-bottom: var(--space-xs-margin);
-}
+/**
+ *  space.css
+ *
+ *  manually add spacing between elements
+ */
 
-.space.space--sm {
-  margin-bottom: var(--space-sm-margin);
-}
-
-.space.space--md {
-  margin-bottom: var(--space-md-margin);
-}
-
-.space.space--lg {
-  margin-bottom: var(--space-lg-margin);
-}
-
-.space.space--xl {
-  margin-bottom: var(--space-xl-margin);
-}
+.space { margin-bottom: var(--space-md-margin) }
+.space.space--xs { margin-bottom: var(--space-xs-margin) }
+.space.space--sm { margin-bottom: var(--space-sm-margin) }
+.space.space--lg { margin-bottom: var(--space-lg-margin) }
+.space.space--xl { margin-bottom: var(--space-xl-margin) }
 
 @media (--tablet) {
-  .space.space--xs\@tablet {
-    margin-bottom: var(--space-xs-margin);
-  }
-
-  .space.space--sm\@tablet {
-    margin-bottom: var(--space-sm-margin);
-  }
-
-  .space.space--md\@tablet {
-    margin-bottom: var(--space-md-margin);
-  }
-
-  .space.space--lg\@tablet {
-    margin-bottom: var(--space-lg-margin);
-  }
-
-  .space.space--xl\@tablet {
-    margin-bottom: var(--space-xl-margin);
-  }
+  .space.tablet\:space--xs { margin-bottom: var(--space-xs-margin); }
+  .space.tablet\:space--sm { margin-bottom: var(--space-sm-margin); }
+  .space.tablet\:space--lg { margin-bottom: var(--space-lg-margin); }
+  .space.tablet\:space--xl { margin-bottom: var(--space-xl-margin); }
 }
 
 @media (--desktop) {
-  .space.space--xs\@desktop {
-    margin-bottom: var(--space-xs-margin);
-  }
-
-  .space.space--sm\@desktop {
-    margin-bottom: var(--space-sm-margin);
-  }
-
-  .space.space--md\@desktop {
-    margin-bottom: var(--space-md-margin);
-  }
-
-  .space.space--lg\@desktop {
-    margin-bottom: var(--space-lg-margin);
-  }
-
-  .space.space--xl\@desktop {
-    margin-bottom: var(--space-xl-margin);
-  }
+  .space.desktop\:space--xs { margin-bottom: var(--space-xs-margin); }
+  .space.desktop\:space--sm { margin-bottom: var(--space-sm-margin); }
+  .space.desktop\:space--lg { margin-bottom: var(--space-lg-margin); }
+  .space.desktop\:space--xl { margin-bottom: var(--space-xl-margin); }
 }

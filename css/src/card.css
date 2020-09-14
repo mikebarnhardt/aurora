@@ -23,19 +23,11 @@
   transition: all 160ms ease;
 }
 
-.card-section.card-section--sm {
-  padding: var(--card-section-sm-padding);
-}
+.card-section { padding: var(--card-section-padding) }
+.card-section.card-section--sm { padding: var(--card-section-sm-padding) }
+.card-section.card-section--lg { padding: var(--card-section-lg-padding) }
 
-.card-section.card-section--md {
-  padding: var(--card-section-md-padding);
-}
-
-.card-section.card-section--lg {
-  padding: var(--card-section-lg-padding);
-}
-
-.card-section--action {
+.card-section.card-section--action {
   background-color: var(--card-action-background-color);
   color: var(--card-action-color);
 }
@@ -75,60 +67,6 @@
   width: 100%;
 }
 
-/* ==========================================================================
-   Card Menu
-   ========================================================================== */
-
-/**
- * @NOTE
- * Card menus are a duplicate of menu with a more appropriate color scheme.
- * I'm still not sure if I want to keep it separate or create a modifier
- * (.menu--card) so it will stay here for now.
- */
-
-.card-menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-menu > li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.card-menu.card-menu--dividers > .card-menu-link:not(:last-child) {
-  border-bottom-color: var(--card-menu-divider-border-color);
-  border-bottom-style: var(--card-menu-divider-border-style);
-  border-bottom-width: var(--card-menu-divider-border-width);
-}
-
-.card-menu-link {
-  background-color: var(--card-menu-background-color);
-  color: var(--card-menu-color);
-  display: block;
-  font-size: var(--card-menu-font-size);
-  line-height: var(--card-menu-line-height);
-  list-style: none;
-  padding: var(--card-menu-padding);
-}
-
-.card-menu-link:hover {
-  background-color: var(--card-menu-hover-background-color);
-  color: var(--card-menu-hover-color);
-}
-
-.card-menu-link:focus {
-  background-color: var(--card-menu-focus-background-color);
-  color: var(--card-menu-focus-color);
-}
-
-.card-menu-link:active,
-.card-menu-link.card-menu-link--active {
-  background-color: var(--card-menu-active-background-color);
-  color: var(--card-menu-active-color);
-}
-
 .card.card--primary {
   background-color: hsl(232, 64%, 56%);
   background-image: url('/wave.png'), linear-gradient(175deg, hsl(216, 80%, 64%), hsl(232, 64%, 56%));
@@ -153,42 +91,12 @@
   --card-divider-color: rgba(255, 255, 255, 0.2);
 }
 
-
-
-
-/**
- *  card / tablet
- */
 @media (--tablet) {
-  .card-section.card-section--sm\@tablet {
-    padding: var(--card-section-sm-padding);
-  }
-  
-  .card-section.card-section--md\@tablet {
-    padding: var(--card-section-md-padding);
-  }
-
-  .card-section.card-section--lg\@tablet {
-    padding: var(--card-section-lg-padding);
-  }
+  .card-section.tablet\:card-section--sm { padding: var(--card-section-sm-padding) }
+  .card-section.tablet\:card-section--lg { padding: var(--card-section-lg-padding) }
 }
 
-
-
-
-/**
- *  card / desktop
- */
 @media (--desktop) {
-  .card-section.card-section--sm\@desktop {
-    padding: var(--card-section-sm-padding);
-  }
-
-  .card-section.card-section--md\@desktop {
-    padding: var(--card-section-md-padding);
-  }
-
-  .card-section.card-section--lg\@desktop {
-    padding: var(--card-section-lg-padding);
-  }
+  .card-section.desktop\:card-section--sm { padding: var(--card-section-sm-padding) }
+  .card-section.desktop\:card-section--lg { padding: var(--card-section-lg-padding) }
 }

@@ -7,77 +7,25 @@
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-left: var(--grid-gutter);
 }
 
-/**
- *  Grid Sizes
- */
-.grid.grid--xs {
-  margin-left: var(--grid-gutter-xs);
-}
+.grid.grid--xs { margin-left: var(--grid-gutter-xs) }
+.grid.grid--sm { margin-left: var(--grid-gutter-sm) }
+.grid.grid--lg { margin-left: var(--grid-gutter-lg) }
+.grid.grid--xl { margin-left: var(--grid-gutter-xl) }
 
-.grid.grid--sm {
-  margin-left: var(--grid-gutter-sm);
-}
-
-.grid.grid--lg {
-  margin-left: var(--grid-gutter-lg);
-}
-
-.grid.grid--xl {
-  margin-left: var(--grid-gutter-xl);
-}
-
-/**
- *  Grid / Tablet
- */
 @media (--tablet) {
-  /**
-   *  Grid Sizes
-   */
-  .grid.grid--xs,
-  .grid.grid--xs\@tablet {
-    margin-left: var(--grid-gutter-xs);
-  }
-  
-  .grid.grid--sm,
-  .grid.grid--sm\@tablet {
-    margin-left: var(--grid-gutter-sm);
-  }
-  
-  .grid.grid--lg,
-  .grid.grid--lg\@tablet {
-    margin-left: var(--grid-gutter-lg);
-  }
-
-  .grid.grid--xl,
-  .grid.grid--xl\@tablet {
-    margin-left: var(--grid-gutter-xl);
-  }
+  .grid.tablet\:grid--xs { margin-left: var(--grid-gutter-xs) }
+  .grid.tablet\:grid--sm { margin-left: var(--grid-gutter-sm) }
+  .grid.tablet\:grid--lg { margin-left: var(--grid-gutter-lg) }
+  .grid.tablet\:grid--xl { margin-left: var(--grid-gutter-xl) }
 }
 
-/**
- *  Grid / Desktop
- */
 @media (--desktop) {
-  /**
-   * Grid / Desktop / Sizes
-   */
-  .grid.grid--xs\@desktop {
-    margin-left: var(--grid-gutter-xs);
-  }
-  
-  .grid.grid--sm\@desktop {
-    margin-left: var(--grid-gutter-sm);
-  }
-  
-  .grid.grid--lg\@desktop {
-    margin-left: var(--grid-gutter-lg);
-  }
-
-  .grid.grid--xl\@desktop {
-    margin-left: var(--grid-gutter-xl);
-  }
+  .grid.dekstop\:grid--xs { margin-left: var(--grid-gutter-xs) }
+  .grid.dekstop\:grid--sm { margin-left: var(--grid-gutter-sm) }
+  .grid.dekstop\:grid--lg { margin-left: var(--grid-gutter-lg) }
+  .grid.dekstop\:grid--xl { margin-left: var(--grid-gutter-xl) }
 }
