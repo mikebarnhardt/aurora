@@ -132,14 +132,14 @@
    *  Card
    */
   --card-background-color: white;
-  --card-border-color: hsl(232, 16%, 96%);
+  --card-border-color: hsl(232, 32%, 96%);
   --card-border-radius: 0.5rem;
   --card-border-style: solid;
   --card-border-width: 1px;
   --card-box-shadow: none;
-  --card-color: hsl(232, 16%, 32%);
+  --card-color: hsl(232, 32%, 32%);
+  --card-section-padding: 1.5rem;
   --card-section-sm-padding: 0.75rem;
-  --card-section-md-padding: 1.5rem;
   --card-section-lg-padding: 3rem;
   --card-divider-color: hsl(232, 16%, 96%);
   --card-divider-style: solid;
