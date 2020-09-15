@@ -4,10 +4,10 @@
  *  Columns for use inside of the grid.
  */
 .grid > .column { padding-left: var(--column-gutter) }
-.grid.grid--xs > .column { padding-left: var(--column-gutter-xs) }
-.grid.grid--sm > .column { padding-left: var(--column-gutter-sm) }
-.grid.grid--lg > .column { padding-left: var(--column-gutter-lg) }
-.grid.grid--xl > .column { padding-left: var(--column-gutter-xl) }
+.grid.grid--xs > .column { padding-left: var(--column-xs-gutter) }
+.grid.grid--sm > .column { padding-left: var(--column-sm-gutter) }
+.grid.grid--lg > .column { padding-left: var(--column-lg-gutter) }
+.grid.grid--xl > .column { padding-left: var(--column-xl-gutter) }
 
 .column { flex: 0 0 100% }
 .column.column--auto { flex: 1 }
@@ -18,10 +18,10 @@
 .column.column--75 { flex-basis: 75% }
 
 @media (--tablet) {
-  .grid.tablet\:grid--xs > .column { padding-left: var(--column-gutter-xs) }
-  .grid.tablet\:grid--sm > .column { padding-left: var(--column-gutter-sm) }
-  .grid.tablet\:grid--lg > .column { padding-left: var(--column-gutter-lg) }
-  .grid.tablet\:grid--xl > .column { padding-left: var(--column-gutter-xl) }
+  .grid.tablet\:grid--xs > .column { padding-left: var(--column-xs-gutter) }
+  .grid.tablet\:grid--sm > .column { padding-left: var(--column-sm-gutter) }
+  .grid.tablet\:grid--lg > .column { padding-left: var(--column-lg-gutter) }
+  .grid.tablet\:grid--xl > .column { padding-left: var(--column-xl-gutter) }
   
   .tablet\:column--auto { flex: 1 }
   .tablet\:column--25 { flex-basis: 25% }
@@ -32,10 +32,10 @@
 }
 
 @media (--desktop) {
-  .grid.desktop\:grid-xs > .column { padding-left: var(--column-gutter-xs) }
-  .grid.desktop\:grid-sm > .column { padding-left: var(--column-gutter-sm) }
-  .grid.desktop\:grid-lg > .column { padding-left: var(--column-gutter-lg) }
-  .grid.desktop\:grid-xl > .column { padding-left: var(--column-gutter-xl) }
+  .grid.desktop\:grid--xs > .column { padding-left: var(--column-xs-gutter) }
+  .grid.desktop\:grid--sm > .column { padding-left: var(--column-sm-gutter) }
+  .grid.desktop\:grid--lg > .column { padding-left: var(--column-lg-gutter) }
+  .grid.desktop\:grid--xl > .column { padding-left: var(--column-xl-gutter) }
 
   .desktop\:column--auto { flex: 1 }
   .desktop\:column--25 { flex-basis: 25% }

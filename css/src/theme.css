@@ -149,10 +149,10 @@
    *  Column
    */
   --column-gutter: 1.5rem;
-  --column-gutter-xs: 0.375rem;
-  --column-gutter-sm: 0.75rem;
-  --column-gutter-lg: 3rem;
-  --column-gutter-xl: 6rem;
+  --column-xs-gutter: 0.375rem;
+  --column-sm-gutter: 0.75rem;
+  --column-lg-gutter: 3rem;
+  --column-xl-gutter: 6rem;
 
   /**
    *  Container
