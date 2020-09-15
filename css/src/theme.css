@@ -157,11 +157,11 @@
   /**
    *  Container
    */
-  --container-width: 800px;
-  --container-width-xs: 480px;
-  --container-width-sm: 640px;
-  --container-width-lg: 960px;
-  --container-width-xl: 1120px;
+  --container-max-width: 800px;
+  --container-xs-max-width: 480px;
+  --container-sm-max-width: 640px;
+  --container-lg-max-width: 960px;
+  --container-xl-max-width: 1120px;
 
   /**
    *  divider
@@ -174,10 +174,10 @@
    *  Grid
    */
   --grid-gutter: -1.5rem;
-  --grid-gutter-xs: -0.375rem;
-  --grid-gutter-sm: -0.75rem;
-  --grid-gutter-lg: -3rem;
-  --grid-gutter-xl: -6rem;
+  --grid-xs-gutter: -0.375rem;
+  --grid-sm-gutter: -0.75rem;
+  --grid-lg-gutter: -3rem;
+  --grid-xl-gutter: -6rem;
 
   /**
    *  HTML
@@ -334,10 +334,10 @@
    *  Section
    */
   --section-padding: 1.5rem;
-  --section-padding-xs: 0.375rem;
-  --section-padding-sm: 0.75rem;
-  --section-padding-lg: 3rem;
-  --section-padding-xl: 6rem 3rem;
+  --section-xs-padding: 0.375rem;
+  --section-sm-padding: 0.75rem;
+  --section-lg-padding: 3rem;
+  --section-xl-padding: 6rem 3rem;
 
   /**
    *  Stack

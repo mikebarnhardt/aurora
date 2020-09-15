@@ -5,21 +5,21 @@
  */
 
 .section { padding: var(--section-padding) }
-.section.section--xs { padding: var(--section-padding-xs) }
-.section.section--sm { padding: var(--section-padding-sm) }
-.section.section--lg { padding: var(--section-padding-lg) }
-.section.section--xl { padding: var(--section-padding-xl) }
+.section.section--xs { padding: var(--section-xs-padding) }
+.section.section--sm { padding: var(--section-sm-padding) }
+.section.section--lg { padding: var(--section-lg-padding) }
+.section.section--xl { padding: var(--section-xl-padding) }
 
 @media (--tablet) {
-  .section.tablet\:section--xs { padding: var(--section-padding-xs) }
-  .section.tablet\:section--sm { padding: var(--section-padding-sm) }
-  .section.tablet\:section--lg { padding: var(--section-padding-lg) }
-  .section.tablet\:section--xl { padding: var(--section-padding-xl) }
+  .section.tablet\:section--xs { padding: var(--section-xs-padding) }
+  .section.tablet\:section--sm { padding: var(--section-sm-padding) }
+  .section.tablet\:section--lg { padding: var(--section-lg-padding) }
+  .section.tablet\:section--xl { padding: var(--section-xl-padding) }
 }
 
 @media (--desktop) {
-  .section.desktop\:section--xs { padding: var(--section-padding-xs) }
-  .section.desktop\:section--sm { padding: var(--section-padding-sm) }
-  .section.desktop\:section--lg { padding: var(--section-padding-lg) }
-  .section.desktop\:section--xl { padding: var(--section-padding-xl) }
+  .section.desktop\:section--xs { padding: var(--section-xs-padding) }
+  .section.desktop\:section--sm { padding: var(--section-sm-padding) }
+  .section.desktop\:section--lg { padding: var(--section-lg-padding) }
+  .section.desktop\:section--xl { padding: var(--section-xl-padding) }
 }

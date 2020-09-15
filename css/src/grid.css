@@ -7,25 +7,26 @@
 
 .grid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-left: var(--grid-gutter);
 }
 
-.grid.grid--xs { margin-left: var(--grid-gutter-xs) }
-.grid.grid--sm { margin-left: var(--grid-gutter-sm) }
-.grid.grid--lg { margin-left: var(--grid-gutter-lg) }
-.grid.grid--xl { margin-left: var(--grid-gutter-xl) }
+.grid.grid--xs { margin-left: var(--grid-xs-gutter) }
+.grid.grid--sm { margin-left: var(--grid-sm-gutter) }
+.grid.grid--lg { margin-left: var(--grid-lg-gutter) }
+.grid.grid--xl { margin-left: var(--grid-xl-gutter) }
 
 @media (--tablet) {
-  .grid.tablet\:grid--xs { margin-left: var(--grid-gutter-xs) }
-  .grid.tablet\:grid--sm { margin-left: var(--grid-gutter-sm) }
-  .grid.tablet\:grid--lg { margin-left: var(--grid-gutter-lg) }
-  .grid.tablet\:grid--xl { margin-left: var(--grid-gutter-xl) }
+
+  .grid.tablet\:grid--xs { margin-left: var(--grid-xs-gutter) }
+  .grid.tablet\:grid--sm { margin-left: var(--grid-sm-gutter) }
+  .grid.tablet\:grid--lg { margin-left: var(--grid-lg-gutter) }
+  .grid.tablet\:grid--xl { margin-left: var(--grid-xl-gutter) }
 }
 
 @media (--desktop) {
-  .grid.dekstop\:grid--xs { margin-left: var(--grid-gutter-xs) }
-  .grid.dekstop\:grid--sm { margin-left: var(--grid-gutter-sm) }
-  .grid.dekstop\:grid--lg { margin-left: var(--grid-gutter-lg) }
-  .grid.dekstop\:grid--xl { margin-left: var(--grid-gutter-xl) }
+  .grid.desktop\:grid--xs { margin-left: var(--grid-xs-gutter) }
+  .grid.desktop\:grid--sm { margin-left: var(--grid-sm-gutter) }
+  .grid.desktop\:grid--lg { margin-left: var(--grid-lg-gutter) }
+  .grid.desktop\:grid--xl { margin-left: var(--grid-xl-gutter) }
 }

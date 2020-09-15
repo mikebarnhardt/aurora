@@ -2,27 +2,23 @@
  *  container.css
  */
 
-.container { width: 100% }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 @media (--tablet) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--container-width);
-  }
-
-  .container.container--xs { max-width: var(--container-width-xs) }
-  .container.container--sm { max-width: var(--container-width-sm) }
-  .container.container--lg { max-width: var(--container-width-lg) }
-  .container.container--xl { max-width: var(--container-width-xl) }
-
-  .container.container--left { margin-left: 0 }
-  .container.container--right { margin-right: 0 }
+  .container { max-width: var(--container-max-width) }
+  .container.tablet\:container--xs { max-width: var(--container-xs-max-width) }
+  .container.tablet\:container--sm { max-width: var(--container-sm-max-width) }
+  .container.tablet\:container--lg { max-width: var(--container-lg-max-width) }
+  .container.tablet\:container--xl { max-width: var(--container-xl-max-width) }
 }
 
 @media (--desktop) {
-  .container.desktop\:container--xs { max-width: var(--container-max-width-xs) }
-  .container.desktop\:container--sm { max-width: var(--container-max-width-sm) }
-  .container.desktop\:container--lg { max-width: var(--container-max-width-lg) }
-  .container.desktop\:container--xl { max-width: var(--container-max-width-xl) }
+  .container.desktop\:container--xs { max-width: var(--container-xs-max-width) }
+  .container.desktop\:container--sm { max-width: var(--container-sm-max-width) }
+  .container.desktop\:container--lg { max-width: var(--container-lg-max-width) }
+  .container.desktop\:container--xl { max-width: var(--container-xl-max-width) }
 }
