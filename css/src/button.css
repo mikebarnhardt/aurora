@@ -223,3 +223,15 @@
   color: inherit;
   padding: 0;
 }
+
+.unstyled-button {
+  appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  display: inline;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
