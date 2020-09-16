@@ -1,0 +1,26 @@
+.indicator { position: relative }
+
+.indicator::after {
+  background-color: hsl(352, 64%, 56%);
+  border-radius: 9999rem;
+  content: '';
+  display: inline-block;
+  height: 0.375rem;
+  width: 0.375rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.indicator.indicator--sm::after {
+  height: 0.25rem;
+  width: 0.25rem;
+}
+
+.indicator.indicator--lg::after {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.inidicator.indicator--text { transform: translateX(100%) }
