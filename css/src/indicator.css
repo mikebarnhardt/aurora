@@ -23,4 +23,4 @@
   width: 0.5rem;
 }
 
-.inidicator.indicator--text { transform: translateX(100%) }
+.inidicator.indicator--text::after { transform: translateX(100%) }
