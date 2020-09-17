@@ -302,6 +302,15 @@
   --link-text-decoration-color-hover: hsl(232, 64%, 56%);
 
   /**
+   *  margin
+   */
+  --margin: 1.5rem;
+  --margin--sm: 0.75rem;
+  --margin--xs: 0.375rem;
+  --margin--lg: 3rem;
+  --margin--xl: 6rem;
+
+  /**
    *  menu
    */
   --menu-item-border-radius: 0.25rem;
@@ -364,6 +373,15 @@
   --notification-sm-padding: 0.25rem 0.5rem;
   --notification-md-padding: 0.5rem 1rem;
   --notification-lg-padding: 1rem 1.5rem;
+
+  /**
+   *  padding
+   */
+  --padding: 1.5rem;
+  --padding--sm: 0.75rem;
+  --padding--xs: 0.375rem;
+  --padding--lg: 3rem;
+  --padding--xl: 6rem;
 
   /**
    *  Section
