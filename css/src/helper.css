@@ -1,0 +1,10 @@
+.helper {
+  color: var(--helper-text-color);
+  font-size: var(--helper-font-size);
+  line-height: var(--helper-line-height);
+  padding: var(--helper-padding);
+}
+
+.helper.helper--error { color: var(--helper-error-text-color) }
+.helper.helper--success { color: var(--helper-success-text-color) }
+.helper.helper--warning { color: var(--helper-warning-text-color) }

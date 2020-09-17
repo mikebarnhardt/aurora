@@ -1,12 +1,16 @@
-/* =============================================================================
-   Label
-   ========================================================================== */
+/**
+ *  label.css
+ */
 
 .label {
-  cursor: pointer;
+  color: var(--label-text-color);
   display: block;
-  font-size: 0.875rem;
-  font-weight: 700;
-  line-height: 1.75;
-  padding-bottom: 0.375rem;
+  font-size: var(--label-font-size);
+  font-weight: var(--label-font-weight);
+  line-height: var(--label-line-height);
+  padding: var(--label-padding);
 }
+
+.label.label--error { color: var(--label-error-text-color) }
+.label.label--success { color: var(--label-success-text-color) }
+.label.label--warning { color: var(--label-warning-text-color) }

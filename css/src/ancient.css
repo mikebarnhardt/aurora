@@ -18,6 +18,7 @@
 @import 'divider';
 @import 'dropdown';
 @import 'grid';
+@import 'helper';
 @import 'html';
 @import 'icon';
 @import 'indicator';
@@ -55,3 +56,4 @@
 @import 'height';
 @import 'margin';
 @import 'strong';
+@import 'text';

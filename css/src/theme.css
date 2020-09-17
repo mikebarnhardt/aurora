@@ -18,7 +18,7 @@
   /**
    *  banner
    */
-   --banner-background-color: hsl(232, 32%, 96%);
+   --banner-background-color: hsl(232, 32%, 98%);
    --banner-text-color: hsl(232, 32%, 32%);
    --banner-primary-background-color: hsl(232, 64%, 56%);
    --banner-primary-background-gradient: linear-gradient(170deg, hsl(200, 80%, 56%), hsl(232, 64%, 56%));
@@ -31,9 +31,9 @@
    *  button defaults
    */
   --button-border-style: solid;
-  --button-transition: all 80ms;
-  --button-background-color-default: hsl(232, 32%, 92%);
-  --button-background-color-hover: hsl(232, 32%, 96%);
+  --button-transition: all 160ms ease-in-out;
+  --button-background-color-default: hsl(232, 32%, 96%);
+  --button-background-color-hover: hsl(232, 32%, 92%);
   --button-background-color-focus: hsl(232, 32%, 32%);
   --button-background-color-active: hsl(232, 32%, 88%);
   --button-focus-outline: 0 0 0 0.25rem hsla(232, 32%, 32%, 0.25);
@@ -71,21 +71,21 @@
   /**
    *  button subtle error
    */
-  --button-error-background-color-default: hsl(352, 64%, 92%);
-  --button-error-background-color-hover: hsl(352, 64%, 96%);
+  --button-error-background-color-default: hsl(352, 64%, 96%);
+  --button-error-background-color-hover: hsl(352, 64%, 92%);
   --button-error-background-color-focus: hsl(352, 64%, 56%);
   --button-error-background-color-active: hsl(352, 64%, 88%);
   --button-error-focus-outline: 0 0 0 0.25rem hsla(352, 64%, 56%, 0.25);
-  --button-error-text-color-default: hsl(352, 64%, 32%);
-  --button-error-text-color-hover: hsl(352, 64%, 32%);
+  --button-error-text-color-default: hsl(352, 64%, 48%);
+  --button-error-text-color-hover: hsl(352, 64%, 40%);
   --button-error-text-color-focus: white;
-  --button-error-text-color-active: hsl(352, 64%, 32%);
+  --button-error-text-color-active: hsl(352, 64%, 40%);
 
   /**
    *  button success
    */
-  --button-success-background-color-default: hsl(160, 48%, 92%);
-  --button-success-background-color-hover: hsl(160, 48%, 96%);
+  --button-success-background-color-default: hsl(160, 48%, 96%);
+  --button-success-background-color-hover: hsl(160, 48%, 92%);
   --button-success-background-color-focus: hsl(160, 48%, 64%);
   --button-success-background-color-active: hsl(160, 48%, 88%);
   --button-success-focus-outline: 0 0 0 0.25rem hsla(160, 48%, 64%, 0.25);
@@ -97,15 +97,15 @@
   /**
    *  button warning
    */
-  --button-warning-background-color-default: hsl(16, 72%, 92%);
-  --button-warning-background-color-hover: hsl(16, 72%, 96%);
+  --button-warning-background-color-default: hsl(16, 72%, 96%);
+  --button-warning-background-color-hover: hsl(16, 72%, 92%);
   --button-warning-background-color-focus: hsl(16, 72%, 72%);
   --button-warning-background-color-active: hsl(16, 72%, 88%);
   --button-warning-focus-outline: 0 0 0 0.25rem hsla(16, 72%, 72%, 0.25);
-  --button-warning-text-color-default: hsl(16, 72%, 32%);
-  --button-warning-text-color-hover: hsl(16, 72%, 32%);
+  --button-warning-text-color-default: hsl(16, 72%, 40%);
+  --button-warning-text-color-hover: hsl(16, 72%, 40%);
   --button-warning-text-color-focus: white;
-  --button-warning-text-color-active: hsl(16, 72%, 32%);
+  --button-warning-text-color-active: hsl(16, 72%, 40%);
 
   --button-md-border-radius: 0.25rem;
   --button-md-font-size: 1rem;
@@ -121,12 +121,6 @@
   --button-lg-font-size: 1.125rem;
   --button-lg-line-height: 1.3333333333;
   --button-lg-icon-padding: 1.5rem;
-  --button-outline-md-border-width: 1px;
-  --button-outline-sm-border-width: 1px;
-  --button-outline-lg-border-width: 2px;
-  --button-outline-sm-padding: 0.1875rem 0.4375rem;
-  --button-outline-md-padding: 0.4375rem 0.9375rem;
-  --button-outline-lg-padding: 0.9375rem 1.4375rem;
 
   /**
    *  Card
@@ -144,6 +138,24 @@
   --card-divider-color: hsl(232, 16%, 96%);
   --card-divider-style: solid;
   --card-divider-width: 1px;
+
+  --checkbox-border-color-default: hsl(232, 32%, 88%);
+  --checkbox-border-color-hover: hsl(232, 32%, 72%);
+  --checkbox-border-color-focus: hsl(232, 64%, 56%);
+  --checkbox-border-color-active: hsl(232, 32%, 72%);
+  --checkbox-focus-outline: 0 0 0 0.25rem hsla(232, 64%, 56%, 0.25);
+  --checkbox-color-default: hsl(232, 32%, 88%);
+  --checkbox-color-hover: hsl(232, 32%, 72%);
+  --checkbox-color-focus: hsl(232, 32%, 72%);
+  --checkbox-color-active: hsl(232, 32%, 72%);
+  --checkbox-icon-color-checked: hsl(232, 64%, 56%);
+  --checkbox-border-radius: 0.25rem;
+  --checkbox-border-style: solid;
+  --checkbox-border-width: 1px;
+  --checkbox-size: 1rem;
+  --checkbox-padding: 0.125rem;
+  --checkbox-transition: all 160ms ease-in-out;
+  --checkbox-margin-right: 0.75rem;
 
   /**
    *  Column
@@ -180,6 +192,17 @@
   --grid-xl-gutter: -6rem;
 
   /**
+   *  helper
+   */
+  --helper-text-color: hsl(232, 16%, 48%);
+  --helper-font-size: 0.875rem;
+  --helper-line-height: 1.7142857143;
+  --helper-padding: 0.375rem 0 0 0;
+  --helper-error-text-color: hsl(352, 64%, 56%);
+  --helper-success-text-color: hsl(160, 48%, 32%);
+  --helper-warning-text-color: hsl(16, 72%, 40%);
+
+  /**
    *  HTML
    */
   --html-background-color: white;
@@ -191,7 +214,7 @@
    *  Input
    */
   --input-border-style: solid;
-  --input-transition: all 160ms ease;
+  --input-transition: all 160ms ease-in-out;
   --input-base-border-color-default: hsl(232, 32%, 88%);
   --input-base-border-color-hover: hsl(232, 32%, 72%);
   --input-base-border-color-focus: hsl(232, 64%, 64%);
@@ -257,6 +280,18 @@
   --input-padding-icon-lg: 4.125rem;
 
   /**
+   *  label
+   */
+  --label-font-size: 0.875rem;
+  --label-font-weight: 700;
+  --label-line-height: 1.7142857143;
+  --label-padding: 0 0 0.375rem 0;
+  --label-text-color: hsl(232, 24%, 48%);
+  --label-error-text-color: hsl(352, 64%, 56%);
+  --label-success-text-color: hsl(160, 48%, 32%);
+  --label-warning-text-color: hsl(16, 72%, 40%);
+
+  /**
    *  link
    */
   --link-text-color: hsl(232, 64%, 56%);
@@ -311,12 +346,12 @@
   /**
    *  Notification
    */
-  --notification-error-background-color: hsl(352, 64%, 92%);
-  --notification-error-text-color: hsl(352, 64%, 32%);
-  --notification-success-background-color: hsl(160, 48%, 92%);
+  --notification-error-background-color: hsl(352, 64%, 96%);
+  --notification-error-text-color: hsl(352, 64%, 48%);
+  --notification-success-background-color: hsl(160, 48%, 96%);
   --notification-success-text-color: hsl(160, 48%, 32%);
-  --notification-warning-background-color: hsl(16, 72%, 92%);
-  --notification-warning-text-color: hsl(16, 72%, 32%);
+  --notification-warning-background-color: hsl(16, 72%, 96%);
+  --notification-warning-text-color: hsl(16, 72%, 40%);
   --notification-sm-border-radius: 0.25rem;
   --notification-md-border-radius: 0.25rem;
   --notification-lg-border-radius: 0.5rem;
@@ -398,6 +433,12 @@
   --tag-padding-sm: 0.25rem 0.5rem;
   --tag-padding-lg: 1rem 1.5rem;
   --tag-padding-xl: 1.5rem 2rem;
+
+  --text-xs-font-size: 0.75rem;
+  --text-sm-font-size: 0.875rem;
+  --text-lg-font-size: 1.125rem;
+  --text-xl-font-size: 1.25rem;
+  --text-subtle-color: hsl(232, 32%, 48%);
 
   --text-selection-background-color: hsl(232, 64%, 96%);
   --text-selection-color: hsl(232, 64%, 56%);
@@ -511,6 +552,16 @@
   --card-divider-color: hsl(232, 32%, 24%);
   --card-section-padding: 1.5rem;
 
+  --checkbox-border-color-default: hsl(232, 32%, 32%);
+  --checkbox-border-color-hover: hsl(232, 32%, 40%);
+  --checkbox-border-color-focus: hsl(232, 64%, 80%);
+  --checkbox-focus-outline: 0 0 0 0.25rem hsla(232, 64%, 64%, 0.25);
+  --checkbox-color-default: hsl(232, 32%, 32%);
+  --checkbox-color-hover: hsl(232, 32%, 40%);
+  --checkbox-color-focus: hsl(232, 64%, 80%);
+  --checkbox-icon-color-checked: hsl(232, 64%, 64%);
+  --checkbox-transition: all 160ms ease-in-out;
+
   --divider-border-color: hsl(232, 32%, 20%);
 
   /**
@@ -551,6 +602,8 @@
    */
   --html-background-color: hsl(232, 32%, 16%);
   --html-color: hsl(232, 32%, 96%);
+
+  --text-subtle-color: hsl(232, 32%, 64%);
 
   /**
    *  toggle
