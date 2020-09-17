@@ -15,3 +15,14 @@
 p {
   margin: 0;
 }
+
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
