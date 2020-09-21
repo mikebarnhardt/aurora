@@ -17,5 +17,5 @@
     "build": "postcss --env=production --no-map src/civics.css --output dist/civics.min.css",
     "start": "postcss --watch src/civics.css --output dist/civics.css"
   },
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

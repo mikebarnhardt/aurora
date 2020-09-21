@@ -16,7 +16,7 @@
   /**
    *  banner
    */
-   --banner-background-color: hsl(224, 24%, 96%);
+   --banner-background-color: hsl(224, 24%, 98%);
    --banner-text-color: hsl(224, 24%, 32%);
    --banner-primary-background-color: hsl(224, 64%, 56%);
    --banner-primary-background-gradient: linear-gradient(170deg, hsl(192, 80%, 56%), hsl(224, 80%, 56%));
@@ -28,8 +28,8 @@
   /**
    *  button defaults
    */
-  --button-background-color-default: hsl(224, 24%, 92%);
-  --button-background-color-hover: hsl(224, 24%, 96%);
+  --button-background-color-default: hsl(224, 24%, 96%);
+  --button-background-color-hover: hsl(224, 24%, 92%);
   --button-background-color-focus: hsl(224, 24%, 32%);
   --button-background-color-active: hsl(224, 24%, 88%);
   --button-focus-outline: 0 0 0 0.25rem hsla(224, 24%, 32%, 0.25);
@@ -72,16 +72,16 @@
   --button-error-background-color-focus: hsl(0, 64%, 56%);
   --button-error-background-color-active: hsl(0, 64%, 88%);
   --button-error-focus-outline: 0 0 0 0.25rem hsla(0, 64%, 56%, 0.25);
-  --button-error-text-color-default: hsl(0, 64%, 32%);
-  --button-error-text-color-hover: hsl(0, 64%, 32%);
+  --button-error-text-color-default: hsl(0, 64%, 40%);
+  --button-error-text-color-hover: hsl(0, 64%, 40%);
   --button-error-text-color-focus: white;
-  --button-error-text-color-active: hsl(0, 64%, 32%);
+  --button-error-text-color-active: hsl(0, 64%, 40%);
 
   /**
    *  button success
    */
-  --button-success-background-color-default: hsl(144, 48%, 92%);
-  --button-success-background-color-hover: hsl(144, 48%, 96%);
+  --button-success-background-color-default: hsl(144, 48%, 96%);
+  --button-success-background-color-hover: hsl(144, 48%, 92%);
   --button-success-background-color-focus: hsl(144, 48%, 64%);
   --button-success-background-color-active: hsl(144, 48%, 88%);
   --button-success-focus-outline: 0 0 0 0.25rem hsla(144, 48%, 64%, 0.25);
@@ -93,15 +93,15 @@
   /**
    *  button warning
    */
-  --button-warning-background-color-default: hsl(16, 72%, 92%);
-  --button-warning-background-color-hover: hsl(16, 72%, 96%);
+  --button-warning-background-color-default: hsl(16, 72%, 96%);
+  --button-warning-background-color-hover: hsl(16, 72%, 92%);
   --button-warning-background-color-focus: hsl(16, 72%, 72%);
   --button-warning-background-color-active: hsl(16, 72%, 88%);
   --button-warning-focus-outline: 0 0 0 0.25rem hsla(16, 72%, 72%, 0.25);
-  --button-warning-text-color-default: hsl(16, 72%, 32%);
-  --button-warning-text-color-hover: hsl(16, 72%, 32%);
+  --button-warning-text-color-default: hsl(16, 72%, 40%);
+  --button-warning-text-color-hover: hsl(16, 72%, 40%);
   --button-warning-text-color-focus: white;
-  --button-warning-text-color-active: hsl(16, 72%, 32%);
+  --button-warning-text-color-active: hsl(16, 72%, 40%);
 
   /**
    *  Card
@@ -204,12 +204,12 @@
   /**
    *  Notification
    */
-  --notification-error-background-color: hsl(0, 64%, 92%);
-  --notification-error-text-color: hsl(0, 64%, 32%);
-  --notification-success-background-color: hsl(144, 48%, 92%);
+  --notification-error-background-color: hsl(0, 64%, 96%);
+  --notification-error-text-color: hsl(0, 64%, 40%);
+  --notification-success-background-color: hsl(144, 48%, 96%);
   --notification-success-text-color: hsl(144, 48%, 32%);
-  --notification-warning-background-color: hsl(16, 72%, 92%);
-  --notification-warning-text-color: hsl(16, 72%, 32%);
+  --notification-warning-background-color: hsl(16, 72%, 96%);
+  --notification-warning-text-color: hsl(16, 72%, 40%);
 
   /**
    *  tag
