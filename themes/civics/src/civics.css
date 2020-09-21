@@ -67,15 +67,15 @@
   /**
    *  button subtle error
    */
-  --button-error-background-color-default: hsl(0, 64%, 92%);
-  --button-error-background-color-hover: hsl(0, 64%, 96%);
+  --button-error-background-color-default: hsl(0, 64%, 96%);
+  --button-error-background-color-hover: hsl(0, 64%, 92%);
   --button-error-background-color-focus: hsl(0, 64%, 56%);
   --button-error-background-color-active: hsl(0, 64%, 88%);
   --button-error-focus-outline: 0 0 0 0.25rem hsla(0, 64%, 56%, 0.25);
-  --button-error-text-color-default: hsl(0, 64%, 40%);
-  --button-error-text-color-hover: hsl(0, 64%, 40%);
+  --button-error-text-color-default: hsl(0, 64%, 48%);
+  --button-error-text-color-hover: hsl(0, 64%, 48%);
   --button-error-text-color-focus: white;
-  --button-error-text-color-active: hsl(0, 64%, 40%);
+  --button-error-text-color-active: hsl(0, 64%, 48%);
 
   /**
    *  button success
@@ -205,7 +205,7 @@
    *  Notification
    */
   --notification-error-background-color: hsl(0, 64%, 96%);
-  --notification-error-text-color: hsl(0, 64%, 40%);
+  --notification-error-text-color: hsl(0, 64%, 48%);
   --notification-success-background-color: hsl(144, 48%, 96%);
   --notification-success-text-color: hsl(144, 48%, 32%);
   --notification-warning-background-color: hsl(16, 72%, 96%);
