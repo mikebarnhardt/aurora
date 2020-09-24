@@ -7,7 +7,10 @@ html {
   font-size: var(--html-font-size);
   line-height: var(--html-line-height);
   text-rendering: optimizeLegibility;
-  transition: all 80ms;
+  transition:
+    background-color 160ms ease-in-out,
+    color 160ms ease-in-out,
+    font-size 160ms ease-in-out;
 }
 
 html.font-size--sm {
