@@ -26,7 +26,7 @@
   },
   "scripts": {
     "build": "postcss --env=production --no-map src/ancient.css --output dist/ancient.min.css",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "start": "postcss --watch src/ancient.css --output dist/ancient.css"
   },
   "version": "1.4.1"

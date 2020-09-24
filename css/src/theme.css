@@ -183,6 +183,20 @@
   --divider-border-width: 1px;
 
   /**
+   *  dropdown
+   */
+  --dropdown-background-color: hsl(232, 32%, 16%);
+  --dropdown-item-background-color-default: hsl(232, 32%, 16%);
+  --dropdown-item-background-color-hover: hsl(232, 32%, 20%);
+  --dropdown-item-background-color-focus: hsl(232, 64%, 56%);
+  --dropdown-item-background-color-active: hsl(232, 32%, 24%);
+  --dropdown-item-text-color-default: hsl(232, 32%, 96%);
+  --dropdown-item-text-color-hover: hsl(232, 32%, 96%);
+  --dropdown-item-text-color-focus: hsl(232, 64%, 100%);
+  --dropdown-item-text-color-active: hsl(232, 32%, 96%);
+  --dropdown-item-padding: 0.75rem 1.5rem;
+
+  /**
    *  Grid
    */
   --grid-gutter: -1.5rem;
@@ -580,7 +594,24 @@
   --checkbox-icon-color-checked: hsl(232, 64%, 64%);
   --checkbox-transition: all 160ms ease-in-out;
 
+  /**
+   *  divider
+   */
   --divider-border-color: hsl(232, 32%, 20%);
+
+  /**
+   *  dropdown
+   */
+  --dropdown-background-color: hsl(232, 32%, 96%);
+  --dropdown-item-background-color-default: hsl(232, 32%, 96%);
+  --dropdown-item-background-color-hover: hsl(232, 32%, 92%);
+  --dropdown-item-background-color-focus: hsl(232, 64%, 64%);
+  --dropdown-item-background-color-active: hsl(232, 32%, 88%);
+  --dropdown-item-text-color-default: hsl(232, 32%, 32%);
+  --dropdown-item-text-color-hover: hsl(232, 32%, 32%);
+  --dropdown-item-text-color-focus: hsl(232, 64%, 100%);
+  --dropdown-item-text-color-active: hsl(232, 32%, 32%);
+  --dropdown-item-padding: 0.75rem 1.5rem;
 
   /**
    *  input
