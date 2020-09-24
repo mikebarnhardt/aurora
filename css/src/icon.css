@@ -56,23 +56,3 @@
 .control.control--lg > .icon:last-child {
   right: 3rem;
 }
-
-/* Path
-   ========================================================================== */
-
-/**
- *  1.  `currentColor` will allow the icon to be used universally without
- *      needing a separate variable for each component (`icon--button`)
- *  2.  For duotone icons we can lower the opacity of the secondary path
- *      without needing excessive variables.
- */
-
-.path--primary {
-  fill: var(--path-primary-fill); /* 1 */
-  opacity: var(--path-primary-opacity);
-}
-
-.path--secondary {
-  fill: var(--path-secondary-fill); /* 1 */
-  opacity: var(--path-secondary-opacity); /* 2 */
-}

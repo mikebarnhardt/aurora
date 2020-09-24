@@ -9,7 +9,7 @@
   border-style: var(--card-border-style);
   border-width: var(--card-border-width);
   box-shadow: var(--card-box-shadow);
-  color: var(--card-color);
+  color: var(--card-text-color);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -29,7 +29,7 @@
 
 .card-section.card-section--action {
   background-color: var(--card-action-background-color);
-  color: var(--card-action-color);
+  color: var(--card-action-text-color);
 }
 
 .card-figure {

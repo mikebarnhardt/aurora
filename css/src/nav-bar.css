@@ -10,7 +10,6 @@
   background-color: var(--nav-bar-background-color);
   color: var(--nav-bar-text-color);
   display: flex;
-  padding: var(--nav-bar-padding);
 }
 
 /**

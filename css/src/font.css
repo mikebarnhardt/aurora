@@ -1,51 +1,27 @@
-.font-size--md {
-  font-size: var(--font-size);
-}
+.font-size--md { font-size: var(--font-size) }
+.font-size--sm { font-size: var(--font-size-sm) }
+.font-size--lg { font-size: var(--font-size-lg) }
 
-.font-size--sm {
-  font-size: var(--font-size-sm);
-}
+.text-align--center { text-align: center }
+.text-align--left { text-align: left }
+.text-align--right { text-align: right }
 
-.font-size--lg {
-  font-size: var(--font-size-lg);
-}
+@media (--tablet) {
+  .tablet\:font-size--md { font-size: var(--font-size) }
+  .tablet\:font-size--sm { font-size: var(--font-size-sm) }
+  .tablet\:font-size--lg { font-size: var(--font-size-lg) }
 
-@media (--desktop) {  
-  .desktop\:font-size--md {
-    font-size: var(--font-size);
-  }
-  
-  .desktop\:font-size--sm {
-    font-size: var(--font-size-sm);
-  }
-  
-  .desktop\:font-size--lg {
-    font-size: var(--font-size-lg);
-  }
-}
-
-.text-align--center {
-  text-align: center;
-}
-
-.text-align--left {
-  text-align: left;
-}
-
-.text-align--right {
-  text-align: right;
+  .tablet\:text-align--center { text-align: center }
+  .tablet\:text-align--left { text-align: left }
+  .tablet\:text-align--right { text-align: right }
 }
 
 @media (--desktop) {
-  .desktop\:text-align--center {
-    text-align: center;
-  }
+  .desktop\:font-size--md { font-size: var(--font-size) }
+  .desktop\:font-size--sm { font-size: var(--font-size-sm) }
+  .desktop\:font-size--lg { font-size: var(--font-size-lg) }
 
-  .desktop\:text-align--left {
-    text-align: left;
-  }
-
-  .desktop\:text-align--right {
-    text-align: right;
-  }
+  .desktop\:text-align--center { text-align: center }
+  .desktop\:text-align--left { text-align: left }
+  .desktop\:text-align--right { text-align: right }
 }

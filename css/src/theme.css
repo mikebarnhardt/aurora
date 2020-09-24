@@ -115,11 +115,12 @@
   --button-sm-border-radius: 0.25rem;
   --button-sm-font-size: 0.875rem;
   --button-sm-line-height: 1.7142857143;
-  --button-sm-padding: 0.25rem 0.5rem;
+  --button-sm-padding: 0.375rem 0.75rem;
   --button-sm-icon-padding: 0.5625rem;
   --button-lg-border-radius: 0.5rem;
   --button-lg-font-size: 1.125rem;
   --button-lg-line-height: 1.3333333333;
+  --button-lg-padding: 1.5rem 2.25rem;
   --button-lg-icon-padding: 1.5rem;
 
   /**
@@ -131,14 +132,19 @@
   --card-border-style: solid;
   --card-border-width: 1px;
   --card-box-shadow: none;
-  --card-color: hsl(232, 32%, 32%);
+  --card-text-color: hsl(232, 32%, 32%);
   --card-section-padding: 1.5rem;
   --card-section-sm-padding: 0.75rem;
   --card-section-lg-padding: 3rem;
   --card-divider-color: hsl(232, 16%, 96%);
   --card-divider-style: solid;
   --card-divider-width: 1px;
+  --card-action-background-color: hsl(232, 32%, 98%);
+  --card-action-text-color: hsl(232, 32%, 32%);
 
+  /**
+   *  checkbox
+   */
   --checkbox-border-color-default: hsl(232, 32%, 88%);
   --checkbox-border-color-hover: hsl(232, 32%, 72%);
   --checkbox-border-color-focus: hsl(232, 64%, 56%);
@@ -195,6 +201,16 @@
   --dropdown-item-text-color-focus: hsl(232, 64%, 100%);
   --dropdown-item-text-color-active: hsl(232, 32%, 96%);
   --dropdown-item-padding: 0.75rem 1.5rem;
+  --dropdown-divider-border-color: hsl(232, 32%, 20%);
+  --dropdown-divider-border-style: solid;
+  --dropdown-divider-border-width: 1px;
+
+  /**
+   *  font
+   */
+  --font-size: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.125rem;
 
   /**
    *  Grid
@@ -222,6 +238,8 @@
   --html-background-color: white;
   --html-color: hsl(232, 32%, 32%);
   --html-font-size: 16px;
+  --html-sm-font-size: 14px;
+  --html-lg-font-size: 18px;
   --html-line-height: 1.5;
 
   /**
@@ -286,6 +304,9 @@
   --input-sm-font-size: 0.875rem;
   --input-md-font-size: 1rem;
   --input-lg-font-size: 1.125rem;
+  --input-sm-line-height: 1.7142857143;
+  --input-md-line-height: 1.5;
+  --input-lg-line-height: 1.3333333333;
   --input-sm-padding: 0.375rem 0.75rem;
   --input-md-padding: 0.75rem 1.5rem;
   --input-lg-padding: 1.125rem 1.875rem;
@@ -330,8 +351,11 @@
   --menu-item-border-radius: 0.25rem;
   --menu-item-padding: 0.75rem 1.5rem;
   --menu-item-background-color-hover: hsl(232, 32%, 96%);
-  --menu-item-background-color-focus: hsl(232, 32%, 96%);
+  --menu-item-background-color-focus: hsl(232, 64%, 56%);
   --menu-item-background-color-active: hsl(232, 32%, 88%);
+  --menu-item-text-color-hover: hsl(232, 32%, 32%);
+  --menu-item-text-color-focus: white;
+  --menu-item-text-color-active: hsl(232, 32%, 32%);
   --menu-item-title-font-size: 1rem;
   --menu-item-title-font-weight: 700;
   --menu-item-title-line-height: 1.5;
@@ -361,10 +385,16 @@
    *  nav-item
    */
   --nav-item-background-color-default: transparent;
+  --nav-item-background-color-hover: rgba(255, 255, 255, 0.1);
+  --nav-item-background-color-focus: rgba(255, 255, 255, 0.2);
+  --nav-item-background-color-active: rgba(255, 255, 255, 0.2);
   --nav-item-text-color-default: inherit;
+  --nav-item-text-color-hover: inherit;
+  --nav-item-text-color-focus: inherit;
+  --nav-item-text-color-active: inherit;
   --nav-item-border-radius: 0.25rem;
   --nav-item-margin: 0 0.375rem 0 0;
-  --nav-item-padding: 0.75rem;
+  --nav-item-padding: 0.375rem 0.75rem;
 
   /**
    *  Notification
@@ -445,6 +475,7 @@
   --tag-font-size: 1rem;
   --tag-font-size-xs: 0.75rem;
   --tag-font-size-sm: 0.875rem;
+  --tag-font-size-lg: 1.125rem;
   --tag-line-height: 1.5;
   --tag-line-height-xs: 1rem;
   --tag-line-height-sm: 1.7142857143;

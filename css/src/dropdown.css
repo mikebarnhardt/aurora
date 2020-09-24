@@ -70,7 +70,7 @@
 }
 
 .dropdown-divider {
-  border-bottom-width: var(--dropdown-divider-width);
-  border-color: var(--dropdown-border-color);
-  border-style: var(--dropdown-border-style);
+  border-bottom-width: var(--dropdown-divider-border-width);
+  border-color: var(--dropdown-divider-border-color);
+  border-style: var(--dropdown-divider-border-style);
 }

@@ -10,17 +10,17 @@
 
 .menu-item.menu-item--link:hover {
   background-color: var(--menu-item-background-color-hover);
-  color: var(--menu-item-color-hover);
+  color: var(--menu-item-text-color-hover);
 }
 
 .menu-item.menu-item--link:focus {
   background-color: var(--menu-item-background-color-focus);
-  color: var(--menu-item-color-focus);
+  color: var(--menu-item-text-color-focus);
 }
 
 .menu-item.menu-item--link:active {
   background-color: var(--menu-item-background-color-active);
-  color: var(--menu-item-color-active);
+  color: var(--menu-item-text-color-active);
 }
 
 /**
