@@ -6,22 +6,25 @@
   flex-direction: column;
   left: 0;
   opacity: 0;
-  overflow: auto;
   overflow-x: hidden;
   overflow-y: auto;
+  overflow: auto;
   position: fixed;
   right: 0;
   top: 0;
-  transform: translateY(-1rem);
-  transition: all 160ms;
-  visibility: hidden;
+  transition:
+    opacity 160ms ease-in-out,
+    transform 160ms ease-in-out,
+    visibility 160ms ease-in-out;
+  visibility: collapse;
   width: 100vw;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .modal.modal--hidden {
-  visibility: hidden;
   opacity: 0;
+  transform: translateY(-1.5rem);
+  visibility: hidden;
 }
 
 .modal.modal--visible {
