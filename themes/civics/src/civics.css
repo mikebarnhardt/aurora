@@ -392,12 +392,12 @@
   /**
    *  link
    */
-  --link-text-color: hsl(224, 80%, 56%);
+  --link-text-color: hsl(224, 64%, 64%);
   --link-text-decoration: underline;
-  --link-text-decoration-color: hsl(224, 80%, 88%);
-  --link-text-color-hover: hsl(224, 80%, 56%);
+  --link-text-decoration-color: hsl(224, 24%, 32%);
+  --link-text-color-hover: hsl(224, 64%, 64%);
   --link-text-decoration-hover: underline;
-  --link-text-decoration-color-hover: hsl(224, 80%, 56%);
+  --link-text-decoration-color-hover: hsl(224, 64%, 64%);
 
   /**
    *  menu
