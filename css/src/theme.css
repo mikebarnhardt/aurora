@@ -127,7 +127,7 @@
    *  Card
    */
   --card-background-color: white;
-  --card-border-color: hsl(232, 32%, 96%);
+  --card-border-color: hsl(232, 32%, 88%);
   --card-border-radius: 0.5rem;
   --card-border-style: solid;
   --card-border-width: 1px;
@@ -136,7 +136,7 @@
   --card-section-padding: 1.5rem;
   --card-section-sm-padding: 0.75rem;
   --card-section-lg-padding: 3rem;
-  --card-divider-color: hsl(232, 16%, 96%);
+  --card-divider-color: hsl(232, 16%, 88%);
   --card-divider-style: solid;
   --card-divider-width: 1px;
   --card-action-background-color: hsl(232, 32%, 98%);
@@ -321,7 +321,7 @@
   --label-font-weight: 700;
   --label-line-height: 1.7142857143;
   --label-padding: 0 0 0.375rem 0;
-  --label-text-color: hsl(232, 24%, 48%);
+  --label-text-color: inherit;
   --label-error-text-color: hsl(352, 64%, 56%);
   --label-success-text-color: hsl(160, 48%, 32%);
   --label-warning-text-color: hsl(16, 72%, 40%);
@@ -482,15 +482,15 @@
   --tag-line-height-lg: 1.3333333333;
   --tag-line-height-xl: 1.2;
   --tag-padding: 0 0.25rem;
-  --tag-background-color: hsl(232, 32%, 92%);
+  --tag-background-color: hsl(232, 32%, 96%);
   --tag-text-color: hsl(232, 32%, 32%);
-  --tag-primary-background-color: hsl(232, 64%, 92%);
+  --tag-primary-background-color: hsl(232, 64%, 96%);
   --tag-primary-text-color: hsl(232, 64%, 32%);
-  --tag-error-background-color: hsl(352, 64%, 92%);
+  --tag-error-background-color: hsl(352, 64%, 96%);
   --tag-error-text-color: hsl(352, 64%, 32%);
-  --tag-success-background-color: hsl(160, 48%, 92%);
+  --tag-success-background-color: hsl(160, 48%, 96%);
   --tag-success-text-color: hsl(160, 48%, 32%);
-  --tag-warning-background-color: hsl(16, 72%, 92%);
+  --tag-warning-background-color: hsl(16, 72%, 96%);
   --tag-warning-text-color: hsl(16, 72%, 32%);
   --tag-padding-xs: 0 0.25rem;
   --tag-padding-sm: 0.25rem 0.5rem;
@@ -526,6 +526,9 @@
  *  Dark Theme
  */
 .theme--ancient.theme--dark {
+  /**
+   *  banner
+   */
   --banner-background-color: hsl(232, 32%, 12%);
   --banner-text-color: hsl(232, 32%, 96%);
   --banner-primary-background-color: hsl(232, 64%, 64%);
@@ -536,20 +539,8 @@
   --banner-secondary-text-color: white;
 
   /**
-   *  Box
+   *  button
    */
-  --box-base-background-color: hsl(232, 32%, 20%);
-  --box-subtle-base-background-color: hsl(232, 32%, 20%);
-  --box-subtle-base-text-color: hsl(232, 32%, 96%);
-  --box-subtle-primary-background-color: hsl(232, 32%, 20%);
-  --box-subtle-primary-text-color: hsl(232, 64%, 80%);
-  --box-subtle-error-background-color: hsl(232, 32%, 20%);
-  --box-subtle-error-text-color: hsl(352, 64%, 80%);
-  --box-subtle-success-background-color: hsl(232, 32%, 20%);
-  --box-subtle-success-text-color: hsl(160, 48%, 80%);
-  --box-subtle-warning-background-color: hsl(232, 32%, 20%);
-  --box-subtle-warning-text-color: hsl(16, 72%, 80%);
-  
   --button-background-color-default: hsl(232, 32%, 24%);
   --button-background-color-hover: hsl(232, 32%, 28%);
   --button-background-color-focus: hsl(232, 32%, 88%);
@@ -657,6 +648,16 @@
   --input-error-border-color-active: hsl(352, 64%, 64%);
 
   /**
+   *  link
+   */
+  --link-text-color: hsl(232, 64%, 64%);
+  --link-text-decoration: underline;
+  --link-text-decoration-color: hsl(232, 64%, 32%);
+  --link-text-color-hover: hsl(232, 64%, 64%);
+  --link-text-decoration-hover: underline;
+  --link-text-decoration-color-hover: hsl(232, 64%, 64%);
+
+  /**
    *  menu
    */
   --menu-item-background-color-hover: hsl(232, 32%, 20%);
@@ -664,24 +665,41 @@
   /**
    *  nav-bar
    */
-  --nav-bar-primary-background-color: hsl(232, 64%, 56%);
+  --nav-bar-primary-background-color: hsl(232, 64%, 64%);
   --nav-bar-primary-text-color: white;
 
   /**
    *  notification
    */
   --notification-error-background-color: hsl(352, 64%, 80%);
-  --notification-error-text-color: hsl(352, 64%, 24%);
+  --notification-error-text-color: hsl(352, 64%, 32%);
   --notification-success-background-color: hsl(160, 48%, 80%);
   --notification-success-text-color: hsl(160, 48%, 24%);
   --notification-warning-background-color: hsl(16, 72%, 80%);
-  --notification-warning-text-color: hsl(16, 72%, 24%);
+  --notification-warning-text-color: hsl(16, 72%, 32%);
 
   /**
    *  HTML
    */
   --html-background-color: hsl(232, 32%, 16%);
   --html-color: hsl(232, 32%, 96%);
+
+  /**
+   *  tag
+   */
+  --tag-background-color: hsl(232, 32%, 80%);
+  --tag-text-color: hsl(232, 32%, 32%);
+  --tag-primary-background-color: hsl(232, 64%, 80%);
+  --tag-primary-text-color: hsl(232, 64%, 32%);
+  --tag-error-background-color: hsl(352, 64%, 80%);
+  --tag-error-text-color: hsl(352, 64%, 32%);
+  --tag-success-background-color: hsl(160, 48%, 80%);
+  --tag-success-text-color: hsl(160, 48%, 32%);
+  --tag-warning-background-color: hsl(16, 72%, 80%);
+  --tag-warning-text-color: hsl(16, 72%, 32%);
+
+  --text-selection-background-color: hsl(232, 32%, 32%);
+  --text-selection-color: hsl(232, 64%, 64%);
 
   --text-subtle-color: hsl(232, 32%, 64%);
 
