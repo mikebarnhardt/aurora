@@ -1,0 +1,9 @@
+/*
+  elements.figure.css
+    make figures block by default
+*/
+
+figure {
+  display: block;
+  margin: 0;
+}

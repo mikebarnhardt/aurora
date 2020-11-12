@@ -1,0 +1,158 @@
+/*
+  components.dropdown.css
+*/
+
+.dropdown {
+  --hover-delta: -4%;
+  --active-delta: -8%;
+
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--background, var(--base-background))
+  );
+
+  border-radius: 0.25em;
+
+  color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--color, var(--base-color))
+  );
+
+  margin-top: 1em;
+  padding: 0.25em 0;
+  position: absolute;
+  top: -9999rem;
+
+  transition: var(
+    --prefers-reduced-motion,
+    opacity 160ms, transform 160ms, visibility 160ms
+  );
+}
+
+/*
+  .dropdown.hidden, .dropdown.visible
+    these extend the utility classes .hidden and .visible which modify
+    the visibility property
+*/
+
+.dropdown.hidden {
+  opacity: 0;
+  transform: translateY(-1rem);
+}
+
+.dropdown.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+/*
+  .dropdown::before
+    styles a dropdown arrow
+*/
+
+.dropdown::before {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--background, var(--base-background))
+  );
+
+  border-top-left-radius: 0.25rem;
+  content: "";
+  display: block;
+  height: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: -0.25rem;
+  transform: translateX(50%) rotate(45deg);
+  width: 1rem;
+  z-index: -1;
+}
+
+
+
+/*
+  .dropdown hr
+    set the default divider color inside dropdowns to base since the
+    dropdown is set to base color
+*/
+
+.dropdown hr {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--divider, var(--base-divider))
+  );
+}
+
+
+
+
+/*
+  dropdown-item
+*/
+
+.dropdown-item {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--background, var(--base-background))
+  );
+  
+  color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--color, var(--base-color))
+  );
+  
+  display: block;
+  padding: 0.5em 1em;
+  text-align: left;
+  text-decoration: none;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, border 160ms, color 160ms
+  );
+
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    calc(var(--background, var(--base-background)) + var(--hover-delta))
+  );
+}
+
+.dropdown-item:focus {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    calc(var(--background, var(--base-background)) + var(--hover-delta))
+  );
+
+  border-left:
+    0.25em solid
+    hsl(
+      var(--hue, var(--base-hue)),
+      var(--saturation, var(--base-saturation)),
+      var(--color, var(--base-color))
+    );
+  
+  outline: var(--outline, none);
+}
+
+.dropdown-item:active {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    calc(var(--background, var(--base-background)) + var(--active-delta))
+  );
+}

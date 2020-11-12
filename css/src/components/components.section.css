@@ -1,0 +1,21 @@
+.section {
+  background-color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--background, var(--default-background))
+  );
+
+  color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--color, var(--default-color))
+  );
+
+  margin: 2px;
+  padding: 2em;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, color 160ms
+  );
+}

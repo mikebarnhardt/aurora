@@ -1,0 +1,49 @@
+/*
+  elements.html.css
+    properties for html element
+*/
+
+
+
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: hsl(
+    var(--default-hue, 232),
+    var(--default-saturation, 32%),
+    var(--default-html, 98%)
+  );
+
+  color: hsl(
+    var(--default-hue, 232),
+    var(--default-saturation, 32%),
+    var(--default-color, 24%)
+  );
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, color 160ms
+  );
+}
+
+
+
+
+/*
+  .font-size-auto
+    adjust the font-size between 16px and 20px between 480px to 1920px widths
+*/
+
+.font-size-auto {
+  font-size: calc(14px + (20 - 14) * (100vw - 480px) / (1920 - 480));
+}
+
+
+

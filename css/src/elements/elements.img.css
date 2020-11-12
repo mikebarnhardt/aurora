@@ -1,0 +1,9 @@
+/*
+  elements.img.css
+    prevent extra spacing under images and display nicely by default
+*/
+
+img {
+  display: block;
+  max-width: 100%;
+}

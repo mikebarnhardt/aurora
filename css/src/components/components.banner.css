@@ -1,0 +1,26 @@
+/*
+  components.banner.css
+    a banner or hero brings great attention to a section of content
+*/
+
+.banner {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--background, var(--base-background))
+  );
+
+  color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--color, var(--base-color))
+  );
+
+  margin: 2px;
+  padding: 2em;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, color 160ms
+  );
+}

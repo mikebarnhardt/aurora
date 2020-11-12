@@ -1,0 +1,24 @@
+/*
+  components.tag.css
+*/
+
+.tag {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--background, var(--base-background))
+  );
+
+  border-radius: 0.25em;
+
+  color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--color, var(--base-color))
+  );
+
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.25em 0.5em;
+}

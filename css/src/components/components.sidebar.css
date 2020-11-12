@@ -1,0 +1,25 @@
+.sidebar {
+  background-color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--background, var(--default-background))
+  );
+
+  color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--color, var(--default-color))
+  );
+
+  margin: 2px 0 0;
+  max-width: 24em;
+  min-width: 16em;
+  padding: 1em;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, color 160ms
+  );
+
+  width: 24%;
+}

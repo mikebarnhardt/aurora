@@ -1,0 +1,32 @@
+/*
+  components.flow.css
+    auto-space between children
+*/
+
+.flow > * + * {
+  --flow-margin: 1em;
+  margin-top: var(--flow-margin)
+}
+
+.flow-xs > * + * { --flow-margin: 0.25em }
+.flow-s > * + * { --flow-margin: 0.5em }
+.flow-l > * + * { --flow-margin: 2em }
+.flow-xl > * + * { --flow-margin: 4em }
+
+@media (min-width: 768px) {
+  .flow-0\/m > * + * { --flow-margin: 0 }
+  .flow-l\/m > * + * { --flow-margin: 2em }
+  .flow-m\/m > * + * { --flow-margin: 1em }
+  .flow-s\/m > * + * { --flow-margin: 0.5em }
+  .flow-xl\/m > * + * { --flow-margin: 4em }
+  .flow-xs\/m > * + * { --flow-margin: 0.25em }
+}
+
+@media (min-width: 1024px) {
+  .flow-0\/l > * + * { --flow-margin: 0 }
+  .flow-xs\/l > * + * { --flow-margin: 0.25em }
+  .flow-s\/l > * + * { --flow-margin: 0.5em }
+  .flow-m\/l > * + * { --flow-margin: 1em }
+  .flow-l\/l > * + * { --flow-margin: 2em }
+  .flow-xl\/l > * + * { --flow-margin: 4em }
+}

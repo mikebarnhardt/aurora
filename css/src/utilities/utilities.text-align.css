@@ -1,0 +1,17 @@
+/* utilities.text-align.css */
+
+.text-center { text-align: center }
+.text-left { text-align: left }
+.text-right { text-align: right }
+
+@media (min-width: 768px) {
+  .text-center\/m { text-align: center }
+  .text-left\/m { text-align: left }
+  .text-right\/m { text-align: right }
+}
+
+@media (min-width: 1024px) {
+  .text-center\/l { text-align: center }
+  .text-left\/l { text-align: left }
+  .text-right\/l { text-align: right }
+}

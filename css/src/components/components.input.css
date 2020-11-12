@@ -1,0 +1,86 @@
+/* input.css */
+
+.input {
+  --border-hover-delta: var(--default-border-hover-delta, -8%);
+  --border-active-delta: var(--default-border-active-delta, -16%);
+
+  background-color: transparent;
+
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--border, var(--base-border))
+  );
+
+  border-radius: 0.25em;
+  border-style: solid;
+  border-width: 1px;
+
+  color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--text, var(--base-text))
+  );
+
+  display: block;
+  font: inherit;
+  padding: calc(0.5em - 1px) calc(1em - 1px);
+
+  transition: var(
+    --prefers-reduced-motion,
+    border-color 160ms, box-shadow 160ms, color 160ms
+  );
+
+  width: 100%;
+}
+
+.input:hover {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    calc(var(--border, var(--base-border)) + var(--border-hover-delta))
+  );
+}
+
+.input:focus {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+  );
+
+  box-shadow:
+    0 0 0 0.1875em
+    hsla(
+      var(--hue, var(--base-hue)),
+      var(--saturation, var(--base-saturation)),
+      calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+      0.25
+    );
+
+  outline: var(--outline, none);
+}
+
+.input:active {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+  );
+
+  box-shadow:
+    0 0 0 0.1875em
+    hsla(
+      var(--hue, var(--base-hue)),
+      var(--saturation, var(--base-saturation)),
+      calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+      0.25
+    );
+}
+
+
+
+
+.icon-right {
+  padding-right: 2.5em;
+}

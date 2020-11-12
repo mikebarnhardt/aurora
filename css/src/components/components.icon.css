@@ -1,0 +1,9 @@
+/*
+  components.icon.css
+    minor formatting for icons to align correctly to text baseline
+*/
+
+.icon {
+  position: relative;
+  top: 0.125em;
+}

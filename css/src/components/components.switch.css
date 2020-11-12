@@ -1,0 +1,205 @@
+/*
+  components.switch.css
+*/
+
+.switch {
+  --hover-delta: var(--default-hover-delta, 8%);
+  --active-delta: var(--default-active-delta, -8%);
+  --border-hover-delta: var(--default-border-hover-delta, -8%);
+  --border-active-delta: var(--default-border-active-delta, -16%);
+
+  display: block;
+  position: relative;
+}
+
+/*
+  .switch input
+    visually hide the input so that it can still be focused and seen by screen
+    readers
+*/
+
+.switch input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/*
+  .switch label::before
+    switch track
+*/
+
+.switch label::before {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    var(--border, var(--base-border))
+  );
+
+  border-radius: 99em;
+  border-style: solid;
+  border-width: 1px;
+  content: "";
+  display: block;
+  height: 1.25em;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, border-color 160ms, box-shadow 160ms
+  );
+
+  width: 2em;
+}
+
+.switch label:hover::before {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--border, var(--base-border)) + var(--border-hover-delta))
+  );
+}
+
+.switch input:focus ~ label::before {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+  );
+
+  box-shadow: 0 0 0 0.1875em hsla(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+    0.25
+  );
+
+  outline: var(--outline, none);
+}
+
+.switch label:active::before {
+  border-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+  );
+
+  box-shadow: 0 0 0 0.1875em hsla(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+    0.25
+  );
+}
+
+.switch input:checked ~ label::before {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    var(--background, var(--base-background))
+  );
+
+  border-color: transparent;
+}
+
+.switch input:checked ~ label:hover::before {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--background, var(--base-background)) + var(--hover-delta))
+  );
+}
+
+.switch input:checked:focus ~ label::before {
+  box-shadow: 0 0 0 0.1875em hsla(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--background, var(--base-background)) + var(--active-delta)),
+    0.25
+  );
+
+  outline: var(--outline, none);
+}
+
+.switch input:checked ~ label:active::before {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--background, var(--base-background)) + var(--active-delta))
+  );
+
+  box-shadow: 0 0 0 0.1875em hsla(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    calc(var(--background, var(--base-background)) + var(--active-delta)),
+    0.25
+  );
+}
+
+
+
+
+/*
+  .switch label::after
+    switch lever
+*/
+
+.switch label::after {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    var(--background, var(--base-background))
+  );
+
+  border-radius: 99em;
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 1em;
+  left: 0.125em;
+  position: absolute;
+  top: 0.125em;
+
+  transition: var(
+    --prefers-reduced-motion,
+    background-color 160ms, transform 160ms, width 160ms
+  );
+
+  width: 1em;
+}
+
+.switch input:checked ~ label::after {
+  background-color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)), 
+    var(--color, var(--base-color))
+  );
+
+  transform: translateX(0.75em);
+}
+
+
+
+
+/*
+  .switch label
+    the text label that displays next to the switch
+*/
+
+.switch label {
+  color: hsl(
+    var(--hue, var(--base-hue)),
+    var(--saturation, var(--base-saturation)),
+    var(--text, var(--base-text))
+  );
+
+  cursor: pointer; 
+  display: inline-block;
+  line-height: 1.25;
+  min-height: 1em;
+  padding: 0 0 0 3em;
+  margin: 0;
+  position: relative;
+}

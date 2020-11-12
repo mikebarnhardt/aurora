@@ -1,0 +1,50 @@
+/* utilities.position.css */
+
+.absolute { position: absolute }
+.fixed { position: fixed }
+.relative { position: relative }
+.sticky { position: sticky }
+
+.b0 { bottom: 0 }
+.l0 { left: 0 }
+.r0 { right: 0 }
+.t0 { top: 0 }
+
+.b100 { bottom: 100% }
+.l100 { left: 100% }
+.r100 { right: 100% }
+.t100 { top: 100% }
+
+@media (min-width: 768px) {
+  .absolute\/m { position: absolute }
+  .fixed\/m { position: fixed }
+  .relative\/m { position: relative }
+  .sticky\/m { position: sticky }
+
+  .b0\/m { bottom: 0 }
+  .l0\/m { left: 0 }
+  .r0\/m { right: 0 }
+  .t0\/m { top: 0 }
+
+  .b100\/m { bottom: 100% }
+  .l100\/m { left: 100% }
+  .r100\/m { right: 100% }
+  .t100\/m { top: 100% }
+}
+
+@media (min-width: 1024px) {
+  .absolute\/l { position: absolute }
+  .fixed\/l { position: fixed }
+  .relative\/l { position: relative }
+  .sticky\/l { position: sticky }
+
+  .b0\/l { bottom: 0 }
+  .l0\/l { left: 0 }
+  .r0\/l { right: 0 }
+  .t0\/l { top: 0 }
+
+  .b100\/l { bottom: 100% }
+  .l100\/l { left: 100% }
+  .r100\/l { right: 100% }
+  .t100\/l { top: 100% }
+}

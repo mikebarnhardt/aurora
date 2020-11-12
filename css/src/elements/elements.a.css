@@ -1,0 +1,10 @@
+/*
+  elements.a.css
+    set some basic styles for anchor tags
+    see [components.link.css] for better link styling
+*/
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}

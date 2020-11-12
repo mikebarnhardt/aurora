@@ -1,7 +1,5 @@
 let plugins = [
   require('postcss-import'),
-  require('postcss-custom-media'),
-  require('postcss-css-variables')({preserve: true}),
   require('autoprefixer')
 ];
 
@@ -11,6 +9,7 @@ if ( process.env.NODE_ENV === 'production' ) {
       preset: [
         'default',
         {
+          calc: false,
           mergeLonghand: false
         }
       ]

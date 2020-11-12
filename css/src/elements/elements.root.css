@@ -1,0 +1,34 @@
+/* elements.root.css */
+
+:root {
+  /*
+    reduce motion
+      enabled by default with `initial`, this can be set to a space character to
+      deactivate all transition effects:
+
+      --prefers-reduced-motion: ;
+  */
+
+  --prefers-reduced-motion: initial;
+  
+  /*
+    focus outlines
+      if you prefer to leave the browser styling in control of focus outlines
+      then set this to `auto` (or another value)
+
+    --outline: auto;
+  */
+}
+
+
+
+
+/*
+  automatically disable transitions based on OS settings
+*/
+
+@media (prefers-reduced-motion) {
+  :root {
+    --prefers-reduced-motion: ;
+  }
+}

@@ -1,0 +1,67 @@
+.tabs {
+  display: flex;
+}
+
+.tab {
+  border-color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--divider, var(--default-divider))
+  );
+
+  border-style: solid;
+  border-width: 0 0 1px;
+
+  color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--text, var(--default-color))
+  );
+
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  padding: 0.5em 1em;
+
+  transition: var(
+    --prefers-reduced-motion,
+    border-color 160ms, box-shadow 160ms, color 160ms
+  );
+
+  text-align: left;
+}
+
+.tab:hover {
+  box-shadow: 0 -0.125em 0 hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--divider, var(--default-divider))
+  ) inset;
+}
+
+.tab:focus {
+  box-shadow: 0 -0.125em 0 hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--divider, var(--default-divider))
+  ) inset;
+
+  outline: var(--outline, none);
+}
+
+
+
+
+.tab.active {
+  border-color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--border, var(--default-border))
+  );
+
+  box-shadow: 0 -0.125em 0 hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--border, var(--default-border))
+  ) inset;
+}

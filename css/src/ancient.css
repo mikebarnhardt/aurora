@@ -1,59 +1,9 @@
-/**
- *  ancient.css
- */
+/*
+  ovxrride
+    an experimental CSS framework/library
+*/
 
-@import 'animate';
-@import 'auto-grid';
-@import 'banner';
-@import 'body';
-@import 'box-sizing';
-@import 'button-group';
-@import 'button';
-@import 'card';
-@import 'checkbox';
-@import 'column';
-@import 'container';
-@import 'control';
-@import 'custom-media';
-@import 'divider';
-@import 'dropdown';
-@import 'grid';
-@import 'helper';
-@import 'html';
-@import 'icon';
-@import 'indicator';
-@import 'input';
-@import 'label';
-@import 'layout';
-@import 'link';
-@import 'list';
-@import 'measure';
-@import 'menu-item';
-@import 'menu';
-@import 'modal';
-@import 'nav-bar';
-@import 'nav';
-@import 'notification';
-@import 'radio';
-@import 'reset';
-@import 'section';
-@import 'space';
-@import 'stack';
-@import 'table';
-@import 'tag';
-@import 'text-selection';
-@import 'theme';
-@import 'title';
-@import 'toggle';
-
-/**
- *  utilities
- */
-@import 'display';
-@import 'flex';
-@import 'font';
-@import 'height';
-@import 'margin';
-@import 'padding';
-@import 'strong';
-@import 'text';
+@import 'elements';
+@import 'components';
+@import 'utilities';
+@import 'themes';

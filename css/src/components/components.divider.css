@@ -1,0 +1,25 @@
+.divider,
+hr {
+  border-color: hsl(
+    var(--hue, var(--default-hue)),
+    var(--saturation, var(--default-saturation)),
+    var(--divider, var(--default-divider))
+  );
+
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+  transition: border-color 160ms;
+  margin: 0;
+  width: 100%;
+}
+
+
+
+
+.divider.vertical,
+hr.vertical {
+  border-bottom-width: 0;
+  border-right-width: 1px;
+  width: auto;
+}

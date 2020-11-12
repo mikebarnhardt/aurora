@@ -1,0 +1,29 @@
+/* components.grid.css */
+
+.grid {
+  --grid-gutter: -1em;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: var(--grid-gutter);
+}
+
+.grid-xs { --grid-gutter: -0.25em }
+.grid-s { --grid-gutter: -0.5em }
+.grid-l { --grid-gutter: -2em }
+.grid-xl { --grid-gutter: -4em }
+
+@media (min-width: 768px) {
+  .grid-xs\/m { --grid-gutter: -0.25em }
+  .grid-s\/m { --grid-gutter: -0.5em }
+  .grid-m\/m { --grid-gutter: -1em }
+  .grid-l\/m { --grid-gutter: -2em }
+  .grid-xl\/m { --grid-gutter: -4em }
+}
+
+@media (min-width: 1024px) {
+  .grid-xs\/l { --grid-gutter: -0.25em }
+  .grid-s\/l { --grid-gutter: -0.5em }
+  .grid-m\/l { --grid-gutter: -1em }
+  .grid-l\/l { --grid-gutter: -2em }
+  .grid-xl\/l { --grid-gutter: -4em }
+}
