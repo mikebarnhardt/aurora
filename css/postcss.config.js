@@ -5,15 +5,7 @@ let plugins = [
 
 if ( process.env.NODE_ENV === 'production' ) {
   plugins.push(
-    require('cssnano')({
-      preset: [
-        'default',
-        {
-          calc: false,
-          mergeLonghand: false
-        }
-      ]
-    })
+    require('postcss-csso')
   );
 }
 
