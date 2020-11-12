@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="theme--ancient theme--light" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -25,17 +25,36 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     
+    <script type="text/javascript">
+      let mode = 'light';
+
+      if (window.localStorage && typeof localStorage.getItem('mode') === 'string') {
+        mode = localStorage.getItem('mode');
+      } else {
+        mode = window.matchMedia
+          && window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? 'night'
+          : 'day';
+      }
+
+      document.documentElement.classList.add(mode);
+    </script>
+    
     <!--
       Ancient CSS minified library. This comes with the default theme already
       installed so no extra theming is technically required.
+
+      <link href="https://unpkg.com/ancient-css@1.0.0/dist/ancient.min.css" rel="stylesheet" type="text/css" />
     -->
-    <link href="https://unpkg.com/ancient-css@0.1.0/dist/ancient.min.css" rel="stylesheet" type="text/css" />
     
     <!--
       Link for switching Ancient themes. You can add multiple links for ease of
       use or manually change "href" with the URI for the theme.
+
+      <link href="" id="js-theme" rel="stylesheet" type="text/css" />
     -->
-    <link href="" id="js-theme" rel="stylesheet" type="text/css" />
+
+    <!-- <link href="%PUBLIC_URL%/ancient.min.css" rel="stylesheet" type="text/css" /> -->
 
     <title>React App</title>
   </head>
