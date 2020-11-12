@@ -1,0 +1,24 @@
+.kitsune,
+.kitsune.day {
+  --default-hue: 264;
+  --default-saturation: 40%;
+
+  --primary-hue: 32;
+  --primary-saturation: 88%;
+  
+  --secondary-hue: 264;
+  --secondary-saturation: 56%;
+  --secondary-text: 64%;
+  
+  --info-hue: 200;
+  --info-saturation: 80%;
+
+  --success-hue: 128;
+  --success-saturation: 56%;
+
+  --warning-hue: 16;
+  --warning-saturation: 80%;
+
+  --error-hue: 344;
+  --error-saturation: 80%;
+}

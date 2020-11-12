@@ -1,0 +1,21 @@
+{
+  "author": "Mike Barnhardt <mikebarnhardt+github@gmail.com>",
+  "dependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1"
+  },
+  "description": "Kitsune theme for Ancient.",
+  "keywords": [
+    "ancient",
+    "css",
+    "kitsune",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "ancient-theme-kitsune",
+  "scripts": {
+    "build": "postcss --env=production --no-map src/kitsune.css --output dist/kitsune.min.css",
+    "start": "postcss --watch src/kitsune.css --output dist/kitsune.css"
+  },
+  "version": "0.1.4"
+}
