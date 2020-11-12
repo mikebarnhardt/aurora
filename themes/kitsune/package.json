@@ -17,5 +17,5 @@
     "build": "postcss --env=production --no-map src/kitsune.css --output dist/kitsune.min.css",
     "start": "postcss --watch src/kitsune.css --output dist/kitsune.css"
   },
-  "version": "0.1.4"
+  "version": "1.0.0"
 }
