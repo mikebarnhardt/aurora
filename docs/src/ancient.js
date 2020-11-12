@@ -6,6 +6,7 @@ import Guidelines from './Guidelines';
 const THEMES = {
   'behelit': 'https://unpkg.com/ancient-theme-behelit@latest/dist/behelit.min.css',
   'civics': 'https://unpkg.com/ancient-theme-civics@latest/dist/civics.min.css',
+  'kitsune': 'https://unpkg.com/ancient-theme-kitsune@latest/dist/kitsune.min.css',
 };
 
 function usePreferredColorScheme() {
@@ -92,14 +93,14 @@ function Ancient() {
 
     setTheme(newTheme);
   }
-  
-  // React.useEffect(
-  //   () => {
-  //     const link = document.querySelector('#js-theme');
-  //     link.setAttribute('href', THEMES[theme] || '');
-  //   },
-  //   [theme]
-  // );
+
+  React.useEffect(
+    () => {
+      const link = document.querySelector('#js-theme');
+      link.setAttribute('href', THEMES[theme] || '');
+    },
+    [theme]
+  );
   
   React.useEffect(
     () => {
