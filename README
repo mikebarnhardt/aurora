@@ -1,11 +1,13 @@
 ANCIENT
-A CSS library with some add-ons: themes, icons, illustrations, and patterns.
+An experimental CSS library with some add-ons:
+  themes, icons, illustrations, and patterns.
 
-POSTCSS
-I wanted to get away with pure CSS, but the DX was bad. I use PostCSS for: imports, custom media queries, CSS variable fallbacks, and auto-prefixing.
+This system is not meant to be a complete framework and assumes you can create
+and extend your own components in your chosen framework (React, Vue, Angular,
+etc.).
 
-WHY CSS?
-I'm not here to debate CSS-in-JS libraries. Everything has a drawback.
+It is intentionally left open-ended and it is highly encouraged to create your
+own repository extending the functionality you want.
 
-WHY NOT TAILWIND/TACHYONS/STYLED-SYSTEM/ETC?
-I'm not here to debate CSS libraries. Everything has a drawback.
+CONTRIBUTORS
+Developed and maintained by Mike Barnhardt <mikebarnhardt+github@gmail.com>.
