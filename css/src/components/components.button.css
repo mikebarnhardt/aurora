@@ -15,6 +15,7 @@
   --active-delta: var(--default-active-delta, -8%);
   --border-hover-delta: var(--default-border-hover-delta, -8%);
   --border-active-delta: var(--default-border-active-delta, -16%);
+  --box-shadow-inset: ;
 
   background-color: hsl(
     var(--hue, var(--base-hue)),
@@ -62,7 +63,7 @@
       var(--box-shadow, var(--background, var(--base-background))),
       var(--box-shadow-alpha, 0.25)
     )
-    var(--box-shadow-inset, );
+    var(--box-shadow-inset);
 
   outline: var(--outline, none);
 }

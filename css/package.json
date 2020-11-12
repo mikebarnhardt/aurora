@@ -29,7 +29,7 @@
     "prepare": "npm run build",
     "start": "postcss --watch src/ancient.css --output dist/ancient.css"
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "dependencies": {
     "postcss-each": "^0.10.0"
   }
