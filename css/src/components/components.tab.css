@@ -56,12 +56,12 @@
   border-color: hsl(
     var(--hue, var(--default-hue)),
     var(--saturation, var(--default-saturation)),
-    var(--border, var(--default-border))
+    var(--text, var(--default-color))
   );
 
   box-shadow: 0 -0.125em 0 hsl(
     var(--hue, var(--default-hue)),
     var(--saturation, var(--default-saturation)),
-    var(--border, var(--default-border))
+    var(--text, var(--default-color))
   ) inset;
 }

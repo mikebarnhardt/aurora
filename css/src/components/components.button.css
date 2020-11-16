@@ -4,19 +4,6 @@
 */
 
 .button {
-  /*
-    set default delta values
-
-    it is important the specificity is 1 so that the color utilities can
-    properly override them (for example, don't set in `.button.ghost`)
-  */
-
-  --hover-delta: var(--default-hover-delta, 8%);
-  --active-delta: var(--default-active-delta, -8%);
-  --border-hover-delta: var(--default-border-hover-delta, -8%);
-  --border-active-delta: var(--default-border-active-delta, -16%);
-  --box-shadow-inset: ;
-
   background-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
@@ -50,7 +37,7 @@
   background-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--hover-delta))
+    calc(var(--background, var(--base-background)) + var(--hover-delta, var(--base-hover-delta)))
   );
 }
 
@@ -72,7 +59,7 @@
   background-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--active-delta))
+    calc(var(--background, var(--base-background)) + var(--active-delta, var(--base-active-delta)))
   );
 }
 
@@ -109,7 +96,7 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-hover-delta))
+    calc(var(--border, var(--base-border)) + var(--border-hover-delta, var(--base-border-hover-delta)))
   );
 }
 
@@ -117,7 +104,7 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta)))
   );
 
   box-shadow:
@@ -125,7 +112,7 @@
     hsla(
       var(--hue, var(--base-hue)),
       var(--saturation, var(--base-saturation)),
-      calc(var(--box-shadow, var(--border, var(--base-border))) + var(--border-active-delta)),
+      calc(var(--box-shadow, var(--border, var(--base-border))) + var(--border-active-delta, var(--base-border-active-delta))),
       var(--box-shadow-alpha, 0.25)
     );
 }
@@ -134,6 +121,6 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta)))
   );
 }

@@ -1,9 +1,6 @@
 /* input.css */
 
 .input {
-  --border-hover-delta: var(--default-border-hover-delta, -8%);
-  --border-active-delta: var(--default-border-active-delta, -16%);
-
   background-color: transparent;
 
   border-color: hsl(
@@ -38,7 +35,7 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-hover-delta))
+    calc(var(--border, var(--base-border)) + var(--border-hover-delta, var(--default-border-hover-delta)))
   );
 }
 
@@ -46,7 +43,7 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--default-border-active-delta))
   );
 
   box-shadow:
@@ -54,7 +51,7 @@
     hsla(
       var(--hue, var(--base-hue)),
       var(--saturation, var(--base-saturation)),
-      calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+      calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--default-border-active-delta)),
       0.25
     );
 
@@ -65,7 +62,7 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--default-border-active-delta))
   );
 
   box-shadow:
@@ -73,7 +70,7 @@
     hsla(
       var(--hue, var(--base-hue)),
       var(--saturation, var(--base-saturation)),
-      calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+      calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--default-border-active-delta)),
       0.25
     );
 }

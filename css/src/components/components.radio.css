@@ -1,9 +1,4 @@
 .radio {
-  --hover-delta: var(--default-hover-delta, 8%);
-  --active-delta: var(--default-active-delta, -8%);
-  --border-hover-delta: var(--default-border-hover-delta, -8%);
-  --border-active-delta: var(--default-border-active-delta, -16%);
-
   position: relative;
 }
 
@@ -58,7 +53,7 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-hover-delta))
+    calc(var(--border, var(--base-border)) + var(--border-hover-delta, var(--base-border-hover-delta)))
   );
 }
 
@@ -66,13 +61,13 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta)))
   );
 
   box-shadow: 0 0 0 0.1875em hsla(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta))),
     0.25
   );
 }
@@ -81,13 +76,13 @@
   border-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta))
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta)))
   );
 
   box-shadow: 0 0 0 0.1875em hsla(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta)),
+    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta))),
     0.25
   );
 }
@@ -106,7 +101,7 @@
   background-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--hover-delta))
+    calc(var(--background, var(--base-background)) + var(--hover-delta, var(--base-hover-delta)))
   );
 }
 
@@ -114,13 +109,13 @@
   background-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--active-delta))
+    calc(var(--background, var(--base-background)) + var(--active-delta, var(--base-active-delta)))
   );
 
   box-shadow: 0 0 0 0.1875em hsla(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--active-delta)),
+    calc(var(--background, var(--base-background)) + var(--active-delta, var(--base-active-delta))),
     0.25
   );
 }
@@ -129,13 +124,13 @@
   background-color: hsl(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--active-delta))
+    calc(var(--background, var(--base-background)) + var(--active-delta, var(--base-active-delta)))
   );
 
   box-shadow: 0 0 0 0.1875em hsla(
     var(--hue, var(--base-hue)),
     var(--saturation, var(--base-saturation)),
-    calc(var(--background, var(--base-background)) + var(--active-delta)),
+    calc(var(--background, var(--base-background)) + var(--active-delta, var(--base-active-delta))),
     0.25
   );
 }

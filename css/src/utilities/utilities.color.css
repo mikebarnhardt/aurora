@@ -32,8 +32,15 @@
   --divider:    var(--base-divider);
   --text:       var(--base-text);
 
-  --border-hover-delta: var(--base-border-hover-delta, 8%);
-  --border-active-delta: var(--base-border-active-delta, 16%);
+  --hover-delta: var(--base-hover-delta, 8%);
+  --active-delta: var(--base-active-delta, -8%);
+  --border-hover-delta: var(--base-border-hover-delta, -8%);
+  --border-active-delta: var(--base-border-active-delta, -16%);
+
+  --box-shadow: var(--base-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 /*
@@ -50,8 +57,15 @@
   --divider:    var(--base-invert-divider);
   --text:       var(--base-invert-text);
   
-  --border-hover-delta: var(--base-border-invert-hover-delta, 8%);
-  --border-active-delta: var(--base-border-invert-active-delta, 16%);
+  --hover-delta: var(--base-invert-hover-delta, -2%);
+  --active-delta: var(--base-invert-active-delta, -4%);
+  --border-hover-delta: var(--base-invert-border-hover-delta, 8%);
+  --border-active-delta: var(--base-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--base-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 /*
@@ -75,21 +89,15 @@
   --divider:    var(--base-alternate-divider);
   --text:       var(--base-alternate-text);
 
-  /*
-    hover-delta increase lightness by default, but will result in pure white
-    here so we should slightly darken it instead
-  */
-  --hover-delta:  var(--base-alternate-hover-delta, -2%);
+  --hover-delta: var(--base-alternate-hover-delta, -2%);
   --active-delta: var(--base-alternate-active-delta, -4%);
+  --border-hover-delta: var(--base-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--base-alternate-border-active-delta, -16%);
 
-  /*
-    box-shadows barely appear so we can remap some of the default button
-    variables that tie into it for better contrast
-  */
-  --box-shadow:       var(--base-alternate-box-shadow, var(--base-alternate-color));
+  --box-shadow: var(--base-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
-  --box-shadow-width: 0.125em;
   --box-shadow-inset: inset;
+  --box-shadow-width: 0.125em;
 }
 
 
@@ -110,10 +118,15 @@
   --divider:    var(--primary-divider);
   --text:       var(--primary-text);
 
-  --box-shadow:       var(--primary-alternate-box-shadow, var(--color));
+  --hover-delta: var(--primary-hover-delta, 8%);
+  --active-delta: var(--primary-active-delta, -8%);
+  --border-hover-delta: var(--primary-border-hover-delta, -8%);
+  --border-active-delta: var(--primary-border-active-delta, -16%);
+
+  --box-shadow: var(--primary-box-shadow, var(--color));
   --box-shadow-alpha: 0.25;
-  --box-shadow-width: 0.1875em;
   --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 /*
@@ -130,8 +143,15 @@
   --divider:    var(--primary-invert-divider);
   --text:       var(--primary-invert-text);
 
+  --hover-delta: var(--primary-invert-hover-delta, -2%);
+  --active-delta: var(--primary-invert-active-delta, -4%);
   --border-hover-delta: var(--primary-invert-border-hover-delta, 8%);
   --border-active-delta: var(--primary-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--primary-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 /*
@@ -159,13 +179,15 @@
   --divider:    var(--primary-alternate-divider);
   --text:       var(--primary-alternate-text);
 
-  --hover-delta:  var(--primary-alternate-hover-delta, -2%);
+  --hover-delta: var(--primary-alternate-hover-delta, -2%);
   --active-delta: var(--primary-alternate-active-delta, -4%);
+  --border-hover-delta: var(--primary-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--primary-alternate-border-active-delta, -16%);
 
-  --box-shadow:       var(--primary-alternate-box-shadow, var(--primary-alternate-color));
+  --box-shadow: var(--primary-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
-  --box-shadow-width: 0.125em;
   --box-shadow-inset: inset;
+  --box-shadow-width: 0.125em;
 }
 
 
@@ -179,6 +201,16 @@
   --color:      var(--secondary-color);
   --divider:    var(--secondary-divider);
   --text:       var(--secondary-text);
+
+  --hover-delta: var(--secondary-hover-delta, 8%);
+  --active-delta: var(--secondary-active-delta, -8%);
+  --border-hover-delta: var(--secondary-border-hover-delta, -8%);
+  --border-active-delta: var(--secondary-border-active-delta, -16%);
+
+  --box-shadow: var(--secondary-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 ._secondary {
@@ -189,9 +221,16 @@
   --color:      var(--secondary-invert-color);
   --divider:    var(--secondary-invert-divider);
   --text:       var(--secondary-invert-text);
-  
-  --border-hover-delta: 8%;
-  --border-active-delta: 16%;
+
+  --hover-delta: var(--secondary-invert-hover-delta, -2%);
+  --active-delta: var(--secondary-invert-active-delta, -4%);
+  --border-hover-delta: var(--secondary-invert-border-hover-delta, 8%);
+  --border-active-delta: var(--secondary-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--secondary-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 .secondary\+ {
@@ -203,10 +242,12 @@
   --divider:    var(--secondary-alternate-divider);
   --text:       var(--secondary-alternate-text);
 
-  --hover-delta:  var(--secondary-alternate-hover-delta, -2%);
+  --hover-delta: var(--secondary-alternate-hover-delta, -2%);
   --active-delta: var(--secondary-alternate-active-delta, -4%);
-  
-  --box-shadow: var(--secondary-box-shadow, var(--secondary-alternate-color, 48%));
+  --border-hover-delta: var(--secondary-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--secondary-alternate-border-active-delta, -16%);
+
+  --box-shadow: var(--secondary-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
   --box-shadow-inset: inset;
   --box-shadow-width: 0.125em;
@@ -223,6 +264,16 @@
   --color:      var(--info-color);
   --divider:    var(--info-divider);
   --text:       var(--info-text);
+
+  --hover-delta: var(--info-hover-delta, 8%);
+  --active-delta: var(--info-active-delta, -8%);
+  --border-hover-delta: var(--info-border-hover-delta, -8%);
+  --border-active-delta: var(--info-border-active-delta, -16%);
+
+  --box-shadow: var(--info-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 ._info {
@@ -234,8 +285,15 @@
   --divider:    var(--info-invert-divider);
   --text:       var(--info-invert-text);
 
-  --border-hover-delta: 8%;
-  --border-active-delta: 16%;
+  --hover-delta: var(--info-invert-hover-delta, -2%);
+  --active-delta: var(--info-invert-active-delta, -4%);
+  --border-hover-delta: var(--info-invert-border-hover-delta, 8%);
+  --border-active-delta: var(--info-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--info-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 .info\+ {
@@ -247,10 +305,12 @@
   --divider:    var(--info-alternate-divider);
   --text:       var(--info-alternate-text);
 
-  --hover-delta:  var(--info-alternate-hover-delta, -2%);
+  --hover-delta: var(--info-alternate-hover-delta, -2%);
   --active-delta: var(--info-alternate-active-delta, -4%);
+  --border-hover-delta: var(--info-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--info-alternate-border-active-delta, -16%);
 
-  --box-shadow:       var(--info-box-shadow, var(--info-alternate-color));
+  --box-shadow: var(--info-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
   --box-shadow-inset: inset;
   --box-shadow-width: 0.125em;
@@ -267,6 +327,16 @@
   --color:      var(--success-color);
   --divider:    var(--success-divider);
   --text:       var(--success-text);
+
+  --hover-delta: var(--success-hover-delta, 8%);
+  --active-delta: var(--success-active-delta, -8%);
+  --border-hover-delta: var(--success-border-hover-delta, -8%);
+  --border-active-delta: var(--success-border-active-delta, -16%);
+
+  --box-shadow: var(--success-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 ._success {
@@ -278,8 +348,15 @@
   --divider:    var(--success-invert-divider);
   --text:       var(--success-invert-text);
 
-  --border-hover-delta: 8%;
-  --border-active-delta: 16%;
+  --hover-delta: var(--success-invert-hover-delta, -2%);
+  --active-delta: var(--success-invert-active-delta, -4%);
+  --border-hover-delta: var(--success-invert-border-hover-delta, 8%);
+  --border-active-delta: var(--success-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--success-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 .success\+ {
@@ -291,10 +368,12 @@
   --divider:    var(--success-alternate-divider);
   --text:       var(--success-alternate-text);
 
-  --hover-delta:  var(--success-alternate-hover-delta, -2%);
+  --hover-delta: var(--success-alternate-hover-delta, -2%);
   --active-delta: var(--success-alternate-active-delta, -4%);
+  --border-hover-delta: var(--success-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--success-alternate-border-active-delta, -16%);
 
-  --box-shadow: var(--success-box-shadow, var(--success-alternate-color));
+  --box-shadow: var(--success-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
   --box-shadow-inset: inset;
   --box-shadow-width: 0.125em;
@@ -311,6 +390,16 @@
   --color:      var(--warning-color);
   --divider:    var(--warning-divider);
   --text:       var(--warning-text);
+
+  --hover-delta: var(--warning-hover-delta, 8%);
+  --active-delta: var(--warning-active-delta, -8%);
+  --border-hover-delta: var(--warning-border-hover-delta, -8%);
+  --border-active-delta: var(--warning-border-active-delta, -16%);
+
+  --box-shadow: var(--warning-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 ._warning {
@@ -322,8 +411,15 @@
   --divider:    var(--warning-invert-divider);
   --text:       var(--warning-invert-text);
 
-  --border-hover-delta: 8%;
-  --border-active-delta: 16%;
+  --hover-delta: var(--warning-invert-hover-delta, -2%);
+  --active-delta: var(--warning-invert-active-delta, -4%);
+  --border-hover-delta: var(--warning-invert-border-hover-delta, 8%);
+  --border-active-delta: var(--warning-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--warning-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 .warning\+ {
@@ -335,10 +431,12 @@
   --divider:    var(--warning-alternate-divider);
   --text:       var(--warning-alternate-text);
 
-  --hover-delta:  var(--warning-alternate-hover-delta, -2%);
+  --hover-delta: var(--warning-alternate-hover-delta, -2%);
   --active-delta: var(--warning-alternate-active-delta, -4%);
+  --border-hover-delta: var(--warning-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--warning-alternate-border-active-delta, -16%);
 
-  --box-shadow: var(--warning-box-shadow, var(--warning-alternate-color));
+  --box-shadow: var(--warning-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
   --box-shadow-inset: inset;
   --box-shadow-width: 0.125em;
@@ -355,6 +453,16 @@
   --color:      var(--error-color);
   --divider:    var(--error-divider);
   --text:       var(--error-text);
+
+  --hover-delta: var(--error-hover-delta, 8%);
+  --active-delta: var(--error-active-delta, -8%);
+  --border-hover-delta: var(--error-border-hover-delta, -8%);
+  --border-active-delta: var(--error-border-active-delta, -16%);
+
+  --box-shadow: var(--error-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 ._error {
@@ -366,8 +474,15 @@
   --divider:    var(--error-invert-divider);
   --text:       var(--error-invert-text);
 
-  --border-hover-delta: 8%;
-  --border-active-delta: 16%;
+  --hover-delta: var(--error-invert-hover-delta, -2%);
+  --active-delta: var(--error-invert-active-delta, -4%);
+  --border-hover-delta: var(--error-invert-border-hover-delta, 8%);
+  --border-active-delta: var(--error-invert-border-active-delta, 16%);
+
+  --box-shadow: var(--error-invert-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-inset: ;
+  --box-shadow-width: 0.1875em;
 }
 
 .error\+ {
@@ -379,10 +494,12 @@
   --divider:    var(--error-alternate-divider);
   --text:       var(--error-alternate-text);
 
-  --hover-delta:  var(--error-alternate-hover-delta, -2%);
+  --hover-delta: var(--error-alternate-hover-delta, -2%);
   --active-delta: var(--error-alternate-active-delta, -4%);
+  --border-hover-delta: var(--error-alternate-border-hover-delta, -8%);
+  --border-active-delta: var(--error-alternate-border-active-delta, -16%);
 
-  --box-shadow: var(--error-box-shadow, var(--error-alternate-color));
+  --box-shadow: var(--error-alternate-box-shadow, var(--color));
   --box-shadow-alpha: 1;
   --box-shadow-inset: inset;
   --box-shadow-width: 0.125em;

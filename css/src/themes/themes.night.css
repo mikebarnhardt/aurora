@@ -7,6 +7,23 @@
 
   --default-border-hover-delta: 8%;
   --default-border-active-delta: 16%;
+  --base-border-hover-delta: 8%;
+  --base-border-active-delta: 16%;
+  --primary-border-hover-delta: 8%;
+  --primary-border-active-delta: 16%;
+  --secondary-border-hover-delta: 8%;
+  --secondary-border-active-delta: 16%;
+  --info-border-hover-delta: 8%;
+  --info-border-active-delta: 16%;
+  --success-border-hover-delta: 8%;
+  --success-border-active-delta: 16%;
+  --warning-border-hover-delta: 8%;
+  --warning-border-active-delta: 16%;
+  --error-border-hover-delta: 8%;
+  --error-border-active-delta: 16%;
+
+  --base-border-invert-hover-delta: -8%;
+  --base-border-invert-active-delta: -16%;
 
   --base-background: 96%;
   --base-border: var(--default-border);
@@ -21,9 +38,6 @@
   --base-invert-text: 24%;
   --base-invert-hover-delta: 2%;
   --base-invert-active-delta: 4%;
-
-  --base-border-invert-hover-delta: -8%;
-  --base-border-invert-active-delta: -16%;
 
   --base-alternate-background: 20%;
   --base-alternate-border: 32%;
