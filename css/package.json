@@ -28,5 +28,5 @@
     "prepare": "npm run build",
     "start": "postcss --watch src/ancient.css --output dist/ancient.css"
   },
-  "version": "2.1.1"
+  "version": "2.1.2"
 }
