@@ -22,9 +22,6 @@
   --error-border-hover-delta: 8%;
   --error-border-active-delta: 16%;
 
-  --base-border-invert-hover-delta: -8%;
-  --base-border-invert-active-delta: -16%;
-
   --base-background: 96%;
   --base-border: var(--default-border);
   --base-color: 24%;
@@ -36,8 +33,10 @@
   --base-invert-color: 96%;
   --base-invert-divider: 28%;
   --base-invert-text: 24%;
-  --base-invert-hover-delta: 2%;
-  --base-invert-active-delta: 4%;
+  --base-invert-hover-delta: 8%;
+  --base-invert-active-delta: -8%;
+  --base-invert-border-hover-delta: -8%;
+  --base-invert-border-active-delta: -16%;
 
   --base-alternate-background: 20%;
   --base-alternate-border: 32%;

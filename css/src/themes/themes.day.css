@@ -9,7 +9,6 @@
   --default-divider: 92%;
   --default-html: 98%;
 
-
   /* base */
   --base-hue: var(--default-hue);
   --base-saturation: var(--default-saturation);
@@ -18,6 +17,10 @@
   --base-color: 96%;
   --base-divider: 32%;
   --base-text: 24%;
+  --base-hover-delta: 8%;
+  --base-active-delta: -8%;
+  --base-border-hover-delta: -8%;
+  --base-border-active-delta: -16%;
 
   /* _base */
   --base-invert-hue: var(--base-hue);
