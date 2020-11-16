@@ -31,6 +31,9 @@
   --color:      var(--base-color);
   --divider:    var(--base-divider);
   --text:       var(--base-text);
+
+  --border-hover-delta: var(--base-border-hover-delta, 8%);
+  --border-active-delta: var(--base-border-active-delta, 16%);
 }
 
 /*
@@ -48,7 +51,7 @@
   --text:       var(--base-invert-text);
   
   --border-hover-delta: var(--base-border-invert-hover-delta, 8%);
-  --border-active-delta: var(--base-border-active-hover-delta, 16%);
+  --border-active-delta: var(--base-border-invert-active-delta, 16%);
 }
 
 /*
@@ -106,6 +109,11 @@
   --border:     var(--primary-border);
   --divider:    var(--primary-divider);
   --text:       var(--primary-text);
+
+  --box-shadow:       var(--primary-alternate-box-shadow, var(--color));
+  --box-shadow-alpha: 0.25;
+  --box-shadow-width: 0.1875em;
+  --box-shadow-inset: ;
 }
 
 /*
