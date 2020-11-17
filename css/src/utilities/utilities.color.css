@@ -37,7 +37,7 @@
   --border-hover-delta: var(--base-border-hover-delta, -8%);
   --border-active-delta: var(--base-border-active-delta, -16%);
 
-  --box-shadow: var(--base-box-shadow, var(--color));
+  --box-shadow: var(--base-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -62,7 +62,7 @@
   --border-hover-delta: var(--base-invert-border-hover-delta, 8%);
   --border-active-delta: var(--base-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--base-invert-box-shadow, var(--color));
+  --box-shadow: var(--base-invert-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -123,7 +123,7 @@
   --border-hover-delta: var(--primary-border-hover-delta, -8%);
   --border-active-delta: var(--primary-border-active-delta, -16%);
 
-  --box-shadow: var(--primary-box-shadow, var(--color));
+  --box-shadow: var(--primary-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -148,7 +148,7 @@
   --border-hover-delta: var(--primary-invert-border-hover-delta, 8%);
   --border-active-delta: var(--primary-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--primary-invert-box-shadow, var(--color));
+  --box-shadow: var(--primary-invert-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -207,7 +207,7 @@
   --border-hover-delta: var(--secondary-border-hover-delta, -8%);
   --border-active-delta: var(--secondary-border-active-delta, -16%);
 
-  --box-shadow: var(--secondary-box-shadow, var(--color));
+  --box-shadow: var(--secondary-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -227,7 +227,7 @@
   --border-hover-delta: var(--secondary-invert-border-hover-delta, 8%);
   --border-active-delta: var(--secondary-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--secondary-invert-box-shadow, var(--color));
+  --box-shadow: var(--secondary-invert-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -270,7 +270,7 @@
   --border-hover-delta: var(--info-border-hover-delta, -8%);
   --border-active-delta: var(--info-border-active-delta, -16%);
 
-  --box-shadow: var(--info-box-shadow, var(--color));
+  --box-shadow: var(--info-box-shadow, var(--backgroundbackground));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -290,7 +290,7 @@
   --border-hover-delta: var(--info-invert-border-hover-delta, 8%);
   --border-active-delta: var(--info-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--info-invert-box-shadow, var(--color));
+  --box-shadow: var(--info-invert-box-shadow, var(--backgroundbackground));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -333,7 +333,7 @@
   --border-hover-delta: var(--success-border-hover-delta, -8%);
   --border-active-delta: var(--success-border-active-delta, -16%);
 
-  --box-shadow: var(--success-box-shadow, var(--color));
+  --box-shadow: var(--success-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -353,7 +353,7 @@
   --border-hover-delta: var(--success-invert-border-hover-delta, 8%);
   --border-active-delta: var(--success-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--success-invert-box-shadow, var(--color));
+  --box-shadow: var(--success-invert-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -396,7 +396,7 @@
   --border-hover-delta: var(--warning-border-hover-delta, -8%);
   --border-active-delta: var(--warning-border-active-delta, -16%);
 
-  --box-shadow: var(--warning-box-shadow, var(--color));
+  --box-shadow: var(--warning-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -416,7 +416,7 @@
   --border-hover-delta: var(--warning-invert-border-hover-delta, 8%);
   --border-active-delta: var(--warning-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--warning-invert-box-shadow, var(--color));
+  --box-shadow: var(--warning-invert-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -459,7 +459,7 @@
   --border-hover-delta: var(--error-border-hover-delta, -8%);
   --border-active-delta: var(--error-border-active-delta, -16%);
 
-  --box-shadow: var(--error-box-shadow, var(--color));
+  --box-shadow: var(--error-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
@@ -479,7 +479,7 @@
   --border-hover-delta: var(--error-invert-border-hover-delta, 8%);
   --border-active-delta: var(--error-invert-border-active-delta, 16%);
 
-  --box-shadow: var(--error-invert-box-shadow, var(--color));
+  --box-shadow: var(--error-invert-box-shadow, var(--background));
   --box-shadow-alpha: 0.25;
   --box-shadow-inset: ;
   --box-shadow-width: 0.1875em;
