@@ -1,17 +1,16 @@
 .section {
   background-color: hsl(
-    var(--hue, var(--default-hue)),
-    var(--saturation, var(--default-saturation)),
-    var(--background, var(--default-background))
+    var(--hue),
+    var(--saturation),
+    var(--background)
   );
 
   color: hsl(
-    var(--hue, var(--default-hue)),
-    var(--saturation, var(--default-saturation)),
-    var(--color, var(--default-color))
+    var(--hue),
+    var(--saturation),
+    var(--color)
   );
 
-  margin: 2px;
   padding: 2em;
 
   transition: var(

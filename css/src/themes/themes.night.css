@@ -1,4 +1,9 @@
 .night {
+  --background: 16%;
+  --border: 32%;
+  --color: 96%;
+  --divider: 24%;
+
   --default-background: 16%;
   --default-border: 32%;
   --default-divider: 24%;

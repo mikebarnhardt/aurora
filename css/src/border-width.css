@@ -1,0 +1,23 @@
+@each $width in 0, 1, 2, 4, 8 {
+  .border-width-$(width) {
+    border-width: $(width)px;
+  }
+
+  @each $psuedo in hover, focus, focus-within, active {
+    .border-width-$(width) {
+      border-width: $(width)px;
+    }
+  }
+  
+  @each $side in bottom, left, right, top {
+    .border-$(side)-width-$(width) {
+      border-$(side)-width: $(width)px;
+    }
+    
+    @each $psuedo in hover, focus, focus-within, active {
+      .border-$(side)-width-$(width) {
+        border-$(side)-width: $(width)px;
+      }
+    }
+  }
+}

@@ -4,9 +4,9 @@
   background-color: transparent;
 
   border-color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    var(--border, var(--base-border))
+    var(--hue),
+    var(--saturation),
+    var(--border)
   );
 
   border-radius: 0.25em;
@@ -14,9 +14,9 @@
   border-width: 1px;
 
   color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    var(--text, var(--base-text))
+    var(--hue),
+    var(--saturation),
+    var(--color)
   );
 
   display: block;
@@ -33,25 +33,25 @@
 
 .input:hover {
   border-color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-hover-delta, var(--base-border-hover-delta)))
+    var(--hue),
+    var(--saturation),
+    calc(var(--border) + var(--border-hover-delta))
   );
 }
 
 .input:focus {
   border-color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta)))
+    var(--hue),
+    var(--saturation),
+    calc(var(--border) + var(--border-active-delta))
   );
 
   box-shadow:
     0 0 0 0.1875em
     hsla(
-      var(--hue, var(--base-hue)),
-      var(--saturation, var(--base-saturation)),
-      calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta))),
+      var(--hue),
+      var(--saturation),
+      calc(var(--border) + var(--border-active-delta)),
       0.25
     );
 
@@ -60,17 +60,17 @@
 
 .input:active {
   border-color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta)))
+    var(--hue),
+    var(--saturation),
+    calc(var(--border) + var(--border-active-delta))
   );
 
   box-shadow:
     0 0 0 0.1875em
     hsla(
-      var(--hue, var(--base-hue)),
-      var(--saturation, var(--base-saturation)),
-      calc(var(--border, var(--base-border)) + var(--border-active-delta, var(--base-border-active-delta))),
+      var(--hue),
+      var(--saturation),
+      calc(var(--border) + var(--border-active-delta)),
       0.25
     );
 }

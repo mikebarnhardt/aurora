@@ -1,7 +1,7 @@
 .day,
 :root {
   /* default */
-  --default-hue: 248;
+  --default-hue: 232;
   --default-saturation: 32%;
   --default-background: 100%;
   --default-border: 84%;
@@ -42,7 +42,7 @@
 
 
   /* primary */
-  --primary-hue: 248;
+  --primary-hue: 232;
   --primary-saturation: 56%;
   --primary-background: 56%;
   --primary-border: var(--default-border);
@@ -70,9 +70,9 @@
 
 
   /* secondary */
-  --secondary-hue: 160;
+  --secondary-hue: 168;
   --secondary-saturation: 56%;
-  --secondary-background: 56%;
+  --secondary-background: 48%;
   --secondary-border: var(--default-border);
   --secondary-color: 100%;
   --secondary-divider: 64%;

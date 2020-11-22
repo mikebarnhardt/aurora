@@ -4,19 +4,20 @@
 */
 
 .banner {
+  --banner-background: hsl(var(--hue), var(--saturation), var(--background));
+
   background-color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    var(--background, var(--base-background))
+    var(--hue),
+    var(--saturation),
+    var(--background)
   );
 
   color: hsl(
-    var(--hue, var(--base-hue)),
-    var(--saturation, var(--base-saturation)),
-    var(--color, var(--base-color))
+    var(--hue),
+    var(--saturation),
+    var(--color)
   );
 
-  margin: 2px;
   padding: 2em;
 
   transition: var(

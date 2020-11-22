@@ -18,6 +18,12 @@
 
     --outline: auto;
   */
+  
+  --hue: 232;
+  --saturation: 32%;
+  --background: 100%;
+  --border: 64%;
+  --color: 16%;
 }
 
 

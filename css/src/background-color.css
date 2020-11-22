@@ -1,0 +1,38 @@
+@each $color in apricot, ash, avocado, azure, bone, bronze, canary, cherry, cloud, coral, ice, indigo, ink, lavender, lime, rose, teal {
+  @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+    .background-$(color)-$(value) {
+      background-color: hsla(var(--$(color)-$(value)), var(--background-alpha, 1));
+    }
+  }
+  
+  @each $psuedo in hover, focus, focus-within, active {
+    @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+      .$(psuedo)\:background-$(color)-$(value):$(psuedo) {
+        background-color: hsla(var(--$(color)-$(value)), var(--background-alpha, 1));
+      }
+    }
+  }
+}
+
+
+
+
+/*
+  dark mode variants
+*/
+
+@each $color in apricot, ash, avocado, azure, bone, bronze, canary, cherry, cloud, coral, ice, indigo, ink, lavender, lime, rose, teal {
+  @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+    .dark .dark\:background-$(color)-$(value) {
+      background-color: hsla(var(--$(color)-$(value)), var(--background-alpha, 1));
+    }
+  }
+  
+  @each $psuedo in hover, focus, focus-within, active {
+    @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+      .dark .dark\:$(psuedo)\:background-$(color)-$(value):$(psuedo) {
+        background-color: hsla(var(--$(color)-$(value)), var(--background-alpha, 1));
+      }
+    }
+  }
+}

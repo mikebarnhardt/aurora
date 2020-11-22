@@ -1,0 +1,20 @@
+.gradient {
+  --gradient-angle: 160deg;
+  background-image: linear-gradient(var(--gradient-angle), var(--gradient-from), var(--gradient-to));
+}
+
+@each $color in base, error, info, primary, secondary, success, warning  {
+  @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200 {
+    .gradient-from-$(color)-$(value) {
+      --gradient-from: var(--$(color)-$(value));
+    }
+  }
+}
+
+@each $color in base, error, info, primary, secondary, success, warning  {
+  @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200 {
+    .gradient-to-$(color)-$(value) {
+      --gradient-to: var(--$(color)-$(value));
+    }
+  }
+}

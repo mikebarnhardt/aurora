@@ -1,0 +1,27 @@
+@each $display in block, flex, inline-block, inline-flex, none, table {
+  .$(display) {
+    display: $(display);
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  @each $display in block, flex, inline-block, inline-flex, none, table {
+    .md\:$(display) {
+      display: $(display);
+    }
+  }
+}
+
+
+
+
+@media (min-width: 1024px) {
+  @each $display in block, flex, inline-block, inline-flex, none, table {
+    .lg\:$(display) {
+      display: $(display);
+    }
+  }
+}

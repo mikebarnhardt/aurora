@@ -3,7 +3,34 @@
     an experimental CSS framework/library
 */
 
-@import 'elements';
-@import 'components';
-@import 'utilities';
-@import 'themes';
+/* @import 'elements'; */
+/* @import 'components'; */
+/* @import 'utilities'; */
+/* @import 'themes'; */
+
+@import 'background-color';
+@import 'border';
+@import 'border-color';
+@import 'border-radius';
+@import 'border-style';
+@import 'border-width';
+@import 'box-shadow';
+@import 'color';
+@import 'display';
+@import 'flex';
+@import 'font-size';
+@import 'font-weight';
+@import 'gradient';
+@import 'height';
+@import 'left';
+@import 'line-height';
+@import 'margin';
+@import 'outline';
+@import 'padding';
+@import 'position';
+@import 'right';
+@import 'theme';
+@import 'top';
+@import 'transform';
+@import 'transition';
+@import 'width';

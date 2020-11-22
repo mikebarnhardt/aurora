@@ -1,0 +1,61 @@
+/*
+  static/keyword colors
+*/
+
+@each $color in black, inherit, transparent, white {
+  .color-$(color) {
+    color: $(color);
+  }
+  
+  @each $psuedo in hover, focus, focus-within, active {
+    .$(psuedo)\:color-$(color):$(psuedo)  {
+      color: $(color);
+    }
+  }
+}
+
+
+
+
+/*
+  theme colors
+*/
+
+@each $color in apricot, ash, avocado, azure, bone, bronze, canary, cherry, cloud, coral, ice, indigo, ink, lavender, lime, rose, teal {
+  @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+    .color-$(color)-$(value) {
+      color: hsla(var(--$(color)-$(value)), var(--color-alpha, 1));
+    }
+  }
+  
+  @each $psuedo in hover, focus, focus-within, active {
+    @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+      .$(psuedo)\:color-$(color)-$(value):$(psuedo) {
+        color: hsla(var(--$(color)-$(value)), var(--color-alpha, 1));
+      }
+    }
+  }
+}
+
+
+
+
+/*
+  dark theme colors
+*/
+
+@each $color in apricot, ash, avocado, azure, bone, bronze, canary, cherry, cloud, coral, ice, indigo, ink, lavender, lime, rose, teal {
+  @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+    .dark .dark\:color-$(color)-$(value) {
+      color: hsla(var(--$(color)-$(value)), var(--color-alpha, 1));
+    }
+  }
+  
+  @each $psuedo in hover, focus, focus-within, active {
+    @each $value in 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 {
+      .dark .dark\:color-$(psuedo)\:$(color)-$(value):$(psuedo) {
+        color: hsla(var(--$(color)-$(value)), var(--color-alpha, 1));
+      }
+    }
+  }
+}

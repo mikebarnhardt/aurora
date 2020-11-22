@@ -9,6 +9,7 @@
     "postcss": "^8.1.7",
     "postcss-cli": "^8.2.0",
     "postcss-csso": "^5.0.0",
+    "postcss-each": "^0.10.0",
     "postcss-import": "^13.0.0"
   },
   "homepage": "https://github.com/mikebarnhardt/ancient#readme",
@@ -28,5 +29,6 @@
     "prepare": "npm run build",
     "start": "postcss --watch src/ancient.css --output dist/ancient.css"
   },
-  "version": "2.3.0"
+  "version": "3.1.0",
+  "dependencies": {}
 }
