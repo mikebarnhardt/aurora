@@ -1,9 +1,0 @@
-/*
-  elements.svg.css
-    prevent svg from enormous display
-*/
-
-svg {
-  height: 1em;
-  width: 1em;
-}

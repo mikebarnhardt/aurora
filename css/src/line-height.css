@@ -1,5 +1,0 @@
-@each $height, $index in (0, 1, 1.25, 1.5, 1.75, 2), (0, 100, 125, 150, 175, 200) {
-  .line-height-$(index) {
-    line-height: $(height);
-  }
-}

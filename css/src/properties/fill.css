@@ -1,0 +1,39 @@
+.fill-current {
+  fill: currentColor;
+}
+
+.hover\:fill-current:hover {
+  fill: currentColor;
+}
+
+.focus\:fill-current:focus {
+  fill: currentColor;
+}
+
+.focus-within\:fill-current:focus-within {
+  fill: currentColor;
+}
+
+.active\:fill-current:active {
+  fill: currentColor;
+}
+
+.fill-none {
+  fill: none;
+}
+
+.hover\:fill-none:hover {
+  fill: none;
+}
+
+.focus\:fill-none:focus {
+  fill: none;
+}
+
+.focus-within\:fill-none:focus-within {
+  fill: none;
+}
+
+.active\:fill-none:active {
+  fill: none;
+}

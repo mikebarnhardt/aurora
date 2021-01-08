@@ -1,36 +1,45 @@
-/*
-  ovxrride
-    an experimental CSS framework/library
-*/
-
-/* @import 'elements'; */
-/* @import 'components'; */
-/* @import 'utilities'; */
-/* @import 'themes'; */
-
-@import 'background-color';
-@import 'border';
-@import 'border-color';
-@import 'border-radius';
-@import 'border-style';
-@import 'border-width';
-@import 'box-shadow';
-@import 'color';
-@import 'display';
-@import 'flex';
-@import 'font-size';
-@import 'font-weight';
-@import 'gradient';
-@import 'height';
-@import 'left';
-@import 'line-height';
-@import 'margin';
-@import 'outline';
-@import 'padding';
-@import 'position';
-@import 'right';
-@import 'theme';
-@import 'top';
-@import 'transform';
-@import 'transition';
-@import 'width';
+@import './properties/align-items.css';
+@import './properties/appearance.css';
+@import './properties/background-color.css';
+@import './properties/background-opacity.css';
+@import './properties/border-collapse.css';
+@import './properties/border-color.css';
+@import './properties/border-radius.css';
+@import './properties/border-style.css';
+@import './properties/border-width.css';
+@import './properties/bottom.css';
+@import './properties/box-shadow.css';
+@import './properties/color.css';
+@import './properties/display.css';
+@import './properties/fill.css';
+@import './properties/flex-direction.css';
+@import './properties/flex.css';
+@import './properties/font-family.css';
+@import './properties/font-size.css';
+@import './properties/font-smoothing.css';
+@import './properties/font-weight.css';
+@import './properties/gap.css';
+@import './properties/grid-columns.css';
+@import './properties/height.css';
+@import './properties/justify-content.css';
+@import './properties/left.css';
+@import './properties/line-height.css';
+@import './properties/margin.css';
+@import './properties/max-height.css';
+@import './properties/max-width.css';
+@import './properties/min-height.css';
+@import './properties/min-width.css';
+@import './properties/opacity.css';
+@import './properties/outline.css';
+@import './properties/overflow.css';
+@import './properties/padding.css';
+@import './properties/position.css';
+@import './properties/ratio.css';
+@import './properties/right.css';
+@import './properties/text-align.css';
+@import './properties/text-decoration.css';
+@import './properties/top.css';
+@import './properties/transform.css';
+@import './properties/transition.css';
+@import './properties/visibility.css';
+@import './properties/width.css';

@@ -1,0 +1,869 @@
+.r-1px {
+  right: 1px;
+}
+
+.r-2px {
+  right: 2px;
+}
+
+.r-3px {
+  right: 3px;
+}
+
+.r-0 {
+  right: 0;
+}
+
+.r-1 {
+  right: 0.25rem;
+}
+
+.r-2 {
+  right: 0.5rem;
+}
+
+.r-3 {
+  right: 0.75rem;
+}
+
+.r-4 {
+  right: 1rem;
+}
+
+.r-5 {
+  right: 1.25rem;
+}
+
+.r-6 {
+  right: 1.5rem;
+}
+
+.r-7 {
+  right: 1.75rem;
+}
+
+.r-8 {
+  right: 2rem;
+}
+
+.r-10 {
+  right: 2.5rem;
+}
+
+.r-12 {
+  right: 3rem;
+}
+
+.r-14 {
+  right: 3.5rem;
+}
+
+.r-16 {
+  right: 4rem;
+}
+
+.r-20 {
+  right: 5rem;
+}
+
+.r-24 {
+  right: 6rem;
+}
+
+.r-32 {
+  right: 8rem;
+}
+
+.r-48 {
+  right: 12rem;
+}
+
+.r-64 {
+  right: 16rem;
+}
+
+.r-1\/1 {
+  right: 100%;
+}
+
+.r-1\/2 {
+  right: 50%;
+}
+
+.r-1\/3 {
+  right: 33.33%;
+}
+
+.r-1\/4 {
+  right: 25%;
+}
+
+.r-2\/3 {
+  right: 66.67%;
+}
+
+.r-3\/4 {
+  right: 75%;
+}
+
+.r-auto {
+  right: auto;
+}
+
+.-r-1px {
+  right: -1px;
+}
+
+.-r-2px {
+  right: -2px;
+}
+
+.-r-3px {
+  right: -3px;
+}
+
+.-r-1 {
+  right: -0.25rem;
+}
+
+.-r-2 {
+  right: -0.5rem;
+}
+
+.-r-3 {
+  right: -0.75rem;
+}
+
+.-r-4 {
+  right: -1rem;
+}
+
+.-r-5 {
+  right: -1.25rem;
+}
+
+.-r-6 {
+  right: -1.5rem;
+}
+
+.-r-7 {
+  right: -1.75rem;
+}
+
+.-r-8 {
+  right: -2rem;
+}
+
+.-r-10 {
+  right: -2.5rem;
+}
+
+.-r-12 {
+  right: -3rem;
+}
+
+.-r-14 {
+  right: -3.5rem;
+}
+
+.-r-16 {
+  right: -4rem;
+}
+
+.-r-20 {
+  right: -5rem;
+}
+
+.-r-24 {
+  right: -6rem;
+}
+
+.-r-32 {
+  right: -8rem;
+}
+
+.-r-48 {
+  right: -12rem;
+}
+
+.-r-64 {
+  right: -16rem;
+}
+
+.-r-1\/1 {
+  right: -100%;
+}
+
+.-r-1\/2 {
+  right: -50%;
+}
+
+.-r-1\/3 {
+  right: -33.33%;
+}
+
+.-r-1\/4 {
+  right: -25%;
+}
+
+.-r-2\/3 {
+  right: -66.67%;
+}
+
+.-r-3\/4 {
+  right: -75%;
+}
+
+@media (min-width: 768px) {
+  .sm\:r-1px {
+    right: 1px;
+  }
+
+  .sm\:r-2px {
+    right: 2px;
+  }
+
+  .sm\:r-3px {
+    right: 3px;
+  }
+
+  .sm\:r-0 {
+    right: 0;
+  }
+
+  .sm\:r-1 {
+    right: 0.25rem;
+  }
+
+  .sm\:r-2 {
+    right: 0.5rem;
+  }
+
+  .sm\:r-3 {
+    right: 0.75rem;
+  }
+
+  .sm\:r-4 {
+    right: 1rem;
+  }
+
+  .sm\:r-5 {
+    right: 1.25rem;
+  }
+
+  .sm\:r-6 {
+    right: 1.5rem;
+  }
+
+  .sm\:r-7 {
+    right: 1.75rem;
+  }
+
+  .sm\:r-8 {
+    right: 2rem;
+  }
+
+  .sm\:r-10 {
+    right: 2.5rem;
+  }
+
+  .sm\:r-12 {
+    right: 3rem;
+  }
+
+  .sm\:r-14 {
+    right: 3.5rem;
+  }
+
+  .sm\:r-16 {
+    right: 4rem;
+  }
+
+  .sm\:r-20 {
+    right: 5rem;
+  }
+
+  .sm\:r-24 {
+    right: 6rem;
+  }
+
+  .sm\:r-32 {
+    right: 8rem;
+  }
+
+  .sm\:r-48 {
+    right: 12rem;
+  }
+
+  .sm\:r-64 {
+    right: 16rem;
+  }
+
+  .sm\:r-1\/1 {
+    right: 100%;
+  }
+
+  .sm\:r-1\/2 {
+    right: 50%;
+  }
+
+  .sm\:r-1\/3 {
+    right: 33.33%;
+  }
+
+  .sm\:r-1\/4 {
+    right: 25%;
+  }
+
+  .sm\:r-2\/3 {
+    right: 66.67%;
+  }
+
+  .sm\:r-3\/4 {
+    right: 75%;
+  }
+
+  .sm\:r-auto {
+    right: auto;
+  }
+
+  .sm\:-r-1px {
+    right: -1px;
+  }
+
+  .sm\:-r-2px {
+    right: -2px;
+  }
+
+  .sm\:-r-3px {
+    right: -3px;
+  }
+
+  .sm\:-r-1 {
+    right: -0.25rem;
+  }
+
+  .sm\:-r-2 {
+    right: -0.5rem;
+  }
+
+  .sm\:-r-3 {
+    right: -0.75rem;
+  }
+
+  .sm\:-r-4 {
+    right: -1rem;
+  }
+
+  .sm\:-r-5 {
+    right: -1.25rem;
+  }
+
+  .sm\:-r-6 {
+    right: -1.5rem;
+  }
+
+  .sm\:-r-7 {
+    right: -1.75rem;
+  }
+
+  .sm\:-r-8 {
+    right: -2rem;
+  }
+
+  .sm\:-r-10 {
+    right: -2.5rem;
+  }
+
+  .sm\:-r-12 {
+    right: -3rem;
+  }
+
+  .sm\:-r-14 {
+    right: -3.5rem;
+  }
+
+  .sm\:-r-16 {
+    right: -4rem;
+  }
+
+  .sm\:-r-20 {
+    right: -5rem;
+  }
+
+  .sm\:-r-24 {
+    right: -6rem;
+  }
+
+  .sm\:-r-32 {
+    right: -8rem;
+  }
+
+  .sm\:-r-48 {
+    right: -12rem;
+  }
+
+  .sm\:-r-64 {
+    right: -16rem;
+  }
+
+  .sm\:-r-1\/1 {
+    right: -100%;
+  }
+
+  .sm\:-r-1\/2 {
+    right: -50%;
+  }
+
+  .sm\:-r-1\/3 {
+    right: -33.33%;
+  }
+
+  .sm\:-r-1\/4 {
+    right: -25%;
+  }
+
+  .sm\:-r-2\/3 {
+    right: -66.67%;
+  }
+
+  .sm\:-r-3\/4 {
+    right: -75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md\:r-1px {
+    right: 1px;
+  }
+
+  .md\:r-2px {
+    right: 2px;
+  }
+
+  .md\:r-3px {
+    right: 3px;
+  }
+
+  .md\:r-0 {
+    right: 0;
+  }
+
+  .md\:r-1 {
+    right: 0.25rem;
+  }
+
+  .md\:r-2 {
+    right: 0.5rem;
+  }
+
+  .md\:r-3 {
+    right: 0.75rem;
+  }
+
+  .md\:r-4 {
+    right: 1rem;
+  }
+
+  .md\:r-5 {
+    right: 1.25rem;
+  }
+
+  .md\:r-6 {
+    right: 1.5rem;
+  }
+
+  .md\:r-7 {
+    right: 1.75rem;
+  }
+
+  .md\:r-8 {
+    right: 2rem;
+  }
+
+  .md\:r-10 {
+    right: 2.5rem;
+  }
+
+  .md\:r-12 {
+    right: 3rem;
+  }
+
+  .md\:r-14 {
+    right: 3.5rem;
+  }
+
+  .md\:r-16 {
+    right: 4rem;
+  }
+
+  .md\:r-20 {
+    right: 5rem;
+  }
+
+  .md\:r-24 {
+    right: 6rem;
+  }
+
+  .md\:r-32 {
+    right: 8rem;
+  }
+
+  .md\:r-48 {
+    right: 12rem;
+  }
+
+  .md\:r-64 {
+    right: 16rem;
+  }
+
+  .md\:r-1\/1 {
+    right: 100%;
+  }
+
+  .md\:r-1\/2 {
+    right: 50%;
+  }
+
+  .md\:r-1\/3 {
+    right: 33.33%;
+  }
+
+  .md\:r-1\/4 {
+    right: 25%;
+  }
+
+  .md\:r-2\/3 {
+    right: 66.67%;
+  }
+
+  .md\:r-3\/4 {
+    right: 75%;
+  }
+
+  .md\:r-auto {
+    right: auto;
+  }
+
+  .md\:-r-1px {
+    right: -1px;
+  }
+
+  .md\:-r-2px {
+    right: -2px;
+  }
+
+  .md\:-r-3px {
+    right: -3px;
+  }
+
+  .md\:-r-1 {
+    right: -0.25rem;
+  }
+
+  .md\:-r-2 {
+    right: -0.5rem;
+  }
+
+  .md\:-r-3 {
+    right: -0.75rem;
+  }
+
+  .md\:-r-4 {
+    right: -1rem;
+  }
+
+  .md\:-r-5 {
+    right: -1.25rem;
+  }
+
+  .md\:-r-6 {
+    right: -1.5rem;
+  }
+
+  .md\:-r-7 {
+    right: -1.75rem;
+  }
+
+  .md\:-r-8 {
+    right: -2rem;
+  }
+
+  .md\:-r-10 {
+    right: -2.5rem;
+  }
+
+  .md\:-r-12 {
+    right: -3rem;
+  }
+
+  .md\:-r-14 {
+    right: -3.5rem;
+  }
+
+  .md\:-r-16 {
+    right: -4rem;
+  }
+
+  .md\:-r-20 {
+    right: -5rem;
+  }
+
+  .md\:-r-24 {
+    right: -6rem;
+  }
+
+  .md\:-r-32 {
+    right: -8rem;
+  }
+
+  .md\:-r-48 {
+    right: -12rem;
+  }
+
+  .md\:-r-64 {
+    right: -16rem;
+  }
+
+  .md\:-r-1\/1 {
+    right: -100%;
+  }
+
+  .md\:-r-1\/2 {
+    right: -50%;
+  }
+
+  .md\:-r-1\/3 {
+    right: -33.33%;
+  }
+
+  .md\:-r-1\/4 {
+    right: -25%;
+  }
+
+  .md\:-r-2\/3 {
+    right: -66.67%;
+  }
+
+  .md\:-r-3\/4 {
+    right: -75%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lg\:r-1px {
+    right: 1px;
+  }
+
+  .lg\:r-2px {
+    right: 2px;
+  }
+
+  .lg\:r-3px {
+    right: 3px;
+  }
+
+  .lg\:r-0 {
+    right: 0;
+  }
+
+  .lg\:r-1 {
+    right: 0.25rem;
+  }
+
+  .lg\:r-2 {
+    right: 0.5rem;
+  }
+
+  .lg\:r-3 {
+    right: 0.75rem;
+  }
+
+  .lg\:r-4 {
+    right: 1rem;
+  }
+
+  .lg\:r-5 {
+    right: 1.25rem;
+  }
+
+  .lg\:r-6 {
+    right: 1.5rem;
+  }
+
+  .lg\:r-7 {
+    right: 1.75rem;
+  }
+
+  .lg\:r-8 {
+    right: 2rem;
+  }
+
+  .lg\:r-10 {
+    right: 2.5rem;
+  }
+
+  .lg\:r-12 {
+    right: 3rem;
+  }
+
+  .lg\:r-14 {
+    right: 3.5rem;
+  }
+
+  .lg\:r-16 {
+    right: 4rem;
+  }
+
+  .lg\:r-20 {
+    right: 5rem;
+  }
+
+  .lg\:r-24 {
+    right: 6rem;
+  }
+
+  .lg\:r-32 {
+    right: 8rem;
+  }
+
+  .lg\:r-48 {
+    right: 12rem;
+  }
+
+  .lg\:r-64 {
+    right: 16rem;
+  }
+
+  .lg\:r-1\/1 {
+    right: 100%;
+  }
+
+  .lg\:r-1\/2 {
+    right: 50%;
+  }
+
+  .lg\:r-1\/3 {
+    right: 33.33%;
+  }
+
+  .lg\:r-1\/4 {
+    right: 25%;
+  }
+
+  .lg\:r-2\/3 {
+    right: 66.67%;
+  }
+
+  .lg\:r-3\/4 {
+    right: 75%;
+  }
+
+  .lg\:r-auto {
+    right: auto;
+  }
+
+  .lg\:-r-1px {
+    right: -1px;
+  }
+
+  .lg\:-r-2px {
+    right: -2px;
+  }
+
+  .lg\:-r-3px {
+    right: -3px;
+  }
+
+  .lg\:-r-1 {
+    right: -0.25rem;
+  }
+
+  .lg\:-r-2 {
+    right: -0.5rem;
+  }
+
+  .lg\:-r-3 {
+    right: -0.75rem;
+  }
+
+  .lg\:-r-4 {
+    right: -1rem;
+  }
+
+  .lg\:-r-5 {
+    right: -1.25rem;
+  }
+
+  .lg\:-r-6 {
+    right: -1.5rem;
+  }
+
+  .lg\:-r-7 {
+    right: -1.75rem;
+  }
+
+  .lg\:-r-8 {
+    right: -2rem;
+  }
+
+  .lg\:-r-10 {
+    right: -2.5rem;
+  }
+
+  .lg\:-r-12 {
+    right: -3rem;
+  }
+
+  .lg\:-r-14 {
+    right: -3.5rem;
+  }
+
+  .lg\:-r-16 {
+    right: -4rem;
+  }
+
+  .lg\:-r-20 {
+    right: -5rem;
+  }
+
+  .lg\:-r-24 {
+    right: -6rem;
+  }
+
+  .lg\:-r-32 {
+    right: -8rem;
+  }
+
+  .lg\:-r-48 {
+    right: -12rem;
+  }
+
+  .lg\:-r-64 {
+    right: -16rem;
+  }
+
+  .lg\:-r-1\/1 {
+    right: -100%;
+  }
+
+  .lg\:-r-1\/2 {
+    right: -50%;
+  }
+
+  .lg\:-r-1\/3 {
+    right: -33.33%;
+  }
+
+  .lg\:-r-1\/4 {
+    right: -25%;
+  }
+
+  .lg\:-r-2\/3 {
+    right: -66.67%;
+  }
+
+  .lg\:-r-3\/4 {
+    right: -75%;
+  }
+}

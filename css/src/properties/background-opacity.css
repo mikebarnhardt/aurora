@@ -1,0 +1,259 @@
+.background-opacity-0 {
+  --background-opacity: 0;
+}
+
+.hover\:background-opacity-0:hover {
+  --background-opacity: 0;
+}
+
+.focus\:background-opacity-0:focus {
+  --background-opacity: 0;
+}
+
+.focus-within\:background-opacity-0:focus-within {
+  --background-opacity: 0;
+}
+
+.active\:background-opacity-0:active {
+  --background-opacity: 0;
+}
+
+.background-opacity-10 {
+  --background-opacity: 0.1;
+}
+
+.hover\:background-opacity-10:hover {
+  --background-opacity: 0.1;
+}
+
+.focus\:background-opacity-10:focus {
+  --background-opacity: 0.1;
+}
+
+.focus-within\:background-opacity-10:focus-within {
+  --background-opacity: 0.1;
+}
+
+.active\:background-opacity-10:active {
+  --background-opacity: 0.1;
+}
+
+.background-opacity-20 {
+  --background-opacity: 0.2;
+}
+
+.hover\:background-opacity-20:hover {
+  --background-opacity: 0.2;
+}
+
+.focus\:background-opacity-20:focus {
+  --background-opacity: 0.2;
+}
+
+.focus-within\:background-opacity-20:focus-within {
+  --background-opacity: 0.2;
+}
+
+.active\:background-opacity-20:active {
+  --background-opacity: 0.2;
+}
+
+.background-opacity-25 {
+  --background-opacity: 0.25;
+}
+
+.hover\:background-opacity-25:hover {
+  --background-opacity: 0.25;
+}
+
+.focus\:background-opacity-25:focus {
+  --background-opacity: 0.25;
+}
+
+.focus-within\:background-opacity-25:focus-within {
+  --background-opacity: 0.25;
+}
+
+.active\:background-opacity-25:active {
+  --background-opacity: 0.25;
+}
+
+.background-opacity-30 {
+  --background-opacity: 0.3;
+}
+
+.hover\:background-opacity-30:hover {
+  --background-opacity: 0.3;
+}
+
+.focus\:background-opacity-30:focus {
+  --background-opacity: 0.3;
+}
+
+.focus-within\:background-opacity-30:focus-within {
+  --background-opacity: 0.3;
+}
+
+.active\:background-opacity-30:active {
+  --background-opacity: 0.3;
+}
+
+.background-opacity-40 {
+  --background-opacity: 0.4;
+}
+
+.hover\:background-opacity-40:hover {
+  --background-opacity: 0.4;
+}
+
+.focus\:background-opacity-40:focus {
+  --background-opacity: 0.4;
+}
+
+.focus-within\:background-opacity-40:focus-within {
+  --background-opacity: 0.4;
+}
+
+.active\:background-opacity-40:active {
+  --background-opacity: 0.4;
+}
+
+.background-opacity-50 {
+  --background-opacity: 0.5;
+}
+
+.hover\:background-opacity-50:hover {
+  --background-opacity: 0.5;
+}
+
+.focus\:background-opacity-50:focus {
+  --background-opacity: 0.5;
+}
+
+.focus-within\:background-opacity-50:focus-within {
+  --background-opacity: 0.5;
+}
+
+.active\:background-opacity-50:active {
+  --background-opacity: 0.5;
+}
+
+.background-opacity-60 {
+  --background-opacity: 0.6;
+}
+
+.hover\:background-opacity-60:hover {
+  --background-opacity: 0.6;
+}
+
+.focus\:background-opacity-60:focus {
+  --background-opacity: 0.6;
+}
+
+.focus-within\:background-opacity-60:focus-within {
+  --background-opacity: 0.6;
+}
+
+.active\:background-opacity-60:active {
+  --background-opacity: 0.6;
+}
+
+.background-opacity-70 {
+  --background-opacity: 0.7;
+}
+
+.hover\:background-opacity-70:hover {
+  --background-opacity: 0.7;
+}
+
+.focus\:background-opacity-70:focus {
+  --background-opacity: 0.7;
+}
+
+.focus-within\:background-opacity-70:focus-within {
+  --background-opacity: 0.7;
+}
+
+.active\:background-opacity-70:active {
+  --background-opacity: 0.7;
+}
+
+.background-opacity-75 {
+  --background-opacity: 0.75;
+}
+
+.hover\:background-opacity-75:hover {
+  --background-opacity: 0.75;
+}
+
+.focus\:background-opacity-75:focus {
+  --background-opacity: 0.75;
+}
+
+.focus-within\:background-opacity-75:focus-within {
+  --background-opacity: 0.75;
+}
+
+.active\:background-opacity-75:active {
+  --background-opacity: 0.75;
+}
+
+.background-opacity-80 {
+  --background-opacity: 0.8;
+}
+
+.hover\:background-opacity-80:hover {
+  --background-opacity: 0.8;
+}
+
+.focus\:background-opacity-80:focus {
+  --background-opacity: 0.8;
+}
+
+.focus-within\:background-opacity-80:focus-within {
+  --background-opacity: 0.8;
+}
+
+.active\:background-opacity-80:active {
+  --background-opacity: 0.8;
+}
+
+.background-opacity-90 {
+  --background-opacity: 0.9;
+}
+
+.hover\:background-opacity-90:hover {
+  --background-opacity: 0.9;
+}
+
+.focus\:background-opacity-90:focus {
+  --background-opacity: 0.9;
+}
+
+.focus-within\:background-opacity-90:focus-within {
+  --background-opacity: 0.9;
+}
+
+.active\:background-opacity-90:active {
+  --background-opacity: 0.9;
+}
+
+.background-opacity-100 {
+  --background-opacity: 1;
+}
+
+.hover\:background-opacity-100:hover {
+  --background-opacity: 1;
+}
+
+.focus\:background-opacity-100:focus {
+  --background-opacity: 1;
+}
+
+.focus-within\:background-opacity-100:focus-within {
+  --background-opacity: 1;
+}
+
+.active\:background-opacity-100:active {
+  --background-opacity: 1;
+}

@@ -1,0 +1,53 @@
+.collapse {
+  visibility: collapse;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .sm\:collapse {
+    visibility: collapse;
+  }
+
+  .sm\:hidden {
+    visibility: hidden;
+  }
+
+  .sm\:visible {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md\:collapse {
+    visibility: collapse;
+  }
+
+  .md\:hidden {
+    visibility: hidden;
+  }
+
+  .md\:visible {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lg\:collapse {
+    visibility: collapse;
+  }
+
+  .lg\:hidden {
+    visibility: hidden;
+  }
+
+  .lg\:visible {
+    visibility: visible;
+  }
+}

@@ -4,33 +4,17 @@
     "url": "https://github.com/mikebarnhardt/ancient/issues"
   },
   "description": "",
-  "devDependencies": {
-    "autoprefixer": "^10.0.2",
-    "postcss": "^8.1.7",
-    "postcss-cli": "^8.2.0",
-    "postcss-csso": "^5.0.0",
-    "postcss-each": "^0.10.0",
-    "postcss-import": "^13.0.0"
-  },
   "homepage": "https://github.com/mikebarnhardt/ancient#readme",
   "keywords": [
     "css",
     "ancient"
   ],
   "license": "MIT",
-  "main": "dist/ancient.min.css",
+  "main": "src/ancient.css",
   "name": "ancient-css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikebarnhardt/ancient.git"
   },
-  "scripts": {
-    "build": "postcss --env=production --no-map src/ancient.css --output dist/ancient.min.css",
-    "prepare": "npm run build",
-    "start": "postcss --watch src/ancient.css --output dist/ancient.css"
-  },
-  "version": "3.1.3",
-  "dependencies": {
-    "postcss-advanced-variables": "^3.0.1"
-  }
+  "version": "4.0.0"
 }

@@ -1,8 +1,0 @@
-/*
-  elements.path.css
-    make icon color same as text by default
-*/
-
-path {
-  fill: currentColor;
-}

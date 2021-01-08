@@ -1,0 +1,102 @@
+ANCIENT-CSS
+A CSS utility library
+
+COLORS
+Colors are defined as incomplete HSL values: 224, 80%, 56%. This is so that it 
+can be inserted in various contexts with a separate opacity variable:
+hsla(var(--blue-600), var(--background-opacity)). This also allows anyone to 
+override the default color values without any build steps. Just add your new 
+variable definitions after this library. (You can also manually import only the 
+properties you need from the /properties folder.)
+
+COLOR REFERENCE (H, S)
+gray 0, 0%
+slate 224, 16%
+stone 0, 16%
+red 0, 80%
+orange 32, 96%
+yellow 56, 96%
+green 128, 64%
+turquoise 176, 72%
+cyan 192, 80%
+blue 224, 80%
+indigo 256, 64%
+violet 272, 80%
+magenta 328, 80%
+
+COLOR VALUE REFERENCE (L)
+50      98%
+100     96%
+200     88%
+300     80%
+400     72%
+500     64%
+600     56%
+700     48%
+800     40%
+900     32%
+1000    24%
+1100    16%
+1200    8%
+
+OPACITY
+10 0.1
+20 0.2
+25 0.25
+30 0.3
+40 0.4
+50 0.5
+60 0.6
+70 0.7
+75 0.75
+80 0.8
+90 0.9
+100 1
+
+SCALE
+There are no scale CSS variables. There are too many opinions on how it should 
+be structured so I used the one I found simplest (and basically copies 
+Tailwind).
+
+Each unit is equal to 0.25rem. This is equivalent to a 4pt/4px scale. It keeps 
+all values proportionate: .p-16 is double .p-8. Simply divide the number by 4 to 
+get the `rem` value: for .p-32, 32/4 = 8rem = 128px. There are also 1-3px units 
+for micro-adjustments, borders, etc.
+
+SCALE REFERENCE
+1px 1px
+2px 2px
+3px 3px
+1 0.25rem 4px
+2 0.5rem 8px
+3 0.75rem 12px
+4 1rem 16px
+5 1.25rem 20px
+6 1.5rem 24px
+7 1.75rem 28px
+8 2rem 32px
+10 2.5rem 40px
+12 3rem 48px
+14 3.5rem 56px
+16 4rem 64px
+20 5rem 80px
+24 6rem 96px
+32 8rem 128px
+48 12rem 192px
+64 16rem 256px
+
+MAX-WIDTH SCALE REFERENCE
+80 20rem 320px
+120 30rem 480px
+160 40rem 640px
+200 50rem 800px
+240 60rem 960px
+320 80rem 1280px
+
+MEDIA QUERY WIDTHS
+sm 768px
+md 1024px
+lg 1280px
+
+CONTRIBUTORS
+Mike Barnhardt <mikebarnhardt+github@gmail.com>

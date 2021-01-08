@@ -1,0 +1,165 @@
+.font-xx-small {
+  font-size: 0.5rem;
+}
+
+.font-x-small {
+  font-size: 0.75rem;
+}
+
+.font-small {
+  font-size: 0.875rem;
+}
+
+.font-medium {
+  font-size: 1rem;
+}
+
+.font-large {
+  font-size: 1.125rem;
+}
+
+.font-x-large {
+  font-size: 1.5rem;
+}
+
+.font-xx-large {
+  font-size: 2rem;
+}
+
+.font-xxx-large {
+  font-size: 3rem;
+}
+
+.font-larger {
+  font-size: 1.25em;
+}
+
+.font-smaller {
+  font-size: 0.75em;
+}
+
+@media (min-width: 768px) {
+  .sm\:font-xx-small {
+    font-size: 0.5rem;
+  }
+
+  .sm\:font-x-small {
+    font-size: 0.75rem;
+  }
+
+  .sm\:font-small {
+    font-size: 0.875rem;
+  }
+
+  .sm\:font-medium {
+    font-size: 1rem;
+  }
+
+  .sm\:font-large {
+    font-size: 1.125rem;
+  }
+
+  .sm\:font-x-large {
+    font-size: 1.5rem;
+  }
+
+  .sm\:font-xx-large {
+    font-size: 2rem;
+  }
+
+  .sm\:font-xxx-large {
+    font-size: 3rem;
+  }
+
+  .sm\:font-larger {
+    font-size: 1.25em;
+  }
+
+  .sm\:font-smaller {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md\:font-xx-small {
+    font-size: 0.5rem;
+  }
+
+  .md\:font-x-small {
+    font-size: 0.75rem;
+  }
+
+  .md\:font-small {
+    font-size: 0.875rem;
+  }
+
+  .md\:font-medium {
+    font-size: 1rem;
+  }
+
+  .md\:font-large {
+    font-size: 1.125rem;
+  }
+
+  .md\:font-x-large {
+    font-size: 1.5rem;
+  }
+
+  .md\:font-xx-large {
+    font-size: 2rem;
+  }
+
+  .md\:font-xxx-large {
+    font-size: 3rem;
+  }
+
+  .md\:font-larger {
+    font-size: 1.25em;
+  }
+
+  .md\:font-smaller {
+    font-size: 0.75em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lg\:font-xx-small {
+    font-size: 0.5rem;
+  }
+
+  .lg\:font-x-small {
+    font-size: 0.75rem;
+  }
+
+  .lg\:font-small {
+    font-size: 0.875rem;
+  }
+
+  .lg\:font-medium {
+    font-size: 1rem;
+  }
+
+  .lg\:font-large {
+    font-size: 1.125rem;
+  }
+
+  .lg\:font-x-large {
+    font-size: 1.5rem;
+  }
+
+  .lg\:font-xx-large {
+    font-size: 2rem;
+  }
+
+  .lg\:font-xxx-large {
+    font-size: 3rem;
+  }
+
+  .lg\:font-larger {
+    font-size: 1.25em;
+  }
+
+  .lg\:font-smaller {
+    font-size: 0.75em;
+  }
+}

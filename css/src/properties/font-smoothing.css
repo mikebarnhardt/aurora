@@ -1,0 +1,8 @@
+.font-antialiased {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-subpixel {
+  -webkit-font-smoothing: subpixel-antialiased;
+}

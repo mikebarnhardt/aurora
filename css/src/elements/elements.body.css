@@ -1,8 +1,0 @@
-/*
-  elements.body.css
-    remove margin from body tag (why isn't this default yet?)
-*/
-
-body {
-  margin: 0;
-}

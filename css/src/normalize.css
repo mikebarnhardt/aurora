@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+hr {
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  font: inherit;
+}
+
+select {
+  font: inherit;
+}
+
+svg {
+  height: 1em;
+  width: 1em;
+}

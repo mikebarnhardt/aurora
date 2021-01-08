@@ -1,0 +1,85 @@
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.static {
+  position: static;
+}
+
+.sticky {
+  position: sticky;
+}
+
+@media (min-width: 768px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:fixed {
+    position: fixed;
+  }
+
+  .sm\:relative {
+    position: relative;
+  }
+
+  .sm\:static {
+    position: static;
+  }
+
+  .sm\:sticky {
+    position: sticky;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:fixed {
+    position: fixed;
+  }
+
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:static {
+    position: static;
+  }
+
+  .md\:sticky {
+    position: sticky;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:fixed {
+    position: fixed;
+  }
+
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:static {
+    position: static;
+  }
+
+  .lg\:sticky {
+    position: sticky;
+  }
+}

@@ -1,0 +1,39 @@
+.radius-1px {
+  border-radius: 1px;
+}
+
+.radius-2px {
+  border-radius: 2px;
+}
+
+.radius-3px {
+  border-radius: 3px;
+}
+
+.radius-0 {
+  border-radius: 0;
+}
+
+.radius-1 {
+  border-radius: 0.25rem;
+}
+
+.radius-2 {
+  border-radius: 0.5rem;
+}
+
+.radius-3 {
+  border-radius: 0.75rem;
+}
+
+.radius-4 {
+  border-radius: 1rem;
+}
+
+.radius-circle {
+  border-radius: 50%;
+}
+
+.radius-pill {
+  border-radius: 9999rem;
+}

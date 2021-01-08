@@ -1,0 +1,79 @@
+.decoration-line-through {
+  text-decoration: line-through;
+}
+
+.hover\:decoration-line-through:hover {
+  text-decoration: line-through;
+}
+
+.focus\:decoration-line-through:focus {
+  text-decoration: line-through;
+}
+
+.focus-within\:decoration-line-through:focus-within {
+  text-decoration: line-through;
+}
+
+.active\:decoration-line-through:active {
+  text-decoration: line-through;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.hover\:decoration-none:hover {
+  text-decoration: none;
+}
+
+.focus\:decoration-none:focus {
+  text-decoration: none;
+}
+
+.focus-within\:decoration-none:focus-within {
+  text-decoration: none;
+}
+
+.active\:decoration-none:active {
+  text-decoration: none;
+}
+
+.decoration-overline {
+  text-decoration: overline;
+}
+
+.hover\:decoration-overline:hover {
+  text-decoration: overline;
+}
+
+.focus\:decoration-overline:focus {
+  text-decoration: overline;
+}
+
+.focus-within\:decoration-overline:focus-within {
+  text-decoration: overline;
+}
+
+.active\:decoration-overline:active {
+  text-decoration: overline;
+}
+
+.decoration-underline {
+  text-decoration: underline;
+}
+
+.hover\:decoration-underline:hover {
+  text-decoration: underline;
+}
+
+.focus\:decoration-underline:focus {
+  text-decoration: underline;
+}
+
+.focus-within\:decoration-underline:focus-within {
+  text-decoration: underline;
+}
+
+.active\:decoration-underline:active {
+  text-decoration: underline;
+}

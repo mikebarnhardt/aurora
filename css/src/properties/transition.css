@@ -1,0 +1,52 @@
+.transition {
+  --transition-duration: 160ms;
+  --transition-property: all;
+  --transition-timing-function: ease;
+  transition-duration: var(--transition-duration);
+  transition-property: var(--transition-property);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.transition-slow {
+  --transition-duration: 320ms;
+}
+
+.transition-fast {
+  --transition-duration: 80ms;
+}
+
+.transition-colors {
+  --transition-property: background-color, border-color, box-shadow, color, fill;
+}
+
+.transition-opacity {
+  --transition-property: opacity;
+}
+
+.transition-shadow {
+  --transition-property: box-shadow;
+}
+
+.transition-transform {
+  --transition-property: transform;
+}
+
+.transition-ease {
+  --transition-timing-function: ease;
+}
+
+.transition-ease-in {
+  --transition-timing-function: ease-in;
+}
+
+.transition-ease-in-out {
+  --transition-timing-function: ease-in-out;
+}
+
+.transition-ease-out {
+  --transition-timing-function: ease-out;
+}
+
+.transition-linear {
+  --transition-timing-function: linear;
+}

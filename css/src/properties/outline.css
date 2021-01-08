@@ -1,0 +1,15 @@
+.outline-none {
+  outline: none;
+}
+
+.hover\:outline-none:hover {
+  outline: none;
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.active\:outline-none:active {
+  outline: none;
+}
