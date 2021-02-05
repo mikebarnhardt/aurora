@@ -1,35 +1,35 @@
-.font-ultralight {
+.font-100 {
   font-weight: 100;
 }
 
-.font-thin {
+.font-200 {
   font-weight: 200;
 }
 
-.font-light {
+.font-300 {
   font-weight: 300;
 }
 
-.font-normal {
+.font-400 {
   font-weight: 400;
 }
 
-.font-medium {
+.font-500 {
   font-weight: 500;
 }
 
-.font-semibold {
+.font-600 {
   font-weight: 600;
 }
 
-.font-bold {
+.font-700 {
   font-weight: 700;
 }
 
-.font-heavy {
+.font-800 {
   font-weight: 800;
 }
 
-.font-black {
+.font-900 {
   font-weight: 900;
 }
