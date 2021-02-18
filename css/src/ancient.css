@@ -1,4 +1,6 @@
+@import './properties/align-content.css';
 @import './properties/align-items.css';
+@import './properties/align-self.css';
 @import './properties/appearance.css';
 @import './properties/background-color.css';
 @import './properties/background-opacity.css';
@@ -10,6 +12,7 @@
 @import './properties/bottom.css';
 @import './properties/box-shadow.css';
 @import './properties/color.css';
+@import './properties/cursor.css';
 @import './properties/display.css';
 @import './properties/fill.css';
 @import './properties/flex-direction.css';
@@ -43,3 +46,4 @@
 @import './properties/transition.css';
 @import './properties/visibility.css';
 @import './properties/width.css';
+@import './properties/z-index.css';
