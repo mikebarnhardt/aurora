@@ -22,6 +22,10 @@
   display: inline-flex;
 }
 
+.none {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .sm\:block {
     display: block;
@@ -45,6 +49,10 @@
 
   .sm\:inline-flex {
     display: inline-flex;
+  }
+
+  .sm\:none {
+    display: none;
   }
 }
 
@@ -72,6 +80,10 @@
   .md\:inline-flex {
     display: inline-flex;
   }
+
+  .md\:none {
+    display: none;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -97,5 +109,9 @@
 
   .lg\:inline-flex {
     display: inline-flex;
+  }
+
+  .lg\:none {
+    display: none;
   }
 }
