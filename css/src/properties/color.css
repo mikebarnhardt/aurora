@@ -1,3 +1,23 @@
+.color-inherit {
+  color: inherit;
+}
+
+.hover\:color-inherit:hover {
+  color: inherit;
+}
+
+.focus\:color-inherit:focus {
+  color: inherit;
+}
+
+.focus-within\:color-inherit:focus-within {
+  color: inherit;
+}
+
+.active\:color-inherit:active {
+  color: inherit;
+}
+
 .color-transparent {
   color: transparent;
 }
